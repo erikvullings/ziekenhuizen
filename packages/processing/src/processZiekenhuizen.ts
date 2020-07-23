@@ -1,0 +1,69 @@
+import * as fs from 'fs';
+import * as path from 'path';
+import * as XLSX from 'xlsx';
+import {
+  ziekenhuisInputFile,
+  ziekenhuizenFolder,
+  ziekenhuisGeojson,
+  aanrijdGeojson25,
+  aanrijdGeojson30,
+} from './settings';
+
+// Maak 2 geojson files, eentje met alle ziekenhuizen als punt op de kaart en de default gegevens,
+// de ander met alle aanrijdgebieden.
+
+const ziekenhuisWb = XLSX.readFile(ziekenhuisInputFile);
+const ziekenhuisTable = XLSX.utils.sheet_to_json(ziekenhuisWb.Sheets[ziekenhuisWb.SheetNames[0]], {
+  raw: true,
+  rawNumbers: true,
+}) as Array<{
+  filename: string;
+  organisatie: string;
+  locatie: string;
+  plaats: string;
+  adres: string;
+  pc: string;
+  gevoeligeZH: boolean;
+  NICU: boolean;
+  fullTimeSEH: boolean;
+  avond: boolean;
+  criteria: boolean;
+  /** Totaal aantal geboorten binnen 25 min regio */
+  t25: number;
+  /** Totaal aantal geboorten binnen 30 min regio */
+  t30: number;
+  /** Totaal aantal geboorten buiten 30 min regio die hier opgevangen worden */
+  tOv: number;
+}>;
+
+const aanrijdgebieden = ziekenhuisTable.map((z) => {
+  const data = fs.readFileSync(path.resolve(ziekenhuizenFolder, z.filename + '.geojson')).slice(3); // remove BOM
+  delete z.filename;
+  return JSON.parse(data.toString());
+});
+
+export const ziekenhuizen = {
+  type: 'FeatureCollection',
+  features: ziekenhuisTable.map((z, i) => ({
+    type: 'Feature',
+    properties: { id: i, ...z, t25: 0, t30: 0, tOv: 0 },
+    geometry: {
+      type: 'Point',
+      coordinates: aanrijdgebieden[i].features[0].properties.center,
+    },
+  })),
+};
+
+export const aanrijdgebieden25 = {
+  type: 'FeatureCollection',
+  features: aanrijdgebieden.map((a) => a.features[0]),
+};
+
+export const aanrijdgebieden30 = {
+  type: 'FeatureCollection',
+  features: aanrijdgebieden.map((a) => a.features[1]),
+};
+
+// fs.writeFileSync(ziekenhuisGeojson, JSON.stringify(ziekenhuizen, null, 2));
+fs.writeFileSync(aanrijdGeojson25, JSON.stringify(aanrijdgebieden25, null, 2));
+fs.writeFileSync(aanrijdGeojson30, JSON.stringify(aanrijdgebieden30, null, 2));

@@ -1,0 +1,38 @@
+{
+  "name": "ziekenhuizen",
+  "version": "0.0.1",
+  "description": "Welke ziekenhuizen dienen open te blijven voor goede geboortezorg",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikvullings/ziekenhuizen.git"
+  },
+  "keywords": [
+    "vws",
+    "ziekenhuizen",
+    "geboortezorg"
+  ],
+  "author": "Erik Vullings <erik.vullings@gmail.com> (http://www.tno.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erikvullings/ziekenhuizen/issues"
+  },
+  "homepage": "https://github.com/erikvullings/ziekenhuizen#readme",
+  "dependencies": {
+    "xlsx": "0.16.4",
+    "@turf/boolean-point-in-polygon": "6.0.1",
+    "@turf/distance": "6.0.1",
+    "@turf/turf": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.24",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
