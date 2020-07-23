@@ -18,6 +18,7 @@ const ziekenhuisTable = XLSX.utils.sheet_to_json(ziekenhuisWb.Sheets[ziekenhuisW
   rawNumbers: true,
 }) as Array<{
   filename: string;
+  id: number;
   organisatie: string;
   locatie: string;
   plaats: string;
@@ -46,7 +47,7 @@ export const ziekenhuizen = {
   type: 'FeatureCollection',
   features: ziekenhuisTable.map((z, i) => ({
     type: 'Feature',
-    properties: { id: i, ...z, t25: 0, t30: 0, tOv: 0 },
+    properties: { ...z, id: i, t25: 0, t30: 0, tOv: 0 },
     geometry: {
       type: 'Point',
       coordinates: aanrijdgebieden[i].features[0].properties.center,

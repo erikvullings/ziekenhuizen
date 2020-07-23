@@ -7,7 +7,10 @@
     "doc": "doc"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf ./public ./.cache ./dist",
+    "cleanup": "npm run clean",
+    "start": "parcel index.html",
+    "build:domain": "npm run clean && parcel build index.html --out-dir ../../docs"
   },
   "repository": {
     "type": "git",
@@ -25,14 +28,23 @@
   },
   "homepage": "https://github.com/erikvullings/ziekenhuizen#readme",
   "dependencies": {
-    "xlsx": "0.16.4",
-    "@turf/boolean-point-in-polygon": "6.0.1",
-    "@turf/distance": "6.0.1",
-    "@turf/turf": "5.1.6"
+    "mithril": "^2.0.4",
+    "leaflet": "^1.6.0",
+    "proj4": "^2.6.2",
+    "proj4leaflet": "^1.0.2",
+    "mgrs": "^1.0.0",
+    "wkt-parser": "^1.2.4",
+    "leaflet-hash": "^0.2.1"
   },
   "devDependencies": {
+    "parcel": "^1.12.4",
+    "@types/geojson": "^7946.0.7",
+    "@types/proj4": "2.3.4",
+    "@types/proj4leaflet": "^1.0.5",
+    "@types/mithril": "^1.1.12",
+    "@types/leaflet": "^1.5.4",
     "@types/node": "^14.0.24",
-    "ts-node": "^8.10.2",
+    "rimraf": "^3.0.2",
     "typescript": "^3.9.7"
   }
 }

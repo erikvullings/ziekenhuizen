@@ -1109,6 +1109,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==
+  /commander/2.20.3:
+    dev: false
+    resolution:
+      integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
   /concaveman/1.2.0:
     dependencies:
       point-in-polygon: 1.0.1
@@ -1418,14 +1422,14 @@ packages:
       integrity: sha512-ppJZNDuKGgxzkHihX8v9v9G5f+18gzaTfrukGrq6ueg0lmH4nqVnA2IPG0AEH3jKEk2GRJCUhDoqpoiw3PHLBA==
   /topojson-client/3.1.0:
     dependencies:
-      commander: 2.17.1
+      commander: 2.20.3
     dev: false
     hasBin: true
     resolution:
       integrity: sha512-605uxS6bcYxGXw9qi62XyrV6Q3xwbndjachmNxu8HWTtVPxZfEJN9fd/SZS1Q54Sn2y0TMyMxFj/cJINqGHrKw==
   /topojson-server/3.0.1:
     dependencies:
-      commander: 2.17.1
+      commander: 2.20.3
     dev: false
     hasBin: true
     resolution:
