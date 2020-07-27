@@ -30,7 +30,7 @@ const demografieNearHospital = demografie.map((pc) => {
     }))
     .sort((a, b) => (a.distance > b.distance ? 1 : a.distance < b.distance ? -1 : 0));
   dist
-    .filter(({ distance }) => distance < 40)
+    // .filter(({ distance }) => distance < 40)
     .map(({ id }) => {
       if (booleanPointInPolygon(p, aanrijdgebieden30.features[id])) {
         if (booleanPointInPolygon(p, aanrijdgebieden25.features[id])) {

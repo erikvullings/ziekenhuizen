@@ -1,34 +1,82 @@
-import m, { FactoryComponent } from 'mithril';
-import L, { LeafletEvent } from 'leaflet';
+import m from 'mithril';
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-hash';
-import ziekenhuizen from './assets/ziekenhuizen.json';
-import { RDnew, ziekenhuisIconX, ziekenhuisIconV } from './utils';
+import { RDnew, ziekenhuisIconX, ziekenhuisIconV, showDiff } from './utils';
 import { IZiekenhuis } from './models/ziekenhuis';
+import { MeiosisComponent } from './services/meiosis';
+import { InfoPanel } from './info-panel';
 
-export const HospitalMap: FactoryComponent = () => {
-  let selectedHospital: GeoJSON.Feature<GeoJSON.Geometry, IZiekenhuis>;
+export const HospitalMap: MeiosisComponent = () => {
+  let map: L.Map;
+  let a25: L.GeoJSON;
+  let postcodeLayer: L.GeoJSON;
   let selectedHospitalLayer: L.Marker;
 
   return {
-    view: () => {
-      const aantalGeboorten = selectedHospital
-        ? Math.round(
-            selectedHospital.properties.t25 +
-              selectedHospital.properties.t30 +
-              selectedHospital.properties.tOv
-          )
-        : 0;
-      // const aantalThuisgeboren = aantalGeboorten * 0.129;
+    view: ({ attrs: { state, actions } }) => {
+      console.log(state);
+      const { hospitals, selectedHospitalId, aanrijd25 } = state.app;
+      const selectedHospital = hospitals?.features
+        .filter((f) => f.properties.id === selectedHospitalId)
+        .shift();
+      const h = selectedHospital?.properties;
+      const aantalGeboorten = h ? Math.round(h.t25 + h.t30 + h.tOv) : 0;
       const aantalGeboortecentrum = Math.round(aantalGeboorten * 0.15);
       const aantalTweedelijn = Math.round(aantalGeboorten * 0.71);
+      const aantalGeboorten2 = h
+        ? Math.round(h.curline.reduce((acc, cur) => acc + cur))
+        : 0;
+      const aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * 0.15);
+      const aantalTweedelijn2 = Math.round(aantalGeboorten2 * 0.71);
+
+      if (map && a25) {
+        const t = aanrijd25?.features.filter(
+          (f) =>
+            hospitals &&
+            f.properties &&
+            hospitals.features[f.properties.id].properties.active
+        );
+        if (t && t.length !== a25.getLayers().length) {
+          a25.clearLayers();
+          t.forEach((f) => a25.addData(f));
+        }
+      }
+
+      if (h) {
+        console.log(
+          `id: ${h.id}: ` +
+            h.coverage
+              .map((c) => c.pc)
+              .sort()
+              .join(', ')
+        );
+        postcodeLayer.clearLayers();
+        h.coverage
+          .map(
+            ({ pc, coord, births, cat }) =>
+              ({
+                type: 'Feature',
+                geometry: {
+                  type: 'Point',
+                  coordinates: coord,
+                },
+                properties: {
+                  pc,
+                  births,
+                  cat,
+                },
+              } as GeoJSON.Feature)
+          )
+          .forEach((p) => postcodeLayer.addData(p));
+      }
 
       return [
         m('#map', {
           style:
             'height: 100vh; width: 70vw; margin: 0; padding: 0; overflow: hidden; box-shadow: (0px 0px 20px rgba(0,0,0,.3))',
           oncreate: () => {
-            const map = L.map('map', {
+            map = L.map('map', {
               crs: RDnew,
             }).setView([51.9741, 5.6688], 9);
             // map.on('load', (e: LeafletEvent) => {
@@ -52,43 +100,75 @@ export const HospitalMap: FactoryComponent = () => {
             pdokachtergrondkaart.addTo(map);
             // Hash in URL
             new (L as any).Hash(map);
-            var myStyle = {
-              color: '#ff7800',
-              weight: 5,
-              opacity: 0.65,
-            };
+            // var myStyle = {
+            //   color: '#ff7800',
+            //   weight: 5,
+            //   opacity: 0.65,
+            // };
 
-            const ziekenhuisLayer = L.geoJSON<IZiekenhuis>(ziekenhuizen, {
-              pointToLayer: (feature, latlng) =>
-                L.marker(
+            const ziekenhuisLayer = L.geoJSON<IZiekenhuis>(hospitals, {
+              pointToLayer: (feature, latlng) => {
+                return new L.Marker(
                   latlng,
                   feature.properties.active === false
                     ? { icon: ziekenhuisIconX }
                     : { icon: ziekenhuisIconV }
-                ),
-              // {
-              //   if (feature.properties.active === false)
-              //     return L.marker(latlng, { icon: ziekenhuisIconX });
-
-              //   // return L.circleMarker(latlng, geojsonMarkerOptions);
-              // },
+                );
+              },
               onEachFeature: (feature, layer) => {
                 layer.on('click', () => {
-                  // console.log(feature);
                   if (!feature.properties.hasOwnProperty('active')) {
                     feature.properties.active = true;
                   }
                   selectedHospitalLayer = layer as L.Marker;
-                  selectedHospital = feature;
-                  m.redraw();
+                  actions.selectHospital(feature.properties.id);
                 });
               },
+            }).addTo(map);
+
+            a25 = L.geoJSON(aanrijd25, {
+              style: {
+                stroke: false,
+                color: 'green',
+                fillOpacity: 0.3,
+              },
+            });
+
+            postcodeLayer = L.geoJSON(undefined, {
+              pointToLayer: (f, latlng) =>
+                L.circleMarker(latlng, {
+                  color: 'black',
+                  fillColor:
+                    f.properties.cat === 0
+                      ? 'green'
+                      : f.properties.cat === 1
+                      ? 'orange'
+                      : 'red',
+                  fillOpacity: 1,
+                  radius: Math.min(10, f.properties.births / 10),
+                }),
+              onEachFeature: (feature, layer) => {
+                layer.bindPopup(
+                  `In PC ${
+                    feature.properties.pc
+                  }, expected births is ${Math.round(
+                    feature.properties.births
+                  )}.`
+                );
+              },
+              // filter: function(feature, layer) {
+              //    return (feature.properties.Verified !== "Y" );
+              // },
             }).addTo(map);
 
             L.control
               .layers(
                 { pdok: pdokachtergrondkaart },
-                { ziekenhuizen: ziekenhuisLayer }
+                {
+                  ziekenhuizen: ziekenhuisLayer,
+                  'aanrijdtijd < 25 min': a25,
+                  postcodes: postcodeLayer,
+                }
               )
               .addTo(map);
           },
@@ -98,71 +178,88 @@ export const HospitalMap: FactoryComponent = () => {
           {
             style: 'position: absolute; top: 0; left: 70vw; padding: 5px;',
           },
-          selectedHospital && [
-            m('h1', selectedHospital.properties.locatie),
-            m('h2', selectedHospital.properties.organisatie),
-            m(
-              'p',
-              { style: 'font-weight: bold' },
-              `Kenmerken: ${[
-                selectedHospital.properties.NICU ? 'NICU' : '',
-                selectedHospital.properties.fullTimeSEH ? '24/7' : '',
-                selectedHospital.properties.gevoeligeZH ? 'gevoelig' : '',
-                selectedHospital.properties.criteria ? 'criteria' : '',
-              ]
-                .filter(Boolean)
-                .join(', ')}`
-            ),
-            m(
-              'p',
-              { style: 'font-weight: bold' },
-              `Aantal geboorten ${aantalGeboorten}, waarvan ${[
-                selectedHospital.properties.t25
-                  ? `binnen 25 min: ${Math.round(
-                      selectedHospital.properties.t25
-                    )}`
-                  : '',
-                selectedHospital.properties.t30
-                  ? `binnen 30 min: ${Math.round(
-                      selectedHospital.properties.t30
-                    )}`
-                  : '',
-                selectedHospital.properties.tOv
-                  ? `overig: ${Math.round(selectedHospital.properties.tOv)}`
-                  : '',
-              ]
-                .filter(Boolean)
-                .join(', ')}`
-            ),
-            m(
-              'p',
-              { style: 'font-weight: bold' },
-              `Geboortecentrum: ${aantalGeboortecentrum}`
-            ),
-            m(
-              'p',
-              { style: 'font-weight: bold' },
-              `Ziekenhuis 2de-lijn: ${aantalTweedelijn}`
-            ),
-            m(
-              'label',
-              m('input[type=checkbox]', {
-                checked: selectedHospital.properties.active,
-                onchange: () => {
-                  selectedHospital.properties.active = !selectedHospital
-                    .properties.active;
-                  selectedHospitalLayer.setIcon(
-                    selectedHospital.properties.active
-                      ? ziekenhuisIconV
-                      : ziekenhuisIconX
-                  );
-                  selectedHospitalLayer.setOpacity(
-                    selectedHospital.properties.active ? 1 : 0.3
-                  );
-                },
-              }),
-              'Actief'
-            ),
+          [
+            m(InfoPanel, { state, actions }),
+            selectedHospital &&
+              h && [
+                m('h2', `${h.locatie} (${h.organisatie})`),
+                m(
+                  'p',
+                  { style: 'font-weight: bold' },
+                  `Kenmerken: ${[
+                    h.NICU ? 'NICU' : '',
+                    h.fullTimeSEH ? '24/7' : '',
+                    h.gevoeligeZH ? 'gevoelig' : '',
+                    h.criteria ? 'criteria' : '',
+                  ]
+                    .filter(Boolean)
+                    .join(', ')}`
+                ),
+                m(
+                  'p',
+                  { style: 'font-weight: bold' },
+                  m.trust(
+                    `Aantal geboorten ${showDiff(
+                      aantalGeboorten2,
+                      aantalGeboorten
+                    )}, waarvan:<br>${[
+                      h.curline[0]
+                        ? `- binnen 25 min: ${showDiff(h.curline[0], h.t25)}`
+                        : '',
+                      h.curline[1]
+                        ? `- binnen 30 min: ${showDiff(h.curline[1], h.t30)}`
+                        : '',
+                      h.curline[2]
+                        ? `- overig: ${showDiff(h.curline[2], h.tOv)}`
+                        : '',
+                    ]
+                      .filter(Boolean)
+                      .join('<br>')}`
+                  )
+                ),
+                m(
+                  'p',
+                  { style: 'font-weight: bold' },
+                  `Geboortecentrum: ${showDiff(
+                    aantalGeboortecentrum2,
+                    aantalGeboortecentrum
+                  )}`
+                ),
+                m(
+                  'p',
+                  { style: 'font-weight: bold' },
+                  `Ziekenhuis 2de-lijn: ${showDiff(
+                    aantalTweedelijn2,
+                    aantalTweedelijn
+                  )}`
+                ),
+                m(
+                  'label',
+                  m('input[type=checkbox]', {
+                    checked: h.active,
+                    onchange: () => {
+                      actions.toggleHospitalActivity(h.id);
+                      selectedHospitalLayer.setIcon(
+                        h.active ? ziekenhuisIconV : ziekenhuisIconX
+                      );
+                      selectedHospitalLayer.setOpacity(h.active ? 1 : 0.3);
+                      // ziekenhuisLayer.eachLayer((l: any) => {
+                      //   if (l.feature.properties.id === id) {
+                      //     (l as L.Marker).setIcon(
+                      //       selectedHospital.properties.active
+                      //         ? ziekenhuisIconV
+                      //         : ziekenhuisIconX
+                      //     );
+                      //     (l as L.Marker).setOpacity(
+                      //       selectedHospital.properties.active ? 1 : 0.3
+                      //     );
+                      //   }
+                      // });
+                    },
+                  }),
+                  'Actief'
+                ),
+              ],
           ]
         ),
       ];

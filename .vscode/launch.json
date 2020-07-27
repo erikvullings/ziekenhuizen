@@ -8,6 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Merge data",
+      "cwd": "${workspaceFolder}/packages/processing",
       "skipFiles": [
         "<node_internals>/**"
       ],
@@ -23,6 +24,7 @@
       "type": "node",
       "request": "launch",
       "name": "Process postcode data",
+      "cwd": "${workspaceFolder}/packages/processing",
       "skipFiles": [
         "<node_internals>/**"
       ],
@@ -38,6 +40,7 @@
       "type": "node",
       "request": "launch",
       "name": "Process ziekenhuis data",
+      "cwd": "${workspaceFolder}/packages/processing",
       "skipFiles": [
         "<node_internals>/**"
       ],

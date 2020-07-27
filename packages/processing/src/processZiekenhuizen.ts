@@ -57,14 +57,14 @@ export const ziekenhuizen = {
 
 export const aanrijdgebieden25 = {
   type: 'FeatureCollection',
-  features: aanrijdgebieden.map((a) => a.features[0]),
+  features: aanrijdgebieden.map((a, i) => ({ ...a.features[0], properties: { ...a.features[0].properties, id: i } })),
 };
 
 export const aanrijdgebieden30 = {
   type: 'FeatureCollection',
-  features: aanrijdgebieden.map((a) => a.features[1]),
+  features: aanrijdgebieden.map((a, i) => ({ ...a.features[1], properties: { ...a.features[1].properties, id: i } })),
 };
 
 // fs.writeFileSync(ziekenhuisGeojson, JSON.stringify(ziekenhuizen, null, 2));
-fs.writeFileSync(aanrijdGeojson25, JSON.stringify(aanrijdgebieden25, null, 2));
-fs.writeFileSync(aanrijdGeojson30, JSON.stringify(aanrijdgebieden30, null, 2));
+fs.writeFileSync(aanrijdGeojson25, JSON.stringify(aanrijdgebieden25));
+fs.writeFileSync(aanrijdGeojson30, JSON.stringify(aanrijdgebieden30));

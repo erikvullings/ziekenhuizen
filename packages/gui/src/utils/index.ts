@@ -1,10 +1,21 @@
 import 'proj4';
 import 'proj4leaflet';
 import L from 'leaflet';
-// import ziekenhuisSvg from '../assets/icons/ziekenhuis.svg';
+// import ziekenhuisImg from '../assets/icons/ziekenhuis.png';
 // import ziekenhuisSvgV from '../assets/icons/ziekenhuis_v.svg';
 // import ziekenhuisSvgX from '../assets/icons/ziekenhuis_x.svg';
 // import ziekenhuisSvgI from '../assets/icons/ziekenhuis_!.svg';
+
+export const formatNumber = (x: number) =>
+  x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+export const showDiff = (cur: number, orig: number) => {
+  const c = Math.round(cur);
+  const o = Math.round(orig);
+  return c === o
+    ? formatNumber(c)
+    : `${formatNumber(c)} (${c > o ? '+' : ''}${formatNumber(c - o)})`;
+};
 
 export const RDnew = new L.Proj.CRS(
   'EPSG:28992',
@@ -53,19 +64,19 @@ export const getColor = (d: number) =>
     ? '#FED976'
     : '#FFEDA0';
 
-const LeafletIcon = L.Icon.extend({
-  options: {
-    // shadowUrl: 'leaf-shadow.png',
-    // shadowSize:   [50, 64],
-    // shadowAnchor: [4, 62],
-    iconSize: [25, 25],
-    iconAnchor: [12, 12],
-    popupAnchor: [-3, -30],
-  },
-});
+// const LeafletIcon = L.Icon.extend({
+//   options: {
+//     // shadowUrl: 'leaf-shadow.png',
+//     // shadowSize:   [50, 64],
+//     // shadowAnchor: [4, 62],
+//     iconSize: [25, 25],
+//     iconAnchor: [12, 12],
+//     popupAnchor: [-3, -30],
+//   },
+// });
 
 const ziekenhuisSvg =
-  '<svg xmlns="http://www.w3.org/2000/svg" fill="{mapIconColor}" viewBox="0 0 36 44" width="25" height="25"><path d="M18.664.253a1 1 0 0 0-1.328 0L.328 15.702a1 1 0 0 0-.328.74V44h36V16.443a1 1 0 0 0-.328-.74zM25 29h-4v4a3 3 0 0 1-6 0v-4h-4a3 3 0 0 1 0-6h4v-4a3 3 0 0 1 6 0v4h4a3 3 0 0 1 0 6z" data-name="Layer 2"/></svg>';
+  '<svg xmlns="http://www.w3.org/2000/svg" fill="{mapIconColor}" viewBox="0 0 36 44" width="20" height="20"><path d="M18.664.253a1 1 0 0 0-1.328 0L.328 15.702a1 1 0 0 0-.328.74V44h36V16.443a1 1 0 0 0-.328-.74zM25 29h-4v4a3 3 0 0 1-6 0v-4h-4a3 3 0 0 1 0-6h4v-4a3 3 0 0 1 6 0v4h4a3 3 0 0 1 0 6z" data-name="Layer 2"/></svg>';
 
 export const ziekenhuisIconV = L.divIcon({
   className: 'leaflet-data-marker',
@@ -84,7 +95,7 @@ export const ziekenhuisIconX = L.divIcon({
 });
 
 // export const ziekenhuisIcon = new (LeafletIcon as any)({
-//   iconUrl: ziekenhuisSvg,
+//   iconUrl: ziekenhuisImg,
 // });
 // export const ziekenhuisIconV = new (LeafletIcon as any)({
 //   iconUrl: ziekenhuisSvgV,
