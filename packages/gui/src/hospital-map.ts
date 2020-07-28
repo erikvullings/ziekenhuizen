@@ -2,7 +2,7 @@ import m from 'mithril';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-hash';
-import { RDnew, ziekenhuisIconX, ziekenhuisIconV, showDiff } from './utils';
+import { ziekenhuisIconX, ziekenhuisIconV, showDiff } from './utils';
 import { IZiekenhuis } from './models/ziekenhuis';
 import { MeiosisComponent } from './services/meiosis';
 import { InfoPanel } from './info-panel';
@@ -11,6 +11,7 @@ export const HospitalMap: MeiosisComponent = () => {
   let map: L.Map;
   let a25: L.GeoJSON;
   let postcodeLayer: L.GeoJSON;
+  let ziekenhuisLayer: L.GeoJSON;
   let selectedHospitalLayer: L.Marker;
 
   return {
@@ -76,9 +77,7 @@ export const HospitalMap: MeiosisComponent = () => {
           style:
             'height: 100vh; width: 70vw; margin: 0; padding: 0; overflow: hidden; box-shadow: (0px 0px 20px rgba(0,0,0,.3))',
           oncreate: () => {
-            map = L.map('map', {
-              crs: RDnew,
-            }).setView([51.9741, 5.6688], 9);
+            map = L.map('map', {}).setView([51.9741, 5.6688], 9);
             // map.on('load', (e: LeafletEvent) => {
             //   // In order to fix an issue when loading leaflet in a modal or tab: https://stackoverflow.com/a/53511529/319711
             //   setTimeout(() => {
@@ -87,26 +86,30 @@ export const HospitalMap: MeiosisComponent = () => {
             // });
             L.control.scale({ imperial: false, metric: true }).addTo(map);
             // Add the PDOK map
-            var pdokachtergrondkaart = new L.TileLayer(
-              'https://geodata.nationaalgeoregister.nl/tms/1.0.0/brtachtergrondkaart/{z}/{x}/{y}.png',
+            const pdokachtergrondkaartGrijs = new L.TileLayer(
+              'https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaartgrijs/EPSG:3857/{z}/{x}/{y}.png',
               {
                 minZoom: 3,
                 maxZoom: 14,
-                tms: true,
                 attribution:
                   'Map data: <a href="http://www.kadaster.nl">Kadaster</a>',
               }
             );
-            pdokachtergrondkaart.addTo(map);
+            pdokachtergrondkaartGrijs.addTo(map);
+            const pdokachtergrondkaart = new L.TileLayer(
+              'https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaart/EPSG:3857/{z}/{x}/{y}.png',
+              {
+                minZoom: 3,
+                maxZoom: 14,
+                // tms: true,
+                attribution:
+                  'Map data: <a href="http://www.kadaster.nl">Kadaster</a>',
+              }
+            );
             // Hash in URL
             new (L as any).Hash(map);
-            // var myStyle = {
-            //   color: '#ff7800',
-            //   weight: 5,
-            //   opacity: 0.65,
-            // };
 
-            const ziekenhuisLayer = L.geoJSON<IZiekenhuis>(hospitals, {
+            ziekenhuisLayer = L.geoJSON<IZiekenhuis>(hospitals, {
               pointToLayer: (feature, latlng) => {
                 return new L.Marker(
                   latlng,
@@ -137,7 +140,8 @@ export const HospitalMap: MeiosisComponent = () => {
             postcodeLayer = L.geoJSON(undefined, {
               pointToLayer: (f, latlng) =>
                 L.circleMarker(latlng, {
-                  color: 'black',
+                  // color: 'black',
+                  stroke: false,
                   fillColor:
                     f.properties.cat === 0
                       ? 'green'
@@ -156,14 +160,14 @@ export const HospitalMap: MeiosisComponent = () => {
                   )}.`
                 );
               },
-              // filter: function(feature, layer) {
-              //    return (feature.properties.Verified !== "Y" );
-              // },
             }).addTo(map);
 
             L.control
               .layers(
-                { pdok: pdokachtergrondkaart },
+                {
+                  grijs: pdokachtergrondkaartGrijs,
+                  normaal: pdokachtergrondkaart,
+                },
                 {
                   ziekenhuizen: ziekenhuisLayer,
                   'aanrijdtijd < 25 min': a25,
@@ -202,7 +206,7 @@ export const HospitalMap: MeiosisComponent = () => {
                     `Aantal geboorten ${showDiff(
                       aantalGeboorten2,
                       aantalGeboorten
-                    )}, waarvan:<br>${[
+                    )}:<br>${[
                       h.curline[0]
                         ? `- binnen 25 min: ${showDiff(h.curline[0], h.t25)}`
                         : '',
@@ -237,25 +241,8 @@ export const HospitalMap: MeiosisComponent = () => {
                   'label',
                   m('input[type=checkbox]', {
                     checked: h.active,
-                    onchange: () => {
-                      actions.toggleHospitalActivity(h.id);
-                      selectedHospitalLayer.setIcon(
-                        h.active ? ziekenhuisIconV : ziekenhuisIconX
-                      );
-                      selectedHospitalLayer.setOpacity(h.active ? 1 : 0.3);
-                      // ziekenhuisLayer.eachLayer((l: any) => {
-                      //   if (l.feature.properties.id === id) {
-                      //     (l as L.Marker).setIcon(
-                      //       selectedHospital.properties.active
-                      //         ? ziekenhuisIconV
-                      //         : ziekenhuisIconX
-                      //     );
-                      //     (l as L.Marker).setOpacity(
-                      //       selectedHospital.properties.active ? 1 : 0.3
-                      //     );
-                      //   }
-                      // });
-                    },
+                    onchange: () =>
+                      actions.toggleHospitalActivity(h.id, ziekenhuisLayer),
                   }),
                   'Actief'
                 ),

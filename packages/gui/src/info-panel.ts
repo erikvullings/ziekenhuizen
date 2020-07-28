@@ -49,10 +49,18 @@ export const InfoPanel: MeiosisComponent = () => {
   return {
     view: ({ attrs: { state } }) => {
       const { baseline = [0, 0, 0], curline = [0, 0, 0] } = state.app;
+      const totalBirths = baseline.reduce((acc, cur) => acc + cur);
+      const qosBaseline = Math.round(
+        100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths)
+      );
+      const qosCurline = Math.round(
+        100 * (1 - (curline[1] + 2 * curline[2]) / totalBirths)
+      );
       return [
-        m('h1', 'Baseline 2018'),
+        m('h1', `Baseline 2018 (QoS: ${qosBaseline})`),
         m(DashboardPanel, { status: baseline }),
         m('ul', [
+          m('li', `QoS: ${showDiff(qosCurline, qosBaseline)}`),
           m('li', `< 25 min: ${showDiff(curline[0], baseline[0])}`),
           m('li', `< 30 min: ${showDiff(curline[1], baseline[1])}`),
           m('li', `> 30 min: ${showDiff(curline[2], baseline[2])}`),

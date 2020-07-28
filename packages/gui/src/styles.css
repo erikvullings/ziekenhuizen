@@ -86,6 +86,7 @@ ul.list-inline li {
 }
 
 ul {
+  list-style: none;
   padding-inline-start: 5px;
 }
 

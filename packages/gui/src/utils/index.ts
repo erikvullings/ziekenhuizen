@@ -49,20 +49,20 @@ export const RDnew = new L.Proj.CRS(
 /** Convert a number to a color (e.g. for the #births) */
 export const getColor = (d: number) =>
   d > 1000
-    ? '#800026'
+    ? '#8c2d04'
     : d > 500
-    ? '#BD0026'
+    ? '#cc4c02'
     : d > 200
-    ? '#E31A1C'
+    ? '#ec7014'
     : d > 100
-    ? '#FC4E2A'
+    ? '#fe9929'
     : d > 50
-    ? '#FD8D3C'
+    ? '#fec44f'
     : d > 20
-    ? '#FEB24C'
+    ? '#fee391'
     : d > 10
-    ? '#FED976'
-    : '#FFEDA0';
+    ? '#ffffd4'
+    : '#fff';
 
 // const LeafletIcon = L.Icon.extend({
 //   options: {
@@ -76,11 +76,20 @@ export const getColor = (d: number) =>
 // });
 
 const ziekenhuisSvg =
-  '<svg xmlns="http://www.w3.org/2000/svg" fill="{mapIconColor}" viewBox="0 0 36 44" width="20" height="20"><path d="M18.664.253a1 1 0 0 0-1.328 0L.328 15.702a1 1 0 0 0-.328.74V44h36V16.443a1 1 0 0 0-.328-.74zM25 29h-4v4a3 3 0 0 1-6 0v-4h-4a3 3 0 0 1 0-6h4v-4a3 3 0 0 1 6 0v4h4a3 3 0 0 1 0 6z" data-name="Layer 2"/></svg>';
+  '<svg xmlns="http://www.w3.org/2000/svg" stroke="black" stroke-width="4" fill="{mapIconColor}" viewBox="0 0 36 44" width="20" height="20"><path d="M18.664.253a1 1 0 0 0-1.328 0L.328 15.702a1 1 0 0 0-.328.74V44h36V16.443a1 1 0 0 0-.328-.74zM25 29h-4v4a3 3 0 0 1-6 0v-4h-4a3 3 0 0 1 0-6h4v-4a3 3 0 0 1 6 0v4h4a3 3 0 0 1 0 6z"/></svg>';
+
+export const createIcon = (mapIconColor: string) =>
+  L.divIcon({
+    className: 'leaflet-data-marker',
+    html: L.Util.template(ziekenhuisSvg, { mapIconColor }),
+    iconAnchor: [12, 12],
+    iconSize: [25, 25],
+    popupAnchor: [0, -30],
+  });
 
 export const ziekenhuisIconV = L.divIcon({
   className: 'leaflet-data-marker',
-  html: L.Util.template(ziekenhuisSvg, { mapIconColor: '#000' }),
+  html: L.Util.template(ziekenhuisSvg, { mapIconColor: '#fff' }),
   iconAnchor: [12, 12],
   iconSize: [25, 25],
   popupAnchor: [0, -30],

@@ -24946,7 +24946,7 @@ var __importDefault = this && this.__importDefault || function (mod) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ziekenhuisIconX = exports.ziekenhuisIconV = exports.getColor = exports.RDnew = exports.showDiff = exports.formatNumber = void 0;
+exports.ziekenhuisIconX = exports.ziekenhuisIconV = exports.createIcon = exports.getColor = exports.RDnew = exports.showDiff = exports.formatNumber = void 0;
 
 require("proj4");
 
@@ -24976,7 +24976,7 @@ exports.RDnew = new leaflet_1.default.Proj.CRS('EPSG:28992', '+proj=sterea +lat_
 /** Convert a number to a color (e.g. for the #births) */
 
 exports.getColor = function (d) {
-  return d > 1000 ? '#800026' : d > 500 ? '#BD0026' : d > 200 ? '#E31A1C' : d > 100 ? '#FC4E2A' : d > 50 ? '#FD8D3C' : d > 20 ? '#FEB24C' : d > 10 ? '#FED976' : '#FFEDA0';
+  return d > 1000 ? '#8c2d04' : d > 500 ? '#cc4c02' : d > 200 ? '#ec7014' : d > 100 ? '#fe9929' : d > 50 ? '#fec44f' : d > 20 ? '#fee391' : d > 10 ? '#ffffd4' : '#fff';
 }; // const LeafletIcon = L.Icon.extend({
 //   options: {
 //     // shadowUrl: 'leaf-shadow.png',
@@ -24989,11 +24989,24 @@ exports.getColor = function (d) {
 // });
 
 
-var ziekenhuisSvg = '<svg xmlns="http://www.w3.org/2000/svg" fill="{mapIconColor}" viewBox="0 0 36 44" width="20" height="20"><path d="M18.664.253a1 1 0 0 0-1.328 0L.328 15.702a1 1 0 0 0-.328.74V44h36V16.443a1 1 0 0 0-.328-.74zM25 29h-4v4a3 3 0 0 1-6 0v-4h-4a3 3 0 0 1 0-6h4v-4a3 3 0 0 1 6 0v4h4a3 3 0 0 1 0 6z" data-name="Layer 2"/></svg>';
+var ziekenhuisSvg = '<svg xmlns="http://www.w3.org/2000/svg" stroke="black" stroke-width="4" fill="{mapIconColor}" viewBox="0 0 36 44" width="20" height="20"><path d="M18.664.253a1 1 0 0 0-1.328 0L.328 15.702a1 1 0 0 0-.328.74V44h36V16.443a1 1 0 0 0-.328-.74zM25 29h-4v4a3 3 0 0 1-6 0v-4h-4a3 3 0 0 1 0-6h4v-4a3 3 0 0 1 6 0v4h4a3 3 0 0 1 0 6z"/></svg>';
+
+exports.createIcon = function (mapIconColor) {
+  return leaflet_1.default.divIcon({
+    className: 'leaflet-data-marker',
+    html: leaflet_1.default.Util.template(ziekenhuisSvg, {
+      mapIconColor: mapIconColor
+    }),
+    iconAnchor: [12, 12],
+    iconSize: [25, 25],
+    popupAnchor: [0, -30]
+  });
+};
+
 exports.ziekenhuisIconV = leaflet_1.default.divIcon({
   className: 'leaflet-data-marker',
   html: leaflet_1.default.Util.template(ziekenhuisSvg, {
-    mapIconColor: '#000'
+    mapIconColor: '#fff'
   }),
   iconAnchor: [12, 12],
   iconSize: [25, 25],
@@ -25095,9 +25108,14 @@ exports.InfoPanel = function () {
           baseline = _c === void 0 ? [0, 0, 0] : _c,
           _d = _b.curline,
           curline = _d === void 0 ? [0, 0, 0] : _d;
-      return [mithril_1.default('h1', 'Baseline 2018'), mithril_1.default(DashboardPanel, {
+      var totalBirths = baseline.reduce(function (acc, cur) {
+        return acc + cur;
+      });
+      var qosBaseline = Math.round(100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths));
+      var qosCurline = Math.round(100 * (1 - (curline[1] + 2 * curline[2]) / totalBirths));
+      return [mithril_1.default('h1', "Baseline 2018 (QoS: " + qosBaseline + ")"), mithril_1.default(DashboardPanel, {
         status: baseline
-      }), mithril_1.default('ul', [mithril_1.default('li', "< 25 min: " + utils_1.showDiff(curline[0], baseline[0])), mithril_1.default('li', "< 30 min: " + utils_1.showDiff(curline[1], baseline[1])), mithril_1.default('li', "> 30 min: " + utils_1.showDiff(curline[2], baseline[2]))])];
+      }), mithril_1.default('ul', [mithril_1.default('li', "QoS: " + utils_1.showDiff(qosCurline, qosBaseline)), mithril_1.default('li', "< 25 min: " + utils_1.showDiff(curline[0], baseline[0])), mithril_1.default('li', "< 30 min: " + utils_1.showDiff(curline[1], baseline[1])), mithril_1.default('li', "> 30 min: " + utils_1.showDiff(curline[2], baseline[2]))])];
     }
   };
 };
@@ -25131,6 +25149,7 @@ exports.HospitalMap = function () {
   var map;
   var a25;
   var postcodeLayer;
+  var ziekenhuisLayer;
   var selectedHospitalLayer;
   return {
     view: function view(_a) {
@@ -25198,9 +25217,7 @@ exports.HospitalMap = function () {
       return [mithril_1.default('#map', {
         style: 'height: 100vh; width: 70vw; margin: 0; padding: 0; overflow: hidden; box-shadow: (0px 0px 20px rgba(0,0,0,.3))',
         oncreate: function oncreate() {
-          map = leaflet_1.default.map('map', {
-            crs: utils_1.RDnew
-          }).setView([51.9741, 5.6688], 9); // map.on('load', (e: LeafletEvent) => {
+          map = leaflet_1.default.map('map', {}).setView([51.9741, 5.6688], 9); // map.on('load', (e: LeafletEvent) => {
           //   // In order to fix an issue when loading leaflet in a modal or tab: https://stackoverflow.com/a/53511529/319711
           //   setTimeout(() => {
           //     map.invalidateSize();
@@ -25212,21 +25229,21 @@ exports.HospitalMap = function () {
             metric: true
           }).addTo(map); // Add the PDOK map
 
-          var pdokachtergrondkaart = new leaflet_1.default.TileLayer('https://geodata.nationaalgeoregister.nl/tms/1.0.0/brtachtergrondkaart/{z}/{x}/{y}.png', {
+          var pdokachtergrondkaartGrijs = new leaflet_1.default.TileLayer('https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaartgrijs/EPSG:3857/{z}/{x}/{y}.png', {
             minZoom: 3,
             maxZoom: 14,
-            tms: true,
             attribution: 'Map data: <a href="http://www.kadaster.nl">Kadaster</a>'
           });
-          pdokachtergrondkaart.addTo(map); // Hash in URL
+          pdokachtergrondkaartGrijs.addTo(map);
+          var pdokachtergrondkaart = new leaflet_1.default.TileLayer('https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaart/EPSG:3857/{z}/{x}/{y}.png', {
+            minZoom: 3,
+            maxZoom: 14,
+            // tms: true,
+            attribution: 'Map data: <a href="http://www.kadaster.nl">Kadaster</a>'
+          }); // Hash in URL
 
-          new leaflet_1.default.Hash(map); // var myStyle = {
-          //   color: '#ff7800',
-          //   weight: 5,
-          //   opacity: 0.65,
-          // };
-
-          var ziekenhuisLayer = leaflet_1.default.geoJSON(hospitals, {
+          new leaflet_1.default.Hash(map);
+          ziekenhuisLayer = leaflet_1.default.geoJSON(hospitals, {
             pointToLayer: function pointToLayer(feature, latlng) {
               return new leaflet_1.default.Marker(latlng, feature.properties.active === false ? {
                 icon: utils_1.ziekenhuisIconX
@@ -25255,7 +25272,8 @@ exports.HospitalMap = function () {
           postcodeLayer = leaflet_1.default.geoJSON(undefined, {
             pointToLayer: function pointToLayer(f, latlng) {
               return leaflet_1.default.circleMarker(latlng, {
-                color: 'black',
+                // color: 'black',
+                stroke: false,
                 fillColor: f.properties.cat === 0 ? 'green' : f.properties.cat === 1 ? 'orange' : 'red',
                 fillOpacity: 1,
                 radius: Math.min(10, f.properties.births / 10)
@@ -25266,7 +25284,8 @@ exports.HospitalMap = function () {
             }
           }).addTo(map);
           leaflet_1.default.control.layers({
-            pdok: pdokachtergrondkaart
+            grijs: pdokachtergrondkaartGrijs,
+            normaal: pdokachtergrondkaart
           }, {
             ziekenhuizen: ziekenhuisLayer,
             'aanrijdtijd < 25 min': a25,
@@ -25282,27 +25301,14 @@ exports.HospitalMap = function () {
         style: 'font-weight: bold'
       }, "Kenmerken: " + [h.NICU ? 'NICU' : '', h.fullTimeSEH ? '24/7' : '', h.gevoeligeZH ? 'gevoelig' : '', h.criteria ? 'criteria' : ''].filter(Boolean).join(', ')), mithril_1.default('p', {
         style: 'font-weight: bold'
-      }, mithril_1.default.trust("Aantal geboorten " + utils_1.showDiff(aantalGeboorten2, aantalGeboorten) + ", waarvan:<br>" + [h.curline[0] ? "- binnen 25 min: " + utils_1.showDiff(h.curline[0], h.t25) : '', h.curline[1] ? "- binnen 30 min: " + utils_1.showDiff(h.curline[1], h.t30) : '', h.curline[2] ? "- overig: " + utils_1.showDiff(h.curline[2], h.tOv) : ''].filter(Boolean).join('<br>'))), mithril_1.default('p', {
+      }, mithril_1.default.trust("Aantal geboorten " + utils_1.showDiff(aantalGeboorten2, aantalGeboorten) + ":<br>" + [h.curline[0] ? "- binnen 25 min: " + utils_1.showDiff(h.curline[0], h.t25) : '', h.curline[1] ? "- binnen 30 min: " + utils_1.showDiff(h.curline[1], h.t30) : '', h.curline[2] ? "- overig: " + utils_1.showDiff(h.curline[2], h.tOv) : ''].filter(Boolean).join('<br>'))), mithril_1.default('p', {
         style: 'font-weight: bold'
       }, "Geboortecentrum: " + utils_1.showDiff(aantalGeboortecentrum2, aantalGeboortecentrum)), mithril_1.default('p', {
         style: 'font-weight: bold'
       }, "Ziekenhuis 2de-lijn: " + utils_1.showDiff(aantalTweedelijn2, aantalTweedelijn)), mithril_1.default('label', mithril_1.default('input[type=checkbox]', {
         checked: h.active,
         onchange: function onchange() {
-          actions.toggleHospitalActivity(h.id);
-          selectedHospitalLayer.setIcon(h.active ? utils_1.ziekenhuisIconV : utils_1.ziekenhuisIconX);
-          selectedHospitalLayer.setOpacity(h.active ? 1 : 0.3); // ziekenhuisLayer.eachLayer((l: any) => {
-          //   if (l.feature.properties.id === id) {
-          //     (l as L.Marker).setIcon(
-          //       selectedHospital.properties.active
-          //         ? ziekenhuisIconV
-          //         : ziekenhuisIconX
-          //     );
-          //     (l as L.Marker).setOpacity(
-          //       selectedHospital.properties.active ? 1 : 0.3
-          //     );
-          //   }
-          // });
+          return actions.toggleHospitalActivity(h.id, ziekenhuisLayer);
         }
       }), 'Actief')]])];
     }
@@ -57257,7 +57263,9 @@ var ziekenhuizen_json_1 = __importDefault(require("../../assets/ziekenhuizen.jso
 
 var aanrijden25_json_1 = __importDefault(require("../../assets/aanrijden25.json"));
 
-var demografie_json_1 = __importDefault(require("../../assets/demografie.json")); // Add curline
+var demografie_json_1 = __importDefault(require("../../assets/demografie.json"));
+
+var utils_1 = require("../../utils"); // Add curline
 
 
 ziekenhuizen_json_1.default.features = ziekenhuizen_json_1.default.features.map(function (z) {
@@ -57285,9 +57293,15 @@ var createFindActiveHospital = function createFindActiveHospital(hospitals) {
 };
 
 var computeCurline = function computeCurline(hospitals) {
-  if (!hospitals) {
-    return hospitals;
-  }
+  if (hospitals === void 0) {
+    hospitals = {
+      type: 'FeatureCollection',
+      features: []
+    };
+  } // if (!hospitals) {
+  //   return { hospitals, curline: [0,0,0] };
+  // }
+
 
   var resetCurlineCount = function resetCurlineCount() {
     return hospitals.features.forEach(function (f) {
@@ -57376,7 +57390,7 @@ exports.appStateMgmt = {
         });
         mithril_1.default.redraw();
       },
-      toggleHospitalActivity: function toggleHospitalActivity(id) {
+      toggleHospitalActivity: function toggleHospitalActivity(id, layer) {
         us(function (_a) {
           var _b = _a.app,
               hospitals = _b.hospitals,
@@ -57391,12 +57405,32 @@ exports.appStateMgmt = {
 
             return false;
           });
+
+          var app = __assign(__assign({}, computeCurline(hospitals)), {
+            aanrijd25: aanrijd25,
+            selectedHospitalId: selectedHospitalId,
+            baseline: baseline
+          });
+
+          if (layer) {
+            var i_1 = 0;
+            layer.eachLayer(function (l) {
+              var curHospital = app.hospitals.features[i_1].properties;
+
+              if (curHospital.active) {
+                var curLoad = (3 * (curHospital.curline[0] - curHospital.t25) / curHospital.t25 + 2 * (curHospital.curline[1] - curHospital.t30) / curHospital.t30 + (curHospital.curline[2] - curHospital.tOv) / curHospital.tOv) / 6;
+                var curColor = utils_1.getColor(100 * curLoad);
+                l.setIcon(utils_1.createIcon(curColor)).setOpacity(1);
+              } else {
+                l.setIcon(utils_1.ziekenhuisIconX).setOpacity(0.3);
+              }
+
+              i_1++;
+            });
+          }
+
           return {
-            app: __assign(__assign({}, computeCurline(hospitals)), {
-              aanrijd25: aanrijd25,
-              selectedHospitalId: selectedHospitalId,
-              baseline: baseline
-            })
+            app: app
           };
         }); // m.redraw();
       },
@@ -57411,7 +57445,7 @@ exports.appStateMgmt = {
     };
   }
 };
-},{"mithril":"node_modules/mithril/index.js","../../assets/ziekenhuizen.json":"src/assets/ziekenhuizen.json","../../assets/aanrijden25.json":"src/assets/aanrijden25.json","../../assets/demografie.json":"src/assets/demografie.json"}],"src/services/meiosis.ts":[function(require,module,exports) {
+},{"mithril":"node_modules/mithril/index.js","../../assets/ziekenhuizen.json":"src/assets/ziekenhuizen.json","../../assets/aanrijden25.json":"src/assets/aanrijden25.json","../../assets/demografie.json":"src/assets/demografie.json","../../utils":"src/utils/index.ts"}],"src/services/meiosis.ts":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -57502,7 +57536,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56338" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50097" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

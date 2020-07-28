@@ -4,6 +4,7 @@ import { IZiekenhuis } from '../../models/ziekenhuis';
 import ziekenhuizen from '../../assets/ziekenhuizen.json';
 import aanrijdtijd25 from '../../assets/aanrijden25.json';
 import demografie from '../../assets/demografie.json';
+import { createIcon, getColor, ziekenhuisIconX } from '../../utils';
 
 type DemografieType = Array<{
   pc: number;
@@ -58,11 +59,14 @@ const createFindActiveHospital = (
 };
 
 const computeCurline = (
-  hospitals?: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>
-) => {
-  if (!hospitals) {
-    return hospitals;
+  hospitals: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis> = {
+    type: 'FeatureCollection',
+    features: [],
   }
+) => {
+  // if (!hospitals) {
+  //   return { hospitals, curline: [0,0,0] };
+  // }
   const resetCurlineCount = () =>
     hospitals.features.forEach((f) => {
       f.properties.curline = [0, 0, 0];
@@ -131,7 +135,7 @@ const computeCurline = (
 
 export interface IAppStateActions {
   selectHospital: (id: number) => void;
-  toggleHospitalActivity: (id: number) => void;
+  toggleHospitalActivity: (id: number, layer?: L.GeoJSON) => void;
   search: (isSearching: boolean, searchQuery?: string) => void;
 }
 
@@ -170,7 +174,7 @@ export const appStateMgmt = {
         us({ app: { selectedHospitalId } });
         m.redraw();
       },
-      toggleHospitalActivity: (id: number) => {
+      toggleHospitalActivity: (id: number, layer?: L.GeoJSON) => {
         us(
           ({ app: { hospitals, selectedHospitalId, baseline, aanrijd25 } }) => {
             hospitals?.features.some((h) => {
@@ -180,14 +184,34 @@ export const appStateMgmt = {
               }
               return false;
             });
-            return {
-              app: {
-                ...computeCurline(hospitals),
-                aanrijd25,
-                selectedHospitalId,
-                baseline,
-              },
+            const app = {
+              ...computeCurline(hospitals),
+              aanrijd25,
+              selectedHospitalId,
+              baseline,
             };
+            if (layer) {
+              let i = 0;
+              layer.eachLayer((l) => {
+                const curHospital = app.hospitals.features[i].properties;
+                if (curHospital.active) {
+                  const curLoad =
+                    ((3 * (curHospital.curline[0] - curHospital.t25)) /
+                      curHospital.t25 +
+                      (2 * (curHospital.curline[1] - curHospital.t30)) /
+                        curHospital.t30 +
+                      (curHospital.curline[2] - curHospital.tOv) /
+                        curHospital.tOv) /
+                    6;
+                  const curColor = getColor(100 * curLoad);
+                  (l as L.Marker).setIcon(createIcon(curColor)).setOpacity(1);
+                } else {
+                  (l as L.Marker).setIcon(ziekenhuisIconX).setOpacity(0.3);
+                }
+                i++;
+              });
+            }
+            return { app };
           }
         );
         // m.redraw();
