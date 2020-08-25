@@ -12,7 +12,7 @@ export const HospitalMap: MeiosisComponent = () => {
   let a25: L.GeoJSON;
   let postcodeLayer: L.GeoJSON;
   let ziekenhuisLayer: L.GeoJSON;
-  let selectedHospitalLayer: L.Marker;
+  // let selectedHospitalLayer: L.Marker;
 
   return {
     view: ({ attrs: { state, actions } }) => {
@@ -123,7 +123,7 @@ export const HospitalMap: MeiosisComponent = () => {
                   if (!feature.properties.hasOwnProperty('active')) {
                     feature.properties.active = true;
                   }
-                  selectedHospitalLayer = layer as L.Marker;
+                  // selectedHospitalLayer = layer as L.Marker;
                   actions.selectHospital(feature.properties.id);
                 });
               },
@@ -175,6 +175,8 @@ export const HospitalMap: MeiosisComponent = () => {
                 }
               )
               .addTo(map);
+
+            actions.inactivateHospitalsFromHash(ziekenhuisLayer);
           },
         }),
         m(
