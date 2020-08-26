@@ -114,8 +114,14 @@ export const HospitalMap: MeiosisComponent = () => {
                 return new L.Marker(
                   latlng,
                   feature.properties.active === false
-                    ? { icon: ziekenhuisIconX }
-                    : { icon: ziekenhuisIconV }
+                    ? {
+                        icon: ziekenhuisIconX,
+                        title: feature.properties.organisatie,
+                      }
+                    : {
+                        icon: ziekenhuisIconV,
+                        title: feature.properties.organisatie,
+                      }
                 );
               },
               onEachFeature: (feature, layer) => {
