@@ -2,14 +2,21 @@ import m from 'mithril';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-hash';
-import { ziekenhuisIconX, ziekenhuisIconV, showDiff } from './utils';
+import {
+  ziekenhuisIconX,
+  ziekenhuisIconV,
+  showDiff,
+  ambulancePostIcon,
+} from './utils';
 import { IZiekenhuis } from './models/ziekenhuis';
 import { MeiosisComponent } from './services/meiosis';
 import { InfoPanel } from './info-panel';
+import { IAmbulancePost } from './models';
 
 export const HospitalMap: MeiosisComponent = () => {
   let map: L.Map;
   let a25: L.GeoJSON;
+  let ambulancePostLayer: L.GeoJSON;
   let postcodeLayer: L.GeoJSON;
   let ziekenhuisLayer: L.GeoJSON;
   // let selectedHospitalLayer: L.Marker;
@@ -17,7 +24,12 @@ export const HospitalMap: MeiosisComponent = () => {
   return {
     view: ({ attrs: { state, actions } }) => {
       console.log(state);
-      const { hospitals, selectedHospitalId, aanrijd25 } = state.app;
+      const {
+        hospitals,
+        selectedHospitalId,
+        aanrijd25,
+        ambulancePosts,
+      } = state.app;
       const selectedHospital = hospitals?.features
         .filter((f) => f.properties.id === selectedHospitalId)
         .shift();
@@ -168,6 +180,29 @@ export const HospitalMap: MeiosisComponent = () => {
               },
             }).addTo(map);
 
+            ambulancePostLayer = L.geoJSON<IAmbulancePost>(ambulancePosts, {
+              pointToLayer: (f, latlng) =>
+                new L.Marker(latlng, {
+                  icon: ambulancePostIcon,
+                  title: f.properties.Standplaats,
+                }),
+              onEachFeature: (
+                {
+                  properties: {
+                    Standplaats,
+                    Straatnaam,
+                    Huisnummer,
+                    Beschikbaarheid,
+                  },
+                },
+                layer
+              ) => {
+                layer.bindPopup(
+                  `${Standplaats}, ${Straatnaam} ${Huisnummer}, ${Beschikbaarheid}`
+                );
+              },
+            });
+
             L.control
               .layers(
                 {
@@ -178,6 +213,7 @@ export const HospitalMap: MeiosisComponent = () => {
                   ziekenhuizen: ziekenhuisLayer,
                   'aanrijdtijd < 25 min': a25,
                   postcodes: postcodeLayer,
+                  ambulanceposten: ambulancePostLayer,
                 }
               )
               .addTo(map);

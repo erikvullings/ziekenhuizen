@@ -1,0 +1,1125 @@
+﻿id;Standplaats;Straatnaam;Postcode;Plaats;Beschikbaarheid;Indicator;Gegevens
+1034;Amsterdam (post noord);Statenjachtstraat 1c;;;;Straatnaam;Statenjachtstraat 1c
+1034;Amsterdam (post noord);;1034CS;;;Postcode;1034CS
+1034;Amsterdam (post noord);;;Amsterdam (post noord);;Plaats;Amsterdam (post noord)
+1034;Amsterdam (post noord);;;;24 uur;Beschikbaarheid;24 uur
+1061;Amsterdam (post west);Jan Tooropstraat 170;;;;Straatnaam;Jan Tooropstraat 170
+1061;Amsterdam (post west);;1061AE;;;Postcode;1061AE
+1061;Amsterdam (post west);;;Amsterdam (post west);;Plaats;Amsterdam (post west)
+1061;Amsterdam (post west);;;;24 uur;Beschikbaarheid;24 uur
+1075;Amsterdam (Hoofdvestiging, post zuid);Karperweg 19-25;;;;Straatnaam;Karperweg 19-25
+1075;Amsterdam (Hoofdvestiging, post zuid);;1075LB;;;Postcode;1075LB
+1075;Amsterdam (Hoofdvestiging, post zuid);;;Amsterdam (Hoofdvestiging, post zuid);;Plaats;Amsterdam (Hoofdvestiging, post zuid)
+1075;Amsterdam (Hoofdvestiging, post zuid);;;;24 uur;Beschikbaarheid;24 uur
+1091;Amsterdam (post oost);Oosterpark 9;;;;Straatnaam;Oosterpark 9
+1091;Amsterdam (post oost);;1091AC;;;Postcode;1091AC
+1091;Amsterdam (post oost);;;Amsterdam (post oost);;Plaats;Amsterdam (post oost)
+1091;Amsterdam (post oost);;;;24 uur;Beschikbaarheid;24 uur
+1105;Amsterdam Zuidoost;Meibergdreef 9;;;;Straatnaam;Meibergdreef 9
+1105;Amsterdam Zuidoost;;1105AZ;;;Postcode;1105AZ
+1105;Amsterdam Zuidoost;;;Amsterdam Zuidoost;;Plaats;Amsterdam Zuidoost
+1105;Amsterdam Zuidoost;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+1141;Monnickendam;De Werf 1;;;;Straatnaam;De Werf 1
+1141;Monnickendam;;1141HL;;;Postcode;1141HL
+1141;Monnickendam;;;Monnickendam;;Plaats;Monnickendam
+1141;Monnickendam;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+1185;Amstelveen;Spinnerij 15;;;;Straatnaam;Spinnerij 15
+1185;Amstelveen;;1185ZN;;;Postcode;1185ZN
+1185;Amstelveen;;;Amstelveen;;Plaats;Amstelveen
+1185;Amstelveen;;;;24 uur;Beschikbaarheid;24 uur
+1212;Post Zuid (Hilversum);Laan van Tergooi 6;;;;Straatnaam;Laan van Tergooi 6
+1212;Post Zuid (Hilversum);;1212VG;;;Postcode;1212VG
+1212;Post Zuid (Hilversum);;;Post Zuid (Hilversum);;Plaats;Post Zuid (Hilversum)
+1212;Post Zuid (Hilversum);;;;24 uur;Beschikbaarheid;24 uur
+1261;Post Noord (Blaricum);Rijksstraatweg 1a;;;;Straatnaam;Rijksstraatweg 1a
+1261;Post Noord (Blaricum);;1261AN;;;Postcode;1261AN
+1261;Post Noord (Blaricum);;;Post Noord (Blaricum);;Plaats;Post Noord (Blaricum)
+1261;Post Noord (Blaricum);;;;24 uur;Beschikbaarheid;24 uur
+1326;Almere;Boomgaardweg 4;;;;Straatnaam;Boomgaardweg 4
+1326;Almere;;1326AC;;;Postcode;1326AC
+1326;Almere;;;Almere;;Plaats;Almere
+1326;Almere;;;;24 uur;Beschikbaarheid;24 uur
+1381;Post Vechtstreek (Weesp);Aetsveldselaan 65;;;;Straatnaam;Aetsveldselaan 65
+1381;Post Vechtstreek (Weesp);;1381CZ;;;Postcode;1381CZ
+1381;Post Vechtstreek (Weesp);;;Post Vechtstreek (Weesp);;Plaats;Post Vechtstreek (Weesp)
+1381;Post Vechtstreek (Weesp);;;;24 uur;Beschikbaarheid;24 uur
+1431;Aalsmeer;Zwarteweg 77 A;;;;Straatnaam;Zwarteweg 77 A
+1431;Aalsmeer;;1431VJ;;;Postcode;1431VJ
+1431;Aalsmeer;;;Aalsmeer;;Plaats;Aalsmeer
+1431;Aalsmeer;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+1442;Purmerend;Cantekoogweg 17;;;;Straatnaam;Cantekoogweg 17
+1442;Purmerend;;1442LG;;;Postcode;1442LG
+1442;Purmerend;;;Purmerend;;Plaats;Purmerend
+1442;Purmerend;;;;24 uur;Beschikbaarheid;24 uur
+1502;Zaandam;Heijermansstraat 76;;;;Straatnaam;Heijermansstraat 76
+1502;Zaandam;;1502DR;;;Postcode;1502DR
+1502;Zaandam;;;Zaandam;;Plaats;Zaandam
+1502;Zaandam;;;;24 uur;Beschikbaarheid;24 uur
+1521;Wormerveer;Industrieweg 1c;;;;Straatnaam;Industrieweg 1c
+1521;Wormerveer;;1521NA;;;Postcode;1521NA
+1521;Wormerveer;;;Wormerveer;;Plaats;Wormerveer
+1521;Wormerveer;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+1616;Hoogkarspel;Sluisweg 8;;;;Straatnaam;Sluisweg 8
+1616;Hoogkarspel;;1616RT;;;Postcode;1616RT
+1616;Hoogkarspel;;;Hoogkarspel;;Plaats;Hoogkarspel
+1616;Hoogkarspel;;;;24 uur;Beschikbaarheid;24 uur
+1687;Wognum;Nieuweweg 24b;;;;Straatnaam;Nieuweweg 24b
+1687;Wognum;;1687BA;;;Postcode;1687BA
+1687;Wognum;;;Wognum;;Plaats;Wognum
+1687;Wognum;;;;24 uur;Beschikbaarheid;24 uur
+1723;Noord-Scharwoude;De Mossel 23a;;;;Straatnaam;De Mossel 23a
+1723;Noord-Scharwoude;;1723HX;;;Postcode;1723HX
+1723;Noord-Scharwoude;;;Noord-Scharwoude;;Plaats;Noord-Scharwoude
+1723;Noord-Scharwoude;;;;24 uur;Beschikbaarheid;24 uur
+1742;Schagen;Lagedijkerweg 19b;;;;Straatnaam;Lagedijkerweg 19b
+1742;Schagen;;1742NB;;;Postcode;1742NB
+1742;Schagen;;;Schagen;;Plaats;Schagen
+1742;Schagen;;;;24 uur;Beschikbaarheid;24 uur
+1771;Wieringerwerf;Dr. Tamsmalaan 3;;;;Straatnaam;Dr. Tamsmalaan 3
+1771;Wieringerwerf;;1771AB;;;Postcode;1771AB
+1771;Wieringerwerf;;;Wieringerwerf;;Plaats;Wieringerwerf
+1771;Wieringerwerf;;;;24 uur;Beschikbaarheid;24 uur
+1786;Den Helder;Schrijnwerkersweg 12;;;;Straatnaam;Schrijnwerkersweg 12
+1786;Den Helder;;1786PC;;;Postcode;1786PC
+1786;Den Helder;;;Den Helder;;Plaats;Den Helder
+1786;Den Helder;;;;24 uur;Beschikbaarheid;24 uur
+1791;Texel (Den Burg);Pontweg 100;;;;Straatnaam;Pontweg 100
+1791;Texel (Den Burg);;1791LB;;;Postcode;1791LB
+1791;Texel (Den Burg);;;Texel (Den Burg);;Plaats;Texel (Den Burg)
+1791;Texel (Den Burg);;;;24 uur;Beschikbaarheid;24 uur
+1812;Alkmaar Zuid;Diamantweg 24f;;;;Straatnaam;Diamantweg 24f
+1812;Alkmaar Zuid;;1812RC;;;Postcode;1812RC
+1812;Alkmaar Zuid;;;Alkmaar Zuid;;Plaats;Alkmaar Zuid
+1812;Alkmaar Zuid;;;;24 uur;Beschikbaarheid;24 uur
+1823;Alkmaar Noord;Hertog Aalbrechtweg 8;;;;Straatnaam;Hertog Aalbrechtweg 8
+1823;Alkmaar Noord;;1823DL;;;Postcode;1823DL
+1823;Alkmaar Noord;;;Alkmaar Noord;;Plaats;Alkmaar Noord
+1823;Alkmaar Noord;;;;24 uur;Beschikbaarheid;24 uur
+1969;Heemskerk;Strengweg 4;;;;Straatnaam;Strengweg 4
+1969;Heemskerk;;1969MG;;;Postcode;1969MG
+1969;Heemskerk;;;Heemskerk;;Plaats;Heemskerk
+1969;Heemskerk;;;;24 uur;Beschikbaarheid;24 uur
+1981;Velsen;Amsterdamseweg 12;;;;Straatnaam;Amsterdamseweg 12
+1981;Velsen;;1981LE;;;Postcode;1981LE
+1981;Velsen;;;Velsen;;Plaats;Velsen
+1981;Velsen;;;;24 uur;Beschikbaarheid;24 uur
+2015;Haarlem;Zijlweg 200;;;;Straatnaam;Zijlweg 200
+2015;Haarlem;;2015CK;;;Postcode;2015CK
+2015;Haarlem;;;Haarlem;;Plaats;Haarlem
+2015;Haarlem;;;;24 uur;Beschikbaarheid;24 uur
+2035;Haarlem-Oost;Floris van Adrichemlaan 90;;;;Straatnaam;Floris van Adrichemlaan 90
+2035;Haarlem-Oost;;2035VD;;;Postcode;2035VD
+2035;Haarlem-Oost;;;Haarlem-Oost;;Plaats;Haarlem-Oost
+2035;Haarlem-Oost;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+2042;Zandvoort;Duinstraat 5;;;;Straatnaam;Duinstraat 5
+2042;Zandvoort;;2042HC;;;Postcode;2042HC
+2042;Zandvoort;;;Zandvoort;;Plaats;Zandvoort
+2042;Zandvoort;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+2132;Hoofddorp;Jacobus  Spijkerdreef 400;;;;Straatnaam;Jacobus  Spijkerdreef 400
+2132;Hoofddorp;;2132PZ;;;Postcode;2132PZ
+2132;Hoofddorp;;;Hoofddorp;;Plaats;Hoofddorp
+2132;Hoofddorp;;;;24 uur;Beschikbaarheid;24 uur
+2134;Hoofddorp;Spaarnepoort 1;;;;Straatnaam;Spaarnepoort 1
+2134;Hoofddorp;;2134TM;;;Postcode;2134TM
+2134;Hoofddorp;;;Hoofddorp;;Plaats;Hoofddorp
+2134;Hoofddorp;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+2182;Hillegom;Hyacinthenlaan 1;;;;Straatnaam;Hyacinthenlaan 1
+2182;Hillegom;;2182DT;;;Postcode;2182DT
+2182;Hillegom;;;Hillegom;;Plaats;Hillegom
+2182;Hillegom;;;;24 uur;Beschikbaarheid;24 uur
+2203;Noordwijk;Van Berckelweg 34a;;;;Straatnaam;Van Berckelweg 34a
+2203;Noordwijk;;2203LB;;;Postcode;2203LB
+2203;Noordwijk;;;Noordwijk;;Plaats;Noordwijk
+2203;Noordwijk;;;;24 uur;Beschikbaarheid;24 uur
+2241;Wassenaar;Hofcampweg 102;;;;Straatnaam;Hofcampweg 102
+2241;Wassenaar;;2241KJ;;;Postcode;2241KJ
+2241;Wassenaar;;;Wassenaar;;Plaats;Wassenaar
+2241;Wassenaar;;;;24 uur;Beschikbaarheid;24 uur
+2272;Leidschendam-Voorburg;Via Donizetti 1;;;;Straatnaam;Via Donizetti 1
+2272;Leidschendam-Voorburg;;2272VK;;;Postcode;2272VK
+2272;Leidschendam-Voorburg;;;Leidschendam-Voorburg;;Plaats;Leidschendam-Voorburg
+2272;Leidschendam-Voorburg;;;;24 uur;Beschikbaarheid;24 uur
+2333;Leiden;Vondellaan 43;;;;Straatnaam;Vondellaan 43
+2333;Leiden;;2332AA;;;Postcode;2332AA
+2333;Leiden;;;Leiden;;Plaats;Leiden
+2333;Leiden;;;;24 uur;Beschikbaarheid;24 uur
+2353;Leiderdorp;Simon Smitweg 1a;;;;Straatnaam;Simon Smitweg 1a
+2353;Leiderdorp;;2353GA;;;Postcode;2353GA
+2353;Leiderdorp;;;Leiderdorp;;Plaats;Leiderdorp
+2353;Leiderdorp;;;;24 uur;Beschikbaarheid;24 uur
+2408;Alphen aan den Rijn;Vorkweg 2;;;;Straatnaam;Vorkweg 2
+2408;Alphen aan den Rijn;;2408ZD;;;Postcode;2408ZD
+2408;Alphen aan den Rijn;;;Alphen aan den Rijn;;Plaats;Alphen aan den Rijn
+2408;Alphen aan den Rijn;;;;24 uur;Beschikbaarheid;24 uur
+2441;Nieuwveen;Schoterhoek 2a;;;;Straatnaam;Schoterhoek 2a
+2441;Nieuwveen;;2441LD;;;Postcode;2441LD
+2441;Nieuwveen;;;Nieuwveen;;Plaats;Nieuwveen
+2441;Nieuwveen;;;;24 uur;Beschikbaarheid;24 uur
+2521;Den Haag (Waldorpstraat);Waldorpstraat 555;;;;Straatnaam;Waldorpstraat 555
+2521;Den Haag (Waldorpstraat);;2521CK;;;Postcode;2521CK
+2521;Den Haag (Waldorpstraat);;;Den Haag (Waldorpstraat);;Plaats;Den Haag (Waldorpstraat)
+2521;Den Haag (Waldorpstraat);;;;24 uur;Beschikbaarheid;24 uur
+2544;Den Haag;Mangaanstraat 86;;;;Straatnaam;Mangaanstraat 86
+2544;Den Haag;;2544DW;;;Postcode;2544DW
+2544;Den Haag;;;Den Haag;;Plaats;Den Haag
+2544;Den Haag;;;;24 uur;Beschikbaarheid;24 uur
+2613;Delft;Krakeelpolderweg 51;;;;Straatnaam;Krakeelpolderweg 51
+2613;Delft;;2613NW;;;Postcode;2613NW
+2613;Delft;;;Delft;;Plaats;Delft
+2613;Delft;;;;24 uur;Beschikbaarheid;24 uur
+2651;Berkel en Rodenrijs;Berkelsepoort 25;;;;Straatnaam;Berkelsepoort 25
+2651;Berkel en Rodenrijs;;2651JX;;;Postcode;2651JX
+2651;Berkel en Rodenrijs;;;Berkel en Rodenrijs;;Plaats;Berkel en Rodenrijs
+2651;Berkel en Rodenrijs;;;;24 uur;Beschikbaarheid;24 uur
+2671;Naaldwijk (Westland);Galgeweg 9;;;;Straatnaam;Galgeweg 9
+2671;Naaldwijk (Westland);;2671MV;;;Postcode;2671MV
+2671;Naaldwijk (Westland);;;Naaldwijk (Westland);;Plaats;Naaldwijk (Westland)
+2671;Naaldwijk (Westland);;;;24 uur;Beschikbaarheid;24 uur
+2711;Zoetermeer;Brusselstraat 4;;;;Straatnaam;Brusselstraat 4
+2711;Zoetermeer;;2711AJ;;;Postcode;2711AJ
+2711;Zoetermeer;;;Zoetermeer;;Plaats;Zoetermeer
+2711;Zoetermeer;;;;Dag/avond;Beschikbaarheid;Dag/avond
+2718;Zoetermeer;Blauw-Roodlaan 290;;;;Straatnaam;Blauw-Roodlaan 290
+2718;Zoetermeer;;2718SK;;;Postcode;2718SK
+2718;Zoetermeer;;;Zoetermeer;;Plaats;Zoetermeer
+2718;Zoetermeer;;;;24 uur;Beschikbaarheid;24 uur
+2806;Gouda;Zuider IJsseldijk 50;;;;Straatnaam;Zuider IJsseldijk 50
+2806;Gouda;;2808PB;;;Postcode;2808PB
+2806;Gouda;;;Gouda;;Plaats;Gouda
+2806;Gouda;;;;24 uur;Beschikbaarheid;24 uur
+2841;Moordrecht;Middelweg 18D;;;;Straatnaam;Middelweg 18D
+2841;Moordrecht;;2841LA;;;Postcode;2841LA
+2841;Moordrecht;;;Moordrecht;;Plaats;Moordrecht
+2841;Moordrecht;;;;24 uur;Beschikbaarheid;24 uur
+2902;Capelle aan den Ijssel;Slotlaan 121;;;;Straatnaam;Slotlaan 121
+2902;Capelle aan den Ijssel;;2902AP;;;Postcode;2902AP
+2902;Capelle aan den Ijssel;;;Capelle aan den Ijssel;;Plaats;Capelle aan den Ijssel
+2902;Capelle aan den Ijssel;;;;24 uur;Beschikbaarheid;24 uur
+2941;Nederlek;C.G. Roosweg 150;;;;Straatnaam;C.G. Roosweg 150
+2941;Nederlek;;2941LH;;;Postcode;2941LH
+2941;Nederlek;;;Nederlek;;Plaats;Nederlek
+2941;Nederlek;;;;24 uur;Beschikbaarheid;24 uur
+2959;Molenwaard;Middenpolderweg 63b;;;;Straatnaam;Middenpolderweg 63b
+2959;Molenwaard;;2959LB;;;Postcode;2959LB
+2959;Molenwaard;;;Molenwaard;;Plaats;Molenwaard
+2959;Molenwaard;;;;Nacht;Beschikbaarheid;Nacht
+2993;Barendrecht;Breslau 2;;;;Straatnaam;Breslau 2
+2993;Barendrecht;;2993LT;;;Postcode;2993LT
+2993;Barendrecht;;;Barendrecht;;Plaats;Barendrecht
+2993;Barendrecht;;;;24 uur;Beschikbaarheid;24 uur
+3011;Rotterdam-Centrum;Schiedamsedijk 95;;;;Straatnaam;Schiedamsedijk 95
+3011;Rotterdam-Centrum;;3011TP;;;Postcode;3011TP
+3011;Rotterdam-Centrum;;;Rotterdam-Centrum;;Plaats;Rotterdam-Centrum
+3011;Rotterdam-Centrum;;;;24 uur;Beschikbaarheid;24 uur
+3034;Rotterdam-Noord;Brugwachter 12;;;;Straatnaam;Brugwachter 12
+3034;Rotterdam-Noord;;3034KD;;;Postcode;3034KD
+3034;Rotterdam-Noord;;;Rotterdam-Noord;;Plaats;Rotterdam-Noord
+3034;Rotterdam-Noord;;;;24 uur;Beschikbaarheid;24 uur
+3079;Rotterdam - Zuid;Maasstadweg 21;;;;Straatnaam;Maasstadweg 21
+3079;Rotterdam - Zuid;;3079DZ;;;Postcode;3079DZ
+3079;Rotterdam - Zuid;;;Rotterdam - Zuid;;Plaats;Rotterdam - Zuid
+3079;Rotterdam - Zuid;;;;24 uur;Beschikbaarheid;24 uur
+3123;Schiedam;Zoomweg 20;;;;Straatnaam;Zoomweg 20
+3123;Schiedam;;3123EP;;;Postcode;3123EP
+3123;Schiedam;;;Schiedam;;Plaats;Schiedam
+3123;Schiedam;;;;Opkomst;Beschikbaarheid;Opkomst
+3131;Vlaardingen;Hoogstad 501;;;;Straatnaam;Hoogstad 501
+3131;Vlaardingen;;3131KX;;;Postcode;3131KX
+3131;Vlaardingen;;;Vlaardingen;;Plaats;Vlaardingen
+3131;Vlaardingen;;;;24 uur;Beschikbaarheid;24 uur
+3199;Maasvlakte;Coloradoweg 20;;;;Straatnaam;Coloradoweg 20
+3199;Maasvlakte;;3199LA;;;Postcode;3199LA
+3199;Maasvlakte;;;Maasvlakte;;Plaats;Maasvlakte
+3199;Maasvlakte;;;;24 uur;Beschikbaarheid;24 uur
+3203;Spijkenisse;Schenkelweg 90;;;;Straatnaam;Schenkelweg 90
+3203;Spijkenisse;;3203LE;;;Postcode;3203LE
+3203;Spijkenisse;;;Spijkenisse;;Plaats;Spijkenisse
+3203;Spijkenisse;;;;24 uur;Beschikbaarheid;24 uur
+3222;Hellevoetsluis;Zwartedijk 2;;;;Straatnaam;Zwartedijk 2
+3222;Hellevoetsluis;;3222LM;;;Postcode;3222LM
+3222;Hellevoetsluis;;;Hellevoetsluis;;Plaats;Hellevoetsluis
+3222;Hellevoetsluis;;;;24 uur;Beschikbaarheid;24 uur
+3232;Brielle;Amer 7;;;;Straatnaam;Amer 7
+3232;Brielle;;3232HA;;;Postcode;3232HA
+3232;Brielle;;;Brielle;;Plaats;Brielle
+3232;Brielle;;;;24 uur;Beschikbaarheid;24 uur
+3247;Dirksland;Watertoren 45D;;;;Straatnaam;Watertoren 45D
+3247;Dirksland;;3247CL;;;Postcode;3247CL
+3247;Dirksland;;;Dirksland;;Plaats;Dirksland
+3247;Dirksland;;;;24 uur;Beschikbaarheid;24 uur
+3252;Goedereede;Provincialeweg 18a;;;;Straatnaam;Provincialeweg 18a
+3252;Goedereede;;3252LR;;;Postcode;3252LR
+3252;Goedereede;;;Goedereede;;Plaats;Goedereede
+3252;Goedereede;;;;Dag/avond;Beschikbaarheid;Dag/avond
+3255;Oude Tonge;Tramweg 3;;;;Straatnaam;Tramweg 3
+3255;Oude Tonge;;3255MB;;;Postcode;3255MB
+3255;Oude Tonge;;;Oude Tonge;;Plaats;Oude Tonge
+3255;Oude Tonge;;;;Dag/avond;Beschikbaarheid;Dag/avond
+3286;Klaaswaal;Molendijk 57;;;;Straatnaam;Molendijk 57
+3286;Klaaswaal;;3286BG;;;Postcode;3286BG
+3286;Klaaswaal;;;Klaaswaal;;Plaats;Klaaswaal
+3286;Klaaswaal;;;;24 uur;Beschikbaarheid;24 uur
+3312;Dordrecht;Romboutslaan 105;;;;Straatnaam;Romboutslaan 105
+3312;Dordrecht;;3312KP;;;Postcode;3312KP
+3312;Dordrecht;;;Dordrecht;;Plaats;Dordrecht
+3312;Dordrecht;;;;24 uur;Beschikbaarheid;24 uur
+3331;Zwijndrecht;Bootjessteeg 81 - 85;;;;Straatnaam;Bootjessteeg 81 - 85
+3331;Zwijndrecht;;3331HA;;;Postcode;3331HA
+3331;Zwijndrecht;;;Zwijndrecht;;Plaats;Zwijndrecht
+3331;Zwijndrecht;;;;24 uur;Beschikbaarheid;24 uur
+3356;Papendrecht;Vliedberg 2;;;;Straatnaam;Vliedberg 2
+3356;Papendrecht;;3356GA;;;Postcode;3356GA
+3356;Papendrecht;;;Papendrecht;;Plaats;Papendrecht
+3356;Papendrecht;;;;24 uur;Beschikbaarheid;24 uur
+3417;Montfoort;Willeskop 94;;;;Straatnaam;Willeskop 94
+3417;Montfoort;;3417ME;;;Postcode;3417ME
+3417;Montfoort;;;Montfoort;;Plaats;Montfoort
+3417;Montfoort;;;;Dag/avond;Beschikbaarheid;Dag/avond
+3436;Nieuwegein;Nevelgaarde 1;;;;Straatnaam;Nevelgaarde 1
+3436;Nieuwegein;;3436ZZ;;;Postcode;3436ZZ
+3436;Nieuwegein;;;Nieuwegein;;Plaats;Nieuwegein
+3436;Nieuwegein;;;;24 uur;Beschikbaarheid;24 uur
+3447;Woerden;Polanerbaan 2;;;;Straatnaam;Polanerbaan 2
+3447;Woerden;;3447GN;;;Postcode;3447GN
+3447;Woerden;;;Woerden;;Plaats;Woerden
+3447;Woerden;;;;24 uur;Beschikbaarheid;24 uur
+3561;Utrecht (Vader Rijndreef);Vader Rijndreef 1;;;;Straatnaam;Vader Rijndreef 1
+3561;Utrecht (Vader Rijndreef);;3561XB;;;Postcode;3561XB
+3561;Utrecht (Vader Rijndreef);;;Utrecht (Vader Rijndreef);;Plaats;Utrecht (Vader Rijndreef)
+3561;Utrecht (Vader Rijndreef);;;;24 uur;Beschikbaarheid;24 uur
+3582;Utrecht (Andreaelaan);Burg. Fockema Andreaelaan 90;;;;Straatnaam;Burg. Fockema Andreaelaan 90
+3582;Utrecht (Andreaelaan);;3582KT;;;Postcode;3582KT
+3582;Utrecht (Andreaelaan);;;Utrecht (Andreaelaan);;Plaats;Utrecht (Andreaelaan)
+3582;Utrecht (Andreaelaan);;;;24 uur;Beschikbaarheid;24 uur
+3608;Maarssen;Floraweg 18;;;;Straatnaam;Floraweg 18
+3608;Maarssen;;3608BW;;;Postcode;3608BW
+3608;Maarssen;;;Maarssen;;Plaats;Maarssen
+3608;Maarssen;;;;24 uur;Beschikbaarheid;24 uur
+3645;Vinkeveen;Herenweg 105;;;;Straatnaam;Herenweg 105
+3645;Vinkeveen;;3645DJ;;;Postcode;3645DJ
+3645;Vinkeveen;;;Vinkeveen;;Plaats;Vinkeveen
+3645;Vinkeveen;;;;24 uur;Beschikbaarheid;24 uur
+3648;Wilnis;Geerkade 23;;;;Straatnaam;Geerkade 23
+3648;Wilnis;;3648NX;;;Postcode;3648NX
+3648;Wilnis;;;Wilnis;;Plaats;Wilnis
+3648;Wilnis;;;;Dag/avond;Beschikbaarheid;Dag/avond
+3707;Zeist;Jagersingel 3;;;;Straatnaam;Jagersingel 3
+3707;Zeist;;3707HL;;;Postcode;3707HL
+3707;Zeist;;;Zeist;;Plaats;Zeist
+3707;Zeist;;;;24 uur;Beschikbaarheid;24 uur
+3743;Baarn;Molenweg 2;;;;Straatnaam;Molenweg 2
+3743;Baarn;;3743KM;;;Postcode;3743KM
+3743;Baarn;;;Baarn;;Plaats;Baarn
+3743;Baarn;;;;Dag/avond;Beschikbaarheid;Dag/avond
+3769;Soesterberg;Stemerdingweg 13;;;;Straatnaam;Stemerdingweg 13
+3769;Soesterberg;;3769CE;;;Postcode;3769CE
+3769;Soesterberg;;;Soesterberg;;Plaats;Soesterberg
+3769;Soesterberg;;;;Dag/avond;Beschikbaarheid;Dag/avond
+3771;Barneveld;Nijkerkerweg 119;;;;Straatnaam;Nijkerkerweg 119
+3771;Barneveld;;3771LA;;;Postcode;3771LA
+3771;Barneveld;;;Barneveld;;Plaats;Barneveld
+3771;Barneveld;;;;24 uur;Beschikbaarheid;24 uur
+3784;Terschuur;Zelderseweg 61;;;;Straatnaam;Zelderseweg 61
+3784;Terschuur;;3784LN;;;Postcode;3784LN
+3784;Terschuur;;;Terschuur;;Plaats;Terschuur
+3784;Terschuur;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+3811;Amersfoort Centrum;Zonnehof 10;;;;Straatnaam;Zonnehof 10
+3811;Amersfoort Centrum;;3811ND;;;Postcode;3811ND
+3811;Amersfoort Centrum;;;Amersfoort Centrum;;Plaats;Amersfoort Centrum
+3811;Amersfoort Centrum;;;;24 uur;Beschikbaarheid;24 uur
+3823;Amersfoort Noord;Het Hofslot 1;;;;Straatnaam;Het Hofslot 1
+3823;Amersfoort Noord;;3823VV;;;Postcode;3823VV
+3823;Amersfoort Noord;;;Amersfoort Noord;;Plaats;Amersfoort Noord
+3823;Amersfoort Noord;;;;24 uur;Beschikbaarheid;24 uur
+3843;Harderwijk;Deventerweg 70;;;;Straatnaam;Deventerweg 70
+3843;Harderwijk;;3843DG;;;Postcode;3843DG
+3843;Harderwijk;;;Harderwijk;;Plaats;Harderwijk
+3843;Harderwijk;;;;24 uur;Beschikbaarheid;24 uur
+3851;Ermelo (Putterweg);Putterweg 136;;;;Straatnaam;Putterweg 136
+3851;Ermelo (Putterweg);;3851VG;;;Postcode;3851VG
+3851;Ermelo (Putterweg);;;Ermelo (Putterweg);;Plaats;Ermelo (Putterweg)
+3851;Ermelo (Putterweg);;;;24 uur;Beschikbaarheid;24 uur
+3897;Zeewolde;Bosruiterweg 36;;;;Straatnaam;Bosruiterweg 36
+3897;Zeewolde;;3897LV;;;Postcode;3897LV
+3897;Zeewolde;;;Zeewolde;;Plaats;Zeewolde
+3897;Zeewolde;;;;24 uur;Beschikbaarheid;24 uur
+3911;Rhenen;Cuneraweg 354;;;;Straatnaam;Cuneraweg 354
+3911;Rhenen;;3911RV;;;Postcode;3911RV
+3911;Rhenen;;;Rhenen;;Plaats;Rhenen
+3911;Rhenen;;;;24 uur;Beschikbaarheid;24 uur
+3931;Woudenberg;Europaweg 4;;;;Straatnaam;Europaweg 4
+3931;Woudenberg;;3931NJ;;;Postcode;3931NJ
+3931;Woudenberg;;;Woudenberg;;Plaats;Woudenberg
+3931;Woudenberg;;;;Dag/avond;Beschikbaarheid;Dag/avond
+3941;Doorn;Korte Molenweg 1;;;;Straatnaam;Korte Molenweg 1
+3941;Doorn;;3941PW;;;Postcode;3941PW
+3941;Doorn;;;Doorn;;Plaats;Doorn
+3941;Doorn;;;;24 uur;Beschikbaarheid;24 uur
+3958;Amerongen;Industrieweg - noord 6;;;;Straatnaam;Industrieweg - noord 6
+3958;Amerongen;;3958VX;;;Postcode;3958VX
+3958;Amerongen;;;Amerongen;;Plaats;Amerongen
+3958;Amerongen;;;;Dag/avond;Beschikbaarheid;Dag/avond
+3991;Houten;De Brug 2b;;;;Straatnaam;De Brug 2b
+3991;Houten;;3991LN;;;Postcode;3991LN
+3991;Houten;;;Houten;;Plaats;Houten
+3991;Houten;;;;Dag/avond;Beschikbaarheid;Dag/avond
+4003;Tiel;Blomboorgerd 10;;;;Straatnaam;Blomboorgerd 10
+4003;Tiel;;4003BX;;;Postcode;4003BX
+4003;Tiel;;;Tiel;;Plaats;Tiel
+4003;Tiel;;;;24 uur;Beschikbaarheid;24 uur
+4041;Kesteren;Vincent van Goghstraat 20;;;;Straatnaam;Vincent van Goghstraat 20
+4041;Kesteren;;4041GG;;;Postcode;4041GG
+4041;Kesteren;;;Kesteren;;Plaats;Kesteren
+4041;Kesteren;;;;24 uur;Beschikbaarheid;24 uur
+4101;Culemborg;Triosingel 34;;;;Straatnaam;Triosingel 34
+4101;Culemborg;;4101XC;;;Postcode;4101XC
+4101;Culemborg;;;Culemborg;;Plaats;Culemborg
+4101;Culemborg;;;;24 uur;Beschikbaarheid;24 uur
+4128;Lexmond;Driemolenweg 1;;;;Straatnaam;Driemolenweg 1
+4128;Lexmond;;4128LS;;;Postcode;4128LS
+4128;Lexmond;;;Lexmond;;Plaats;Lexmond
+4128;Lexmond;;;;Dag/avond;Beschikbaarheid;Dag/avond
+4141;Leerdam;Koningin Emmalaan 30;;;;Straatnaam;Koningin Emmalaan 30
+4141;Leerdam;;4141EC;;;Postcode;4141EC
+4141;Leerdam;;;Leerdam;;Plaats;Leerdam
+4141;Leerdam;;;;Dag/avond;Beschikbaarheid;Dag/avond
+4156;Rumpt;Boutensteinseweg 4a;;;;Straatnaam;Boutensteinseweg 4a
+4156;Rumpt;;4156JZ;;;Postcode;4156JZ
+4156;Rumpt;;;Rumpt;;Plaats;Rumpt
+4156;Rumpt;;;;24 uur;Beschikbaarheid;24 uur
+4181;Waardenburg;Steenweg 20;;;;Straatnaam;Steenweg 20
+4181;Waardenburg;;4181AL;;;Postcode;4181AL
+4181;Waardenburg;;;Waardenburg;;Plaats;Waardenburg
+4181;Waardenburg;;;;24 uur;Beschikbaarheid;24 uur
+4204;Gorinchem;Banneweg 57;;;;Straatnaam;Banneweg 57
+4204;Gorinchem;;4204AA;;;Postcode;4204AA
+4204;Gorinchem;;;Gorinchem;;Plaats;Gorinchem
+4204;Gorinchem;;;;24 uur;Beschikbaarheid;24 uur
+4265;Genderen;Genderensedijk 7;;;;Straatnaam;Genderensedijk 7
+4265;Genderen;;4265JJ;;;Postcode;4265JJ
+4265;Genderen;;;Genderen;;Plaats;Genderen
+4265;Genderen;;;;Dag/avond;Beschikbaarheid;Dag/avond
+4286;Almkerk;Sportlaan 168;;;;Straatnaam;Sportlaan 168
+4286;Almkerk;;4286ET;;;Postcode;4286ET
+4286;Almkerk;;;Almkerk;;Plaats;Almkerk
+4286;Almkerk;;;;24 uur;Beschikbaarheid;24 uur
+4301;Zierikzee;Koning Gustaafweg 2;;;;Straatnaam;Koning Gustaafweg 2
+4301;Zierikzee;;4301NP;;;Postcode;4301NP
+4301;Zierikzee;;;Zierikzee;;Plaats;Zierikzee
+4301;Zierikzee;;;;24 uur;Beschikbaarheid;24 uur
+4307;Oosterland;Molenweg 56B;;;;Straatnaam;Molenweg 56B
+4307;Oosterland;;4307AK;;;Postcode;4307AK
+4307;Oosterland;;;Oosterland;;Plaats;Oosterland
+4307;Oosterland;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+4328;Burgh-Haamstede;Dapperweg 28;;;;Straatnaam;Dapperweg 28
+4328;Burgh-Haamstede;;4328BB;;;Postcode;4328BB
+4328;Burgh-Haamstede;;;Burgh-Haamstede;;Plaats;Burgh-Haamstede
+4328;Burgh-Haamstede;;;;24 uur;Beschikbaarheid;24 uur
+4335;Middelburg;Stromenweg 5;;;;Straatnaam;Stromenweg 5
+4335;Middelburg;;4335JR;;;Postcode;4335JR
+4335;Middelburg;;;Middelburg;;Plaats;Middelburg
+4335;Middelburg;;;;24 uur;Beschikbaarheid;24 uur
+4364;Grijpskerke;Mariekerkseweg 52;;;;Straatnaam;Mariekerkseweg 52
+4364;Grijpskerke;;4364AS;;;Postcode;4364AS
+4364;Grijpskerke;;;Grijpskerke;;Plaats;Grijpskerke
+4364;Grijpskerke;;;;24 uur;Beschikbaarheid;24 uur
+4416;Kruiningen;Weihoek 5M;;;;Straatnaam;Weihoek 5M
+4416;Kruiningen;;4416PX;;;Postcode;4416PX
+4416;Kruiningen;;;Kruiningen;;Plaats;Kruiningen
+4416;Kruiningen;;;;24 uur;Beschikbaarheid;24 uur
+4462;Goes;Verrijn Stuartweg 24;;;;Straatnaam;Verrijn Stuartweg 24
+4462;Goes;;4462GE;;;Postcode;4462GE
+4462;Goes;;;Goes;;Plaats;Goes
+4462;Goes;;;;24 uur;Beschikbaarheid;24 uur
+4501;Oostburg;Pastoor van Genklaan 6;;;;Straatnaam;Pastoor van Genklaan 6
+4501;Oostburg;;4501WD;;;Postcode;4501WD
+4501;Oostburg;;;Oostburg;;Plaats;Oostburg
+4501;Oostburg;;;;24 uur;Beschikbaarheid;24 uur
+4535;Terneuzen;Wielingenlaan 2;;;;Straatnaam;Wielingenlaan 2
+4535;Terneuzen;;4538PK;;;Postcode;4538PK
+4535;Terneuzen;;;Terneuzen;;Plaats;Terneuzen
+4535;Terneuzen;;;;24 uur;Beschikbaarheid;24 uur
+4561;Hulst;Lyceumstraat 20;;;;Straatnaam;Lyceumstraat 20
+4561;Hulst;;4561HV;;;Postcode;4561HV
+4561;Hulst;;;Hulst;;Plaats;Hulst
+4561;Hulst;;;;24 uur;Beschikbaarheid;24 uur
+4614;Bergen op Zoom;Veilingdreef 41;;;;Straatnaam;Veilingdreef 41
+4614;Bergen op Zoom;;4614RX;;;Postcode;4614RX
+4614;Bergen op Zoom;;;Bergen op Zoom;;Plaats;Bergen op Zoom
+4614;Bergen op Zoom;;;;24 uur;Beschikbaarheid;24 uur
+4631;Hoogerheide;Van der Heijdenstraat 6;;;;Straatnaam;Van der Heijdenstraat 6
+4631;Hoogerheide;;4631NH;;;Postcode;4631NH
+4631;Hoogerheide;;;Hoogerheide;;Plaats;Hoogerheide
+4631;Hoogerheide;;;;Dag/avond;Beschikbaarheid;Dag/avond
+4671;Dinteloord;Noordlangeweg 5;;;;Straatnaam;Noordlangeweg 5
+4671;Dinteloord;;4671PK;;;Postcode;4671PK
+4671;Dinteloord;;;Dinteloord;;Plaats;Dinteloord
+4671;Dinteloord;;;;24 uur;Beschikbaarheid;24 uur
+4693;Poortvliet;Paasdijkweg 39;;;;Straatnaam;Paasdijkweg 39
+4693;Poortvliet;;4693RE;;;Postcode;4693RE
+4693;Poortvliet;;;Poortvliet;;Plaats;Poortvliet
+4693;Poortvliet;;;;24 uur;Beschikbaarheid;24 uur
+4715;Roosendaal (Rucphen);Rijksweg-Zuid 113;;;;Straatnaam;Rijksweg-Zuid 113
+4715;Roosendaal (Rucphen);;4715TA;;;Postcode;4715TA
+4715;Roosendaal (Rucphen);;;Roosendaal (Rucphen);;Plaats;Roosendaal (Rucphen)
+4715;Roosendaal (Rucphen);;;;24 uur;Beschikbaarheid;24 uur
+4751;Roosendaal-Noord (Oud-Gastel);Neon 15Q;;;;Straatnaam;Neon 15Q
+4751;Roosendaal-Noord (Oud-Gastel);;4751XA;;;Postcode;4751XA
+4751;Roosendaal-Noord (Oud-Gastel);;;Roosendaal-Noord (Oud-Gastel);;Plaats;Roosendaal-Noord (Oud-Gastel)
+4751;Roosendaal-Noord (Oud-Gastel);;;;Dag/avond;Beschikbaarheid;Dag/avond
+4761;Zevenbergen;Zuidelijke Randweg 1;;;;Straatnaam;Zuidelijke Randweg 1
+4761;Zevenbergen;;4761RN;;;Postcode;4761RN
+4761;Zevenbergen;;;Zevenbergen;;Plaats;Zevenbergen
+4761;Zevenbergen;;;;24 uur;Beschikbaarheid;24 uur
+4815;Breda-Noord;Hoeksteen 10;;;;Straatnaam;Hoeksteen 10
+4815;Breda-Noord;;4815PR;;;Postcode;4815PR
+4815;Breda-Noord;;;Breda-Noord;;Plaats;Breda-Noord
+4815;Breda-Noord;;;;24 uur;Beschikbaarheid;24 uur
+4851;Breda-Zuid (Ulvenhout);Chaamsebaan 4;;;;Straatnaam;Chaamsebaan 4
+4851;Breda-Zuid (Ulvenhout);;4851SN;;;Postcode;4851SN
+4851;Breda-Zuid (Ulvenhout);;;Breda-Zuid (Ulvenhout);;Plaats;Breda-Zuid (Ulvenhout)
+4851;Breda-Zuid (Ulvenhout);;;;24 uur;Beschikbaarheid;24 uur
+4872;Etten Leur;Schoonhout 215;;;;Straatnaam;Schoonhout 215
+4872;Etten Leur;;4872MC;;;Postcode;4872MC
+4872;Etten Leur;;;Etten Leur;;Plaats;Etten Leur
+4872;Etten Leur;;;;Dag/avond;Beschikbaarheid;Dag/avond
+4891;Rijsbergen;Sint Bavostraat 16A;;;;Straatnaam;Sint Bavostraat 16A
+4891;Rijsbergen;;4891CJ;;;Postcode;4891CJ
+4891;Rijsbergen;;;Rijsbergen;;Plaats;Rijsbergen
+4891;Rijsbergen;;;;24 uur;Beschikbaarheid;24 uur
+4905;Oosterhout;Vaartweg 8G;;;;Straatnaam;Vaartweg 8G
+4905;Oosterhout;;4905BL;;;Postcode;4905BL
+4905;Oosterhout;;;Oosterhout;;Plaats;Oosterhout
+4905;Oosterhout;;;;24 uur;Beschikbaarheid;24 uur
+5022;Tilburg-Zuid;Prof. Van Buchemlaan 12;;;;Straatnaam;Prof. Van Buchemlaan 12
+5022;Tilburg-Zuid;;5022KB;;;Postcode;5022KB
+5022;Tilburg-Zuid;;;Tilburg-Zuid;;Plaats;Tilburg-Zuid
+5022;Tilburg-Zuid;;;;24 uur;Beschikbaarheid;24 uur
+5042;Tilburg-Noord;Brugstraat 2;;;;Straatnaam;Brugstraat 2
+5042;Tilburg-Noord;;5042SB;;;Postcode;5042SB
+5042;Tilburg-Noord;;;Tilburg-Noord;;Plaats;Tilburg-Noord
+5042;Tilburg-Noord;;;;24 uur;Beschikbaarheid;24 uur
+5061;Oisterwijk;Kreitenstraat 40-42;;;;Straatnaam;Kreitenstraat 40-42
+5061;Oisterwijk;;5061PT;;;Postcode;5061PT
+5061;Oisterwijk;;;Oisterwijk;;Plaats;Oisterwijk
+5061;Oisterwijk;;;;Dag/avond;Beschikbaarheid;Dag/avond
+5126;Gilze;Broekakkerweg 9;;;;Straatnaam;Broekakkerweg 9
+5126;Gilze;;5126BD;;;Postcode;5126BD
+5126;Gilze;;;Gilze;;Plaats;Gilze
+5126;Gilze;;;;Dag/avond;Beschikbaarheid;Dag/avond
+5146;Waalwijk;De Gaard 128;;;;Straatnaam;De Gaard 128
+5146;Waalwijk;;5146AW;;;Postcode;5146AW
+5146;Waalwijk;;;Waalwijk;;Plaats;Waalwijk
+5146;Waalwijk;;;;24 uur;Beschikbaarheid;24 uur
+5212;s-Hertogenbosch;Gruttostraat 14;;;;Straatnaam;Gruttostraat 14
+5212;s-Hertogenbosch;;5212VM;;;Postcode;5212VM
+5212;s-Hertogenbosch;;;s-Hertogenbosch;;Plaats;s-Hertogenbosch
+5212;s-Hertogenbosch;;;;24 uur;Beschikbaarheid;24 uur
+5251;Vlijmen ;Burg. Zwaansweg 2-A;;;;Straatnaam;Burg. Zwaansweg 2-A
+5251;Vlijmen ;;5251CJ;;;Postcode;5251CJ
+5251;Vlijmen ;;;Vlijmen ;;Plaats;Vlijmen 
+5251;Vlijmen ;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+5283;Boxtel;Brederodeweg 27;;;;Straatnaam;Brederodeweg 27
+5283;Boxtel;;5283HA;;;Postcode;5283HA
+5283;Boxtel;;;Boxtel;;Plaats;Boxtel
+5283;Boxtel;;;;24 uur;Beschikbaarheid;24 uur
+5301;Zaltbommel;Steenweg 83;;;;Straatnaam;Steenweg 83
+5301;Zaltbommel;;5301HK;;;Postcode;5301HK
+5301;Zaltbommel;;;Zaltbommel;;Plaats;Zaltbommel
+5301;Zaltbommel;;;;24 uur;Beschikbaarheid;24 uur
+5342;Oss;Aengelbertlaan 11;;;;Straatnaam;Aengelbertlaan 11
+5342;Oss;;5342LA;;;Postcode;5342LA
+5342;Oss;;;Oss;;Plaats;Oss
+5342;Oss;;;;24 uur;Beschikbaarheid;24 uur
+5363;Velp NB;De Eek 1B;;;;Straatnaam;De Eek 1B
+5363;Velp NB;;5363VD;;;Postcode;5363VD
+5363;Velp NB;;;Velp NB;;Plaats;Velp NB
+5363;Velp NB;;;;Dag/avond;Beschikbaarheid;Dag/avond
+5388;Nistelrode ;Heescheweg 37;;;;Straatnaam;Heescheweg 37
+5388;Nistelrode ;;5388RG;;;Postcode;5388RG
+5388;Nistelrode ;;;Nistelrode ;;Plaats;Nistelrode 
+5388;Nistelrode ;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+5406;Uden;Eikenheuvelweg 5;;;;Straatnaam;Eikenheuvelweg 5
+5406;Uden;;5406NA;;;Postcode;5406NA
+5406;Uden;;;Uden;;Plaats;Uden
+5406;Uden;;;;24 uur;Beschikbaarheid;24 uur
+5443;Haps;Schuttersweg 14a;;;;Straatnaam;Schuttersweg 14a
+5443;Haps;;5443PR;;;Postcode;5443PR
+5443;Haps;;;Haps;;Plaats;Haps
+5443;Haps;;;;24 uur;Beschikbaarheid;24 uur
+5454;Mill ;St. Jacobsstraat 2-D;;;;Straatnaam;St. Jacobsstraat 2-D
+5454;Mill ;;5454GN;;;Postcode;5454GN
+5454;Mill ;;;Mill ;;Plaats;Mill 
+5454;Mill ;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+5465;Veghel;Doornhoek 3738;;;;Straatnaam;Doornhoek 3738
+5465;Veghel;;5465TA;;;Postcode;5465TA
+5465;Veghel;;;Veghel;;Plaats;Veghel
+5465;Veghel;;;;24 uur;Beschikbaarheid;24 uur
+5481;Schijndel ;Hoofdstraat 141;;;;Straatnaam;Hoofdstraat 141
+5481;Schijndel ;;5481AD;;;Postcode;5481AD
+5481;Schijndel ;;;Schijndel ;;Plaats;Schijndel 
+5481;Schijndel ;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+5521;Eersel;Kerver 9A;;;;Straatnaam;Kerver 9A
+5521;Eersel;;5521DA;;;Postcode;5521DA
+5521;Eersel;;;Eersel;;Plaats;Eersel
+5521;Eersel;;;;24 uur;Beschikbaarheid;24 uur
+5531;Bladel;Ambachtsweg 5;;;;Straatnaam;Ambachtsweg 5
+5531;Bladel;;5531AC;;;Postcode;5531AC
+5531;Bladel;;;Bladel;;Plaats;Bladel
+5531;Bladel;;;;24 uur;Beschikbaarheid;24 uur
+5555;Valkenswaard;De Vest 48;;;;Straatnaam;De Vest 48
+5555;Valkenswaard;;5555XP;;;Postcode;5555XP
+5555;Valkenswaard;;;Valkenswaard;;Plaats;Valkenswaard
+5555;Valkenswaard;;;;24 uur;Beschikbaarheid;24 uur
+5611;Eindhoven;Deken van Somerenstraat 2A;;;;Straatnaam;Deken van Somerenstraat 2A
+5611;Eindhoven;;5611KX;;;Postcode;5611KX
+5611;Eindhoven;;;Eindhoven;;Plaats;Eindhoven
+5611;Eindhoven;;;;24 uur;Beschikbaarheid;24 uur
+5627;Eindhoven (Noord);Avignonlaan 7;;;;Straatnaam;Avignonlaan 7
+5627;Eindhoven (Noord);;5627GA;;;Postcode;5627GA
+5627;Eindhoven (Noord);;;Eindhoven (Noord);;Plaats;Eindhoven (Noord)
+5627;Eindhoven (Noord);;;;24 uur;Beschikbaarheid;24 uur
+5705;Helmond;Lagedijk 4b;;;;Straatnaam;Lagedijk 4b
+5705;Helmond;;5705BZ;;;Postcode;5705BZ
+5705;Helmond;;;Helmond;;Plaats;Helmond
+5705;Helmond;;;;24 uur;Beschikbaarheid;24 uur
+5721;Asten;Ommelseweg 69A;;;;Straatnaam;Ommelseweg 69A
+5721;Asten;;5721 WA;;;Postcode;5721 WA
+5721;Asten;;;Asten;;Plaats;Asten
+5721;Asten;;;;24 uur;Beschikbaarheid;24 uur
+5741;Beek en Donk;Willemstraat 7B;;;;Straatnaam;Willemstraat 7B
+5741;Beek en Donk;;5741 PA;;;Postcode;5741 PA
+5741;Beek en Donk;;;Beek en Donk;;Plaats;Beek en Donk
+5741;Beek en Donk;;;;24 uur;Beschikbaarheid;24 uur
+5802;Venray;Acaciastraat 15;;;;Straatnaam;Acaciastraat 15
+5802;Venray;;5802EK;;;Postcode;5802EK
+5802;Venray;;;Venray;;Plaats;Venray
+5802;Venray;;;;24 uur;Beschikbaarheid;24 uur
+5855;Well;Bosscherheide 29 a;;;;Straatnaam;Bosscherheide 29 a
+5855;Well;;5855EA;;;Postcode;5855EA
+5855;Well;;;Well;;Plaats;Well
+5855;Well;;;;24 uur;Beschikbaarheid;24 uur
+5912;Venlo;Tegelseweg 210;;;;Straatnaam;Tegelseweg 210
+5912;Venlo;;5912BL;;;Postcode;5912BL
+5912;Venlo;;;Venlo;;Plaats;Venlo
+5912;Venlo;;;;24 uur;Beschikbaarheid;24 uur
+5928;Blerick;van Heemskerckweg 8;;;;Straatnaam;van Heemskerckweg 8
+5928;Blerick;;5928LL;;;Postcode;5928LL
+5928;Blerick;;;Blerick;;Plaats;Blerick
+5928;Blerick;;;;24 uur;Beschikbaarheid;24 uur
+5961;Horst;Venloseweg 70 a;;;;Straatnaam;Venloseweg 70 a
+5961;Horst;;5961JD;;;Postcode;5961JD
+5961;Horst;;;Horst;;Plaats;Horst
+5961;Horst;;;;24 uur;Beschikbaarheid;24 uur
+5981;Panningen;J.F. Kennedylaan 212;;;;Straatnaam;J.F. Kennedylaan 212
+5981;Panningen;;5981WX;;;Postcode;5981WX
+5981;Panningen;;;Panningen;;Plaats;Panningen
+5981;Panningen;;;;Dag/avond;Beschikbaarheid;Dag/avond
+6003;Weert;Saturnus 1;;;;Straatnaam;Saturnus 1
+6003;Weert;;6003NK;;;Postcode;6003NK
+6003;Weert;;;Weert;;Plaats;Weert
+6003;Weert;;;;24 uur;Beschikbaarheid;24 uur
+6026;Maarheeze;Rondven 32;;;;Straatnaam;Rondven 32
+6026;Maarheeze;;6026PX;;;Postcode;6026PX
+6026;Maarheeze;;;Maarheeze;;Plaats;Maarheeze
+6026;Maarheeze;;;;24 uur;Beschikbaarheid;24 uur
+6037;Kelpen;Ellerweg 2 b;;;;Straatnaam;Ellerweg 2 b
+6037;Kelpen;;6037RS;;;Postcode;6037RS
+6037;Kelpen;;;Kelpen;;Plaats;Kelpen
+6037;Kelpen;;;;24 uur;Beschikbaarheid;24 uur
+6043;Roermond;Nassaustraat 79;;;;Straatnaam;Nassaustraat 79
+6043;Roermond;;6043EB;;;Postcode;6043EB
+6043;Roermond;;;Roermond;;Plaats;Roermond
+6043;Roermond;;;;24 uur;Beschikbaarheid;24 uur
+6049;Herten;Louis Eijssenweg 4;;;;Straatnaam;Louis Eijssenweg 4
+6049;Herten;;6049CD;;;Postcode;6049CD
+6049;Herten;;;Herten;;Plaats;Herten
+6049;Herten;;;;24 uur;Beschikbaarheid;24 uur
+6088;Roggel;Heverstraat 9;;;;Straatnaam;Heverstraat 9
+6088;Roggel;;6088BG;;;Postcode;6088BG
+6088;Roggel;;;Roggel;;Plaats;Roggel
+6088;Roggel;;;;24 uur;Beschikbaarheid;24 uur
+6101;Echt;Nobelweg 4;;;;Straatnaam;Nobelweg 4
+6101;Echt;;6101XB;;;Postcode;6101XB
+6101;Echt;;;Echt;;Plaats;Echt
+6101;Echt;;;;24 uur;Beschikbaarheid;24 uur
+6162;Geleen;Demystraat 15;;;;Straatnaam;Demystraat 15
+6162;Geleen;;6162AP;;;Postcode;6162AP
+6162;Geleen;;;Geleen;;Plaats;Geleen
+6162;Geleen;;;;24 uur;Beschikbaarheid;24 uur
+6226;Maastricht;Vijverdalseweg 2;;;;Straatnaam;Vijverdalseweg 2
+6226;Maastricht;;6226NB;;;Postcode;6226NB
+6226;Maastricht;;;Maastricht;;Plaats;Maastricht
+6226;Maastricht;;;;24 uur;Beschikbaarheid;24 uur
+6271;Gulpen;Oude Rijksweg 32;;;;Straatnaam;Oude Rijksweg 32
+6271;Gulpen;;6271AA;;;Postcode;6271AA
+6271;Gulpen;;;Gulpen;;Plaats;Gulpen
+6271;Gulpen;;;;24 uur;Beschikbaarheid;24 uur
+6374;Landgraaf;Reeweg 120;;;;Straatnaam;Reeweg 120
+6374;Landgraaf;;6374BZ;;;Postcode;6374BZ
+6374;Landgraaf;;;Landgraaf;;Plaats;Landgraaf
+6374;Landgraaf;;;;24 uur;Beschikbaarheid;24 uur
+6411;Heerlen;Het Overloon 2;;;;Straatnaam;Het Overloon 2
+6411;Heerlen;;6411TE;;;Postcode;6411TE
+6411;Heerlen;;;Heerlen;;Plaats;Heerlen
+6411;Heerlen;;;;24 uur;Beschikbaarheid;24 uur
+6525;Nijmegen;Professor Bellefroidstraat  11;;;;Straatnaam;Professor Bellefroidstraat  11
+6525;Nijmegen;;6525AG;;;Postcode;6525AG
+6525;Nijmegen;;;Nijmegen;;Plaats;Nijmegen
+6525;Nijmegen;;;;24 uur;Beschikbaarheid;24 uur
+6534;Nijmegen West;Nieuwe Dukenburgseweg 23;;;;Straatnaam;Nieuwe Dukenburgseweg 23
+6534;Nijmegen West;;6534AD;;;Postcode;6534AD
+6534;Nijmegen West;;;Nijmegen West;;Plaats;Nijmegen West
+6534;Nijmegen West;;;;24 uur;Beschikbaarheid;24 uur
+6573;Beek-Ubbergen;Nieuwe Rijksweg 1;;;;Straatnaam;Nieuwe Rijksweg 1
+6573;Beek-Ubbergen;;6573DH;;;Postcode;6573DH
+6573;Beek-Ubbergen;;;Beek-Ubbergen;;Plaats;Beek-Ubbergen
+6573;Beek-Ubbergen;;;;24 uur;Beschikbaarheid;24 uur
+6641;Beuningen;Elsenpas 11;;;;Straatnaam;Elsenpas 11
+6641;Beuningen;;6641KM;;;Postcode;6641KM
+6641;Beuningen;;;Beuningen;;Plaats;Beuningen
+6641;Beuningen;;;;24 uur;Beschikbaarheid;24 uur
+6651;Druten;van Heemstraweg 52A;;;;Straatnaam;van Heemstraweg 52A
+6651;Druten;;6651KH;;;Postcode;6651KH
+6651;Druten;;;Druten;;Plaats;Druten
+6651;Druten;;;;24 uur;Beschikbaarheid;24 uur
+6658;Beneden Leeuwen;Van Heemstraweg 64D;;;;Straatnaam;Van Heemstraweg 64D
+6658;Beneden Leeuwen;;6658KJ;;;Postcode;6658KJ
+6658;Beneden Leeuwen;;;Beneden Leeuwen;;Plaats;Beneden Leeuwen
+6658;Beneden Leeuwen;;;;24 uur;Beschikbaarheid;24 uur
+6662;Elst;Nijverheidsweg 45;;;;Straatnaam;Nijverheidsweg 45
+6662;Elst;;6662NG;;;Postcode;6662NG
+6662;Elst;;;Elst;;Plaats;Elst
+6662;Elst;;;;24 uur;Beschikbaarheid;24 uur
+6663;Lent;Spoorstraat 31;;;;Straatnaam;Spoorstraat 31
+6663;Lent;;6663AE;;;Postcode;6663AE
+6663;Lent;;;Lent;;Plaats;Lent
+6663;Lent;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+6711;Ede;Breelaan 4 - 6;;;;Straatnaam;Breelaan 4 - 6
+6711;Ede;;6711MR;;;Postcode;6711MR
+6711;Ede;;;Ede;;Plaats;Ede
+6711;Ede;;;;24 uur;Beschikbaarheid;24 uur
+6825;Arnhem IJsseloord;Meander 401;;;;Straatnaam;Meander 401
+6825;Arnhem IJsseloord;;6825MD;;;Postcode;6825MD
+6825;Arnhem IJsseloord;;;Arnhem IJsseloord;;Plaats;Arnhem IJsseloord
+6825;Arnhem IJsseloord;;;;24 uur;Beschikbaarheid;24 uur
+6828;Arnhem;Eusebiusbuitensingel 43;;;;Straatnaam;Eusebiusbuitensingel 43
+6828;Arnhem;;6828HZ;;;Postcode;6828HZ
+6828;Arnhem;;;Arnhem;;Plaats;Arnhem
+6828;Arnhem;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+6871;Renkum;Utrechtseweg 131;;;;Straatnaam;Utrechtseweg 131
+6871;Renkum;;6871DR;;;Postcode;6871DR
+6871;Renkum;;;Renkum;;Plaats;Renkum
+6871;Renkum;;;;24 uur;Beschikbaarheid;24 uur
+6901;Zevenaar;Kampsingel 34;;;;Straatnaam;Kampsingel 34
+6901;Zevenaar;;6901JG;;;Postcode;6901JG
+6901;Zevenaar;;;Zevenaar;;Plaats;Zevenaar
+6901;Zevenaar;;;;24 uur;Beschikbaarheid;24 uur
+6953;Dieren;Hogestraat 11;;;;Straatnaam;Hogestraat 11
+6953;Dieren;;6953AN;;;Postcode;6953AN
+6953;Dieren;;;Dieren;;Plaats;Dieren
+6953;Dieren;;;;24 uur;Beschikbaarheid;24 uur
+7005;Doetinchem;Havenstraat 122;;;;Straatnaam;Havenstraat 122
+7005;Doetinchem;;7005AG;;;Postcode;7005AG
+7005;Doetinchem;;;Doetinchem;;Plaats;Doetinchem
+7005;Doetinchem;;;;24 uur;Beschikbaarheid;24 uur
+7051;Varsseveld;Klaproosstraat 28;;;;Straatnaam;Klaproosstraat 28
+7051;Varsseveld;;7051ZH;;;Postcode;7051ZH
+7051;Varsseveld;;;Varsseveld;;Plaats;Varsseveld
+7051;Varsseveld;;;;24 uur;Beschikbaarheid;24 uur
+7075;Etten;Zeddamseweg 43a;;;;Straatnaam;Zeddamseweg 43a
+7075;Etten;;7075ED;;;Postcode;7075ED
+7075;Etten;;;Etten;;Plaats;Etten
+7075;Etten;;;;24 uur;Beschikbaarheid;24 uur
+7102;Winterswijk;Magnoliastraat 9;;;;Straatnaam;Magnoliastraat 9
+7102;Winterswijk;;7102CX;;;Postcode;7102CX
+7102;Winterswijk;;;Winterswijk;;Plaats;Winterswijk
+7102;Winterswijk;;;;24 uur;Beschikbaarheid;24 uur
+7141;Groenlo;Barkenkamp 5;;;;Straatnaam;Barkenkamp 5
+7141;Groenlo;;7141EL;;;Postcode;7141EL
+7141;Groenlo;;;Groenlo;;Plaats;Groenlo
+7141;Groenlo;;;;24 uur;Beschikbaarheid;24 uur
+7207;Zutphen;Den Elterweg 65;;;;Straatnaam;Den Elterweg 65
+7207;Zutphen;;7207AE;;;Postcode;7207AE
+7207;Zutphen;;;Zutphen;;Plaats;Zutphen
+7207;Zutphen;;;;24 uur;Beschikbaarheid;24 uur
+7223;Baak;Dambroek 16;;;;Straatnaam;Dambroek 16
+7223;Baak;;7223DV;;;Postcode;7223DV
+7223;Baak;;;Baak;;Plaats;Baak
+7223;Baak;;;;24 uur;Beschikbaarheid;24 uur
+7271;Borculo;Bosberg 9;;;;Straatnaam;Bosberg 9
+7271;Borculo;;7271LE;;;Postcode;7271LE
+7271;Borculo;;;Borculo;;Plaats;Borculo
+7271;Borculo;;;;24 uur;Beschikbaarheid;24 uur
+7323;Apeldoorn;Kanaal Noord 380;;;;Straatnaam;Kanaal Noord 380
+7323;Apeldoorn;;7323AM;;;Postcode;7323AM
+7323;Apeldoorn;;;Apeldoorn;;Plaats;Apeldoorn
+7323;Apeldoorn;;;;24 uur;Beschikbaarheid;24 uur
+7332;Apeldoorn;Saba 2;;;;Straatnaam;Saba 2
+7332;Apeldoorn;;7332BH;;;Postcode;7332BH
+7332;Apeldoorn;;;Apeldoorn;;Plaats;Apeldoorn
+7332;Apeldoorn;;;;24 uur;Beschikbaarheid;24 uur
+7418;Deventer;Nijmegensestraat 11;;;;Straatnaam;Nijmegensestraat 11
+7418;Deventer;;7418BZ;;;Postcode;7418BZ
+7418;Deventer;;;Deventer;;Plaats;Deventer
+7418;Deventer;;;;24 uur;Beschikbaarheid;24 uur
+7433;Deventer Noord (Schalkhaar);Raalterweg 18A;;;;Straatnaam;Raalterweg 18A
+7433;Deventer Noord (Schalkhaar);;7433RA;;;Postcode;7433RA
+7433;Deventer Noord (Schalkhaar);;;Deventer Noord (Schalkhaar);;Plaats;Deventer Noord (Schalkhaar)
+7433;Deventer Noord (Schalkhaar);;;;24 uur;Beschikbaarheid;24 uur
+7443;Nijverdal;Van Heerdtweg 7;;;;Straatnaam;Van Heerdtweg 7
+7443;Nijverdal;;7443TA;;;Postcode;7443TA
+7443;Nijverdal;;;Nijverdal;;Plaats;Nijverdal
+7443;Nijverdal;;;;24 uur;Beschikbaarheid;24 uur
+7461;Rijssen;Wierdensestraat 65;;;;Straatnaam;Wierdensestraat 65
+7461;Rijssen;;7461BC;;;Postcode;7461BC
+7461;Rijssen;;;Rijssen;;Plaats;Rijssen
+7461;Rijssen;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7471;Goor;van Kollaan 19;;;;Straatnaam;van Kollaan 19
+7471;Goor;;7471DP;;;Postcode;7471DP
+7471;Goor;;;Goor;;Plaats;Goor
+7471;Goor;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7475;Markelo;Holterweg 32A;;;;Straatnaam;Holterweg 32A
+7475;Markelo;;7475AW;;;Postcode;7475AW
+7475;Markelo;;;Markelo;;Plaats;Markelo
+7475;Markelo;;;;24 uur;Beschikbaarheid;24 uur
+7482;Haaksbergen;Hengelosestraat 174;;;;Straatnaam;Hengelosestraat 174
+7482;Haaksbergen;;7482AE;;;Postcode;7482AE
+7482;Haaksbergen;;;Haaksbergen;;Plaats;Haaksbergen
+7482;Haaksbergen;;;;24 uur;Beschikbaarheid;24 uur
+7496;Hengevelde;Bentelosestraat 1;;;;Straatnaam;Bentelosestraat 1
+7496;Hengevelde;;7496PE;;;Postcode;7496PE
+7496;Hengevelde;;;Hengevelde;;Plaats;Hengevelde
+7496;Hengevelde;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7513;Enschede;M.H.Tromplaan 47;;;;Straatnaam;M.H.Tromplaan 47
+7513;Enschede;;7513AB;;;Postcode;7513AB
+7513;Enschede;;;Enschede;;Plaats;Enschede
+7513;Enschede;;;;24 uur;Beschikbaarheid;24 uur
+7521;Enschede;Hengelosestraat  705;;;;Straatnaam;Hengelosestraat  705
+7521;Enschede;;7521PA;;;Postcode;7521PA
+7521;Enschede;;;Enschede;;Plaats;Enschede
+7521;Enschede;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7524;Lonneker;Oldenzaalsestraat 726;;;;Straatnaam;Oldenzaalsestraat 726
+7524;Lonneker;;7524AG;;;Postcode;7524AG
+7524;Lonneker;;;Lonneker;;Plaats;Lonneker
+7524;Lonneker;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7556;Hengelo;Demmersweg 55;;;;Straatnaam;Demmersweg 55
+7556;Hengelo;;7556BN;;;Postcode;7556BN
+7556;Hengelo;;;Hengelo;;Plaats;Hengelo
+7556;Hengelo;;;;24 uur;Beschikbaarheid;24 uur
+7561;Deurningen;Hengelosestraat  6;;;;Straatnaam;Hengelosestraat  6
+7561;Deurningen;;7561RT;;;Postcode;7561RT
+7561;Deurningen;;;Deurningen;;Plaats;Deurningen
+7561;Deurningen;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7577;Oldenzaal;Zandbreeweg 16;;;;Straatnaam;Zandbreeweg 16
+7577;Oldenzaal;;7577BZ;;;Postcode;7577BZ
+7577;Oldenzaal;;;Oldenzaal;;Plaats;Oldenzaal
+7577;Oldenzaal;;;;24 uur;Beschikbaarheid;24 uur
+7595;Weerselo;De Aanleg 2;;;;Straatnaam;De Aanleg 2
+7595;Weerselo;;7595AP;;;Postcode;7595AP
+7595;Weerselo;;;Weerselo;;Plaats;Weerselo
+7595;Weerselo;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7609;Almelo;Nieuwe Witvoet 2;;;;Straatnaam;Nieuwe Witvoet 2
+7609;Almelo;;7609NE;;;Postcode;7609NE
+7609;Almelo;;;Almelo;;Plaats;Almelo
+7609;Almelo;;;;24 uur;Beschikbaarheid;24 uur
+7625;Zenderen;Hoofdstraat 6;;;;Straatnaam;Hoofdstraat 6
+7625;Zenderen;;7625PD;;;Postcode;7625PD
+7625;Zenderen;;;Zenderen;;Plaats;Zenderen
+7625;Zenderen;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7642;Wierden;Rijssenseweg 61;;;;Straatnaam;Rijssenseweg 61
+7642;Wierden;;7642CW;;;Postcode;7642CW
+7642;Wierden;;;Wierden;;Plaats;Wierden
+7642;Wierden;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7651;Tubbergen;Boskampstraat 35;;;;Straatnaam;Boskampstraat 35
+7651;Tubbergen;;7651AL;;;Postcode;7651AL
+7651;Tubbergen;;;Tubbergen;;Plaats;Tubbergen
+7651;Tubbergen;;;;24 uur;Beschikbaarheid;24 uur
+7666;Fleringen;Oldenzaalseweg 86;;;;Straatnaam;Oldenzaalseweg 86
+7666;Fleringen;;7666LH;;;Postcode;7666LH
+7666;Fleringen;;;Fleringen;;Plaats;Fleringen
+7666;Fleringen;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7671;Vriezenveen;Zuivering 30;;;;Straatnaam;Zuivering 30
+7671;Vriezenveen;;7671SP;;;Postcode;7671SP
+7671;Vriezenveen;;;Vriezenveen;;Plaats;Vriezenveen
+7671;Vriezenveen;;;;24 uur DAM/VWS;Beschikbaarheid;24 uur DAM/VWS
+7681;Vroomshoop;AziÃ«laan 2;;;;Straatnaam;AziÃ«laan 2
+7681;Vroomshoop;;7681NC;;;Postcode;7681NC
+7681;Vroomshoop;;;Vroomshoop;;Plaats;Vroomshoop
+7681;Vroomshoop;;;;24 uur;Beschikbaarheid;24 uur
+7701;Dedemsvaart;Langewijk 124A;;;;Straatnaam;Langewijk 124A
+7701;Dedemsvaart;;7701AH;;;Postcode;7701AH
+7701;Dedemsvaart;;;Dedemsvaart;;Plaats;Dedemsvaart
+7701;Dedemsvaart;;;;24 uur;Beschikbaarheid;24 uur
+7731;Ommen;Balkerweg 22D;;;;Straatnaam;Balkerweg 22D
+7731;Ommen;;7731RZ;;;Postcode;7731RZ
+7731;Ommen;;;Ommen;;Plaats;Ommen
+7731;Ommen;;;;24 uur;Beschikbaarheid;24 uur
+7741;Coevorden;Hulsvoorderdijk 4;;;;Straatnaam;Hulsvoorderdijk 4
+7741;Coevorden;;7741CX;;;Postcode;7741CX
+7741;Coevorden;;;Coevorden;;Plaats;Coevorden
+7741;Coevorden;;;;24 uur;Beschikbaarheid;24 uur
+7772;Hardenberg;Jan Weitkamplaan 4A;;;;Straatnaam;Jan Weitkamplaan 4A
+7772;Hardenberg;;7772SG;;;Postcode;7772SG
+7772;Hardenberg;;;Hardenberg;;Plaats;Hardenberg
+7772;Hardenberg;;;;24 uur;Beschikbaarheid;24 uur
+7812;Emmen;Waanderweg 200;;;;Straatnaam;Waanderweg 200
+7812;Emmen;;7812HZ;;;Postcode;7812HZ
+7812;Emmen;;;Emmen;;Plaats;Emmen
+7812;Emmen;;;;24 uur;Beschikbaarheid;24 uur
+7824;Emmen-ziekenhuis;Boermarkeweg 60;;;;Straatnaam;Boermarkeweg 60
+7824;Emmen-ziekenhuis;;7824AA;;;Postcode;7824AA
+7824;Emmen-ziekenhuis;;;Emmen-ziekenhuis;;Plaats;Emmen-ziekenhuis
+7824;Emmen-ziekenhuis;;;;Dag/avond;Beschikbaarheid;Dag/avond
+7881;Emmen-Noord;Kanaal B ZZ 55;;;;Straatnaam;Kanaal B ZZ 55
+7881;Emmen-Noord;;7881NB;;;Postcode;7881NB
+7881;Emmen-Noord;;;Emmen-Noord;;Plaats;Emmen-Noord
+7881;Emmen-Noord;;;;24 uur;Beschikbaarheid;24 uur
+7891;Klazienaveen;Doorndistel 15;;;;Straatnaam;Doorndistel 15
+7891;Klazienaveen;;7891WV;;;Postcode;7891WV
+7891;Klazienaveen;;;Klazienaveen;;Plaats;Klazienaveen
+7891;Klazienaveen;;;;24 uur;Beschikbaarheid;24 uur
+7909;Hoogeveen;Dr.G.H.Amshoffweg 1;;;;Straatnaam;Dr.G.H.Amshoffweg 1
+7909;Hoogeveen;;7909AA;;;Postcode;7909AA
+7909;Hoogeveen;;;Hoogeveen;;Plaats;Hoogeveen
+7909;Hoogeveen;;;;24 uur;Beschikbaarheid;24 uur
+7943;Meppel;Hoogeveenseweg 38;;;;Straatnaam;Hoogeveenseweg 38
+7943;Meppel;;7943KA;;;Postcode;7943KA
+7943;Meppel;;;Meppel;;Plaats;Meppel
+7943;Meppel;;;;24 uur;Beschikbaarheid;24 uur
+7954;Rouveen;Oude Rijksweg 502B;;;;Straatnaam;Oude Rijksweg 502B
+7954;Rouveen;;7954GG;;;Postcode;7954GG
+7954;Rouveen;;;Rouveen;;Plaats;Rouveen
+7954;Rouveen;;;;24 uur;Beschikbaarheid;24 uur
+7984;Dieverbrug;De Wringen 25a;;;;Straatnaam;De Wringen 25a
+7984;Dieverbrug;;7984NL;;;Postcode;7984NL
+7984;Dieverbrug;;;Dieverbrug;;Plaats;Dieverbrug
+7984;Dieverbrug;;;;24 uur;Beschikbaarheid;24 uur
+8013;Zwolle;Voltastraat 3A;;;;Straatnaam;Voltastraat 3A
+8013;Zwolle;;8013PM;;;Postcode;8013PM
+8013;Zwolle;;;Zwolle;;Plaats;Zwolle
+8013;Zwolle;;;;24 uur;Beschikbaarheid;24 uur
+8043;Zwolle West;Nijenhuislaan 175;;;;Straatnaam;Nijenhuislaan 175
+8043;Zwolle West;;8043WB;;;Postcode;8043WB
+8043;Zwolle West;;;Zwolle West;;Plaats;Zwolle West
+8043;Zwolle West;;;;24 uur;Beschikbaarheid;24 uur
+8064;Zwartsluis;Zomerdijk 41A;;;;Straatnaam;Zomerdijk 41A
+8064;Zwartsluis;;8064XB;;;Postcode;8064XB
+8064;Zwartsluis;;;Zwartsluis;;Plaats;Zwartsluis
+8064;Zwartsluis;;;;24 uur;Beschikbaarheid;24 uur
+8081;Elburg;Oostelijke Rondweg 1;;;;Straatnaam;Oostelijke Rondweg 1
+8081;Elburg;;8081RT;;;Postcode;8081RT
+8081;Elburg;;;Elburg;;Plaats;Elburg
+8081;Elburg;;;;24 uur;Beschikbaarheid;24 uur
+8103;Raalte;Weidelaan 2B;;;;Straatnaam;Weidelaan 2B
+8103;Raalte;;8103NA;;;Postcode;8103NA
+8103;Raalte;;;Raalte;;Plaats;Raalte
+8103;Raalte;;;;24 uur;Beschikbaarheid;24 uur
+8181;Heerde;Zwarteweg 4A;;;;Straatnaam;Zwarteweg 4A
+8181;Heerde;;8181PD;;;Postcode;8181PD
+8181;Heerde;;;Heerde;;Plaats;Heerde
+8181;Heerde;;;;24 uur;Beschikbaarheid;24 uur
+8233;Lelystad;Gordiaandreef 99;;;;Straatnaam;Gordiaandreef 99
+8233;Lelystad;;8233AB;;;Postcode;8233AB
+8233;Lelystad;;;Lelystad;;Plaats;Lelystad
+8233;Lelystad;;;;24 uur;Beschikbaarheid;24 uur
+8251;Dronten;De Noord 34;;;;Straatnaam;De Noord 34
+8251;Dronten;;8251KP;;;Postcode;8251KP
+8251;Dronten;;;Dronten;;Plaats;Dronten
+8251;Dronten;;;;24 uur;Beschikbaarheid;24 uur
+8271;IJsselmuiden;Kleiland 8;;;;Straatnaam;Kleiland 8
+8271;IJsselmuiden;;8271RV;;;Postcode;8271RV
+8271;IJsselmuiden;;;IJsselmuiden;;Plaats;IJsselmuiden
+8271;IJsselmuiden;;;;24 uur;Beschikbaarheid;24 uur
+8304;Emmeloord;Nagelerweg 3;;;;Straatnaam;Nagelerweg 3
+8304;Emmeloord;;8304AB;;;Postcode;8304AB
+8304;Emmeloord;;;Emmeloord;;Plaats;Emmeloord
+8304;Emmeloord;;;;24 uur;Beschikbaarheid;24 uur
+8321;Urk;Malzwin 1;;;;Straatnaam;Malzwin 1
+8321;Urk;;8321MX;;;Postcode;8321MX
+8321;Urk;;;Urk;;Plaats;Urk
+8321;Urk;;;;24 uur;Beschikbaarheid;24 uur
+8331;Steenwijk;Vendelweg 3A;;;;Straatnaam;Vendelweg 3A
+8331;Steenwijk;;8331XE;;;Postcode;8331XE
+8331;Steenwijk;;;Steenwijk;;Plaats;Steenwijk
+8331;Steenwijk;;;;24 uur;Beschikbaarheid;24 uur
+8414;Nieuwehorne;Achtste Wijk 1a;;;;Straatnaam;Achtste Wijk 1a
+8414;Nieuwehorne;;8414NA;;;Postcode;8414NA
+8414;Nieuwehorne;;;Nieuwehorne;;Plaats;Nieuwehorne
+8414;Nieuwehorne;;;;Dag/avond;Beschikbaarheid;Dag/avond
+8431;Oosterwolde;Veengang 27;;;;Straatnaam;Veengang 27
+8431;Oosterwolde;;8431NJ;;;Postcode;8431NJ
+8431;Oosterwolde;;;Oosterwolde;;Plaats;Oosterwolde
+8431;Oosterwolde;;;;24 uur;Beschikbaarheid;24 uur
+8448;Heerenveen;Venus 3;;;;Straatnaam;Venus 3
+8448;Heerenveen;;8448CE;;;Postcode;8448CE
+8448;Heerenveen;;;Heerenveen;;Plaats;Heerenveen
+8448;Heerenveen;;;;24 uur;Beschikbaarheid;24 uur
+8472;Wolvega;Zeeweegbree 3;;;;Straatnaam;Zeeweegbree 3
+8472;Wolvega;;8472BD;;;Postcode;8472BD
+8472;Wolvega;;;Wolvega;;Plaats;Wolvega
+8472;Wolvega;;;;24 uur;Beschikbaarheid;24 uur
+8503;Joure;Morseweg 17;;;;Straatnaam;Morseweg 17
+8503;Joure;;8503AH;;;Postcode;8503AH
+8503;Joure;;;Joure;;Plaats;Joure
+8503;Joure;;;;24 uur;Beschikbaarheid;24 uur
+8531;Lemmer;Houtsaachmolen 13b;;;;Straatnaam;Houtsaachmolen 13b
+8531;Lemmer;;8531WC;;;Postcode;8531WC
+8531;Lemmer;;;Lemmer;;Plaats;Lemmer
+8531;Lemmer;;;;24 uur;Beschikbaarheid;24 uur
+8601;Sneek;Bolswarderbaan 1;;;;Straatnaam;Bolswarderbaan 1
+8601;Sneek;;8601ZK;;;Postcode;8601ZK
+8601;Sneek;;;Sneek;;Plaats;Sneek
+8601;Sneek;;;;24 uur;Beschikbaarheid;24 uur
+8701;Bolsward;Snekerweg 3b;;;;Straatnaam;Snekerweg 3b
+8701;Bolsward;;8701PZ;;;Postcode;8701PZ
+8701;Bolsward;;;Bolsward;;Plaats;Bolsward
+8701;Bolsward;;;;24 uur;Beschikbaarheid;24 uur
+8723;Koudum;T. van der Walstraat 32;;;;Straatnaam;T. van der Walstraat 32
+8723;Koudum;;8723CA;;;Postcode;8723CA
+8723;Koudum;;;Koudum;;Plaats;Koudum
+8723;Koudum;;;;24 uur;Beschikbaarheid;24 uur
+8802;Franeker;Het Want 16;;;;Straatnaam;Het Want 16
+8802;Franeker;;8802PV;;;Postcode;8802PV
+8802;Franeker;;;Franeker;;Plaats;Franeker
+8802;Franeker;;;;24 uur;Beschikbaarheid;24 uur
+8861;Harlingen;Rijksweg 8;;;;Straatnaam;Rijksweg 8
+8861;Harlingen;;8861NL;;;Postcode;8861NL
+8861;Harlingen;;;Harlingen;;Plaats;Harlingen
+8861;Harlingen;;;;24 uur;Beschikbaarheid;24 uur
+8881;Terschelling;Burg. Reedekerstraat 21;;;;Straatnaam;Burg. Reedekerstraat 21
+8881;Terschelling;;8881BZ;;;Postcode;8881BZ
+8881;Terschelling;;;Terschelling;;Plaats;Terschelling
+8881;Terschelling;;;;24 uur;Beschikbaarheid;24 uur
+8899;Vlieland;Berkenlaan 13a;;;;Straatnaam;Berkenlaan 13a
+8899;Vlieland;;8899BP;;;Postcode;8899BP
+8899;Vlieland;;;Vlieland;;Plaats;Vlieland
+8899;Vlieland;;;;24 uur;Beschikbaarheid;24 uur
+8924;Leeuwarden (Elzenstraat);Elzenstraat 1c;;;;Straatnaam;Elzenstraat 1c
+8924;Leeuwarden (Elzenstraat);;8924JN;;;Postcode;8924JN
+8924;Leeuwarden (Elzenstraat);;;Leeuwarden (Elzenstraat);;Plaats;Leeuwarden (Elzenstraat)
+8924;Leeuwarden (Elzenstraat);;;;24 uur;Beschikbaarheid;24 uur
+8932;Leeuwarden (Oostergoweg);Oostergoweg 14;;;;Straatnaam;Oostergoweg 14
+8932;Leeuwarden (Oostergoweg);;8932PG;;;Postcode;8932PG
+8932;Leeuwarden (Oostergoweg);;;Leeuwarden (Oostergoweg);;Plaats;Leeuwarden (Oostergoweg)
+8932;Leeuwarden (Oostergoweg);;;;24 uur;Beschikbaarheid;24 uur
+9001;Grou;Biensma 4;;;;Straatnaam;Biensma 4
+9001;Grou;;9001ZZ;;;Postcode;9001ZZ
+9001;Grou;;;Grou;;Plaats;Grou
+9001;Grou;;;;Dag/avond;Beschikbaarheid;Dag/avond
+9051;Stiens;Seefugel 1-A;;;;Straatnaam;Seefugel 1-A
+9051;Stiens;;9051VC;;;Postcode;9051VC
+9051;Stiens;;;Stiens;;Plaats;Stiens
+9051;Stiens;;;;Dag/avond;Beschikbaarheid;Dag/avond
+9101;Dokkum;Birdaarderstraatweg 80f;;;;Straatnaam;Birdaarderstraatweg 80f
+9101;Dokkum;;9101PK;;;Postcode;9101PK
+9101;Dokkum;;;Dokkum;;Plaats;Dokkum
+9101;Dokkum;;;;24 uur;Beschikbaarheid;24 uur
+9123;Metslawier;Oerslach 2a;;;;Straatnaam;Oerslach 2a
+9123;Metslawier;;9123KK;;;Postcode;9123KK
+9123;Metslawier;;;Metslawier;;Plaats;Metslawier
+9123;Metslawier;;;;24 uur;Beschikbaarheid;24 uur
+9163;Nes (Ameland);Ballummerweg 38a;;;;Straatnaam;Ballummerweg 38a
+9163;Nes (Ameland);;9163GB;;;Postcode;9163GB
+9163;Nes (Ameland);;;Nes (Ameland);;Plaats;Nes (Ameland)
+9163;Nes (Ameland);;;;24 uur;Beschikbaarheid;24 uur
+9166;Schiermonnikoog;Knuppeldam 6;;;;Straatnaam;Knuppeldam 6
+9166;Schiermonnikoog;;9166NZ;;;Postcode;9166NZ
+9166;Schiermonnikoog;;;Schiermonnikoog;;Plaats;Schiermonnikoog
+9166;Schiermonnikoog;;;;24 uur;Beschikbaarheid;24 uur
+9201;Drachten;Omloop 5;;;;Straatnaam;Omloop 5
+9201;Drachten;;9201CC;;;Postcode;9201CC
+9201;Drachten;;;Drachten;;Plaats;Drachten
+9201;Drachten;;;;Dag/avond;Beschikbaarheid;Dag/avond
+9207;Drachten;Ottolaan 2;;;;Straatnaam;Ottolaan 2
+9207;Drachten;;9207JR;;;Postcode;9207JR
+9207;Drachten;;;Drachten;;Plaats;Drachten
+9207;Drachten;;;;24 uur;Beschikbaarheid;24 uur
+9254;Hardegarijp;Rijksstraatweg 211;;;;Straatnaam;Rijksstraatweg 211
+9254;Hardegarijp;;9254DH;;;Postcode;9254DH
+9254;Hardegarijp;;;Hardegarijp;;Plaats;Hardegarijp
+9254;Hardegarijp;;;;24 uur;Beschikbaarheid;24 uur
+9285;Buitenpost;West 32;;;;Straatnaam;West 32
+9285;Buitenpost;;9285WC;;;Postcode;9285WC
+9285;Buitenpost;;;Buitenpost;;Plaats;Buitenpost
+9285;Buitenpost;;;;24 uur;Beschikbaarheid;24 uur
+9301;Roden;Zudden 2;;;;Straatnaam;Zudden 2
+9301;Roden;;9301ZM;;;Postcode;9301ZM
+9301;Roden;;;Roden;;Plaats;Roden
+9301;Roden;;;;24 uur;Beschikbaarheid;24 uur
+9365;Niebert;Grasweg 1b;;;;Straatnaam;Grasweg 1b
+9365;Niebert;;9365PP;;;Postcode;9365PP
+9365;Niebert;;;Niebert;;Plaats;Niebert
+9365;Niebert;;;;24 uur;Beschikbaarheid;24 uur
+9403;Assen Centrum;Dr. Philipsweg 15-A;;;;Straatnaam;Dr. Philipsweg 15-A
+9403;Assen Centrum;;9403AC;;;Postcode;9403AC
+9403;Assen Centrum;;;Assen Centrum;;Plaats;Assen Centrum
+9403;Assen Centrum;;;;Dag/avond;Beschikbaarheid;Dag/avond
+9405;Assen;Balkendwarsweg 1;;;;Straatnaam;Balkendwarsweg 1
+9405;Assen;;9405PT;;;Postcode;9405PT
+9405;Assen;;;Assen;;Plaats;Assen
+9405;Assen;;;;24 uur;Beschikbaarheid;24 uur
+9411;Beilen;Romhof 6;;;;Straatnaam;Romhof 6
+9411;Beilen;;9411SC;;;Postcode;9411SC
+9411;Beilen;;;Beilen;;Plaats;Beilen
+9411;Beilen;;;;24 uur;Beschikbaarheid;24 uur
+9468;Annen;Spijkerboorsdijk 3a;;;;Straatnaam;Spijkerboorsdijk 3a
+9468;Annen;;9468CG;;;Postcode;9468CG
+9468;Annen;;;Annen;;Plaats;Annen
+9468;Annen;;;;24 uur;Beschikbaarheid;24 uur
+9502;Stadskanaal;Veenstraat 8a;;;;Straatnaam;Veenstraat 8a
+9502;Stadskanaal;;9502EZ;;;Postcode;9502EZ
+9502;Stadskanaal;;;Stadskanaal;;Plaats;Stadskanaal
+9502;Stadskanaal;;;;24 uur;Beschikbaarheid;24 uur
+9531;Borger;IJzertijdstraat 3;;;;Straatnaam;IJzertijdstraat 3
+9531;Borger;;9531RA;;;Postcode;9531RA
+9531;Borger;;;Borger;;Plaats;Borger
+9531;Borger;;;;24 uur;Beschikbaarheid;24 uur
+9541;Vlagtwedde;Nieuweweg 1;;;;Straatnaam;Nieuweweg 1
+9541;Vlagtwedde;;9541EG;;;Postcode;9541EG
+9541;Vlagtwedde;;;Vlagtwedde;;Plaats;Vlagtwedde
+9541;Vlagtwedde;;;;Dag/avond;Beschikbaarheid;Dag/avond
+9561;Ter Apel;Industrieweg 9;;;;Straatnaam;Industrieweg 9
+9561;Ter Apel;;9561MB;;;Postcode;9561MB
+9561;Ter Apel;;;Ter Apel;;Plaats;Ter Apel
+9561;Ter Apel;;;;24 uur;Beschikbaarheid;24 uur
+9611;Sappemeer;De Vosholen 99;;;;Straatnaam;De Vosholen 99
+9611;Sappemeer;;9611TE;;;Postcode;9611TE
+9611;Sappemeer;;;Sappemeer;;Plaats;Sappemeer
+9611;Sappemeer;;;;24 uur;Beschikbaarheid;24 uur
+9641;Veendam;Van Stolbergweg 28;;;;Straatnaam;Van Stolbergweg 28
+9641;Veendam;;9641HL;;;Postcode;9641HL
+9641;Veendam;;;Veendam;;Plaats;Veendam
+9641;Veendam;;;;24 uur;Beschikbaarheid;24 uur
+9672;Winschoten;J.D. van der Veenstraat 30;;;;Straatnaam;J.D. van der Veenstraat 30
+9672;Winschoten;;9672AC;;;Postcode;9672AC
+9672;Winschoten;;;Winschoten;;Plaats;Winschoten
+9672;Winschoten;;;;24 uur;Beschikbaarheid;24 uur
+9723;Groningen Gotenburgweg;Gotenburgweg 40 ;;;;Straatnaam;Gotenburgweg 40 
+9723;Groningen Gotenburgweg;;9723TM;;;Postcode;9723TM
+9723;Groningen Gotenburgweg;;;Groningen Gotenburgweg;;Plaats;Groningen Gotenburgweg
+9723;Groningen Gotenburgweg;;;;24 uur;Beschikbaarheid;24 uur
+9741;Groningen-Noord;Kastanjelaan 2;;;;Straatnaam;Kastanjelaan 2
+9741;Groningen-Noord;;9741CP;;;Postcode;9741CP
+9741;Groningen-Noord;;;Groningen-Noord;;Plaats;Groningen-Noord
+9741;Groningen-Noord;;;;24 uur;Beschikbaarheid;24 uur
+9761;Eelde;Machlaan 14-A;;;;Straatnaam;Machlaan 14-A
+9761;Eelde;;9761TK;;;Postcode;9761TK
+9761;Eelde;;;Eelde;;Plaats;Eelde
+9761;Eelde;;;;Dag/avond;Beschikbaarheid;Dag/avond
+9902;Appingedam;Zwet 35;;;;Straatnaam;Zwet 35
+9902;Appingedam;;9902RM;;;Postcode;9902RM
+9902;Appingedam;;;Appingedam;;Plaats;Appingedam
+9902;Appingedam;;;;24 uur;Beschikbaarheid;24 uur
+9951;Winsum;Hoofdstraat  W 70;;;;Straatnaam;Hoofdstraat  W 70
+9951;Winsum;;9951AC;;;Postcode;9951AC
+9951;Winsum;;;Winsum;;Plaats;Winsum
+9951;Winsum;;;;Dag/avond;Beschikbaarheid;Dag/avond
+9965;Leens;R.Ritzemastraat 9E;;;;Straatnaam;R.Ritzemastraat 9E
+9965;Leens;;9965TD;;;Postcode;9965TD
+9965;Leens;;;Leens;;Plaats;Leens
+9965;Leens;;;;24 uur;Beschikbaarheid;24 uur
+9981;Uithuizen;Industrieweg 14a;;;;Straatnaam;Industrieweg 14a
+9981;Uithuizen;;9981HJ;;;Postcode;9981HJ
+9981;Uithuizen;;;Uithuizen;;Plaats;Uithuizen
+9981;Uithuizen;;;;24 uur;Beschikbaarheid;24 uur

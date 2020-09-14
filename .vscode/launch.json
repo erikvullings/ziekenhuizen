@@ -5,6 +5,24 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Isochrone",
+      "cwd": "${workspaceFolder}/packages/isochrone",
+      "program": "${workspaceFolder}/packages/isochrone/src/cli.js",
+      "request": "launch",
+      "args": [
+        "-c",
+        "5.496984, 51.468692",
+        "-n",
+        "http://127.0.0.1:5000",
+        "-s",
+        "0.1"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
       "type": "node",
       "request": "launch",
       "name": "Merge data",
@@ -51,6 +69,6 @@
       "args": [
         "${workspaceFolder}/packages/processing/src/processZiekenhuizen.ts"
       ]
-    }
+    },
   ]
 }

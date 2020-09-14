@@ -1,0 +1,2811 @@
+[
+  {
+    "Standplaats": "Amsterdam (post noord)",
+    "Straatnaam": "Statenjachtstraat",
+    "Huisnummer": "1c",
+    "Postcode": "1034CS",
+    "Plaats": "Amsterdam (post noord)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.40518251,
+    "lon": 4.92237849
+  },
+  {
+    "Standplaats": "Amsterdam (post west)",
+    "Straatnaam": "Jan Tooropstraat",
+    "Huisnummer": "170",
+    "Postcode": "1061AE",
+    "Plaats": "Amsterdam (post west)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.37026575,
+    "lon": 4.83946315
+  },
+  {
+    "Standplaats": "Amsterdam (Hoofdvestiging, post zuid)",
+    "Straatnaam": "Karperweg",
+    "Huisnummer": "19-25",
+    "Postcode": "1075LB",
+    "Plaats": "Amsterdam (Hoofdvestiging, post zuid)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.34812342,
+    "lon": 4.85554542
+  },
+  {
+    "Standplaats": "Amsterdam (post oost)",
+    "Straatnaam": "Oosterpark",
+    "Huisnummer": "9",
+    "Postcode": "1091AC",
+    "Plaats": "Amsterdam (post oost)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.35839551,
+    "lon": 4.9169157
+  },
+  {
+    "Standplaats": "Amsterdam Zuidoost",
+    "Straatnaam": "Meibergdreef",
+    "Huisnummer": "9",
+    "Postcode": "1105AZ",
+    "Plaats": "Amsterdam Zuidoost",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.29498987,
+    "lon": 4.9579127
+  },
+  {
+    "Standplaats": "Monnickendam",
+    "Straatnaam": "De Werf",
+    "Huisnummer": "1",
+    "Postcode": "1141HL",
+    "Plaats": "Monnickendam",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.45653732,
+    "lon": 5.03859647
+  },
+  {
+    "Standplaats": "Amstelveen",
+    "Straatnaam": "Spinnerij",
+    "Huisnummer": "15",
+    "Postcode": "1185ZN",
+    "Plaats": "Amstelveen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.28394498,
+    "lon": 4.83731726
+  },
+  {
+    "Standplaats": "Post Zuid (Hilversum)",
+    "Straatnaam": "Laan van Tergooi",
+    "Huisnummer": "6",
+    "Postcode": "1212VG",
+    "Plaats": "Post Zuid (Hilversum)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.2132805,
+    "lon": 5.19939431
+  },
+  {
+    "Standplaats": "Post Noord (Blaricum)",
+    "Straatnaam": "Rijksstraatweg",
+    "Huisnummer": "1a",
+    "Postcode": "1261AN",
+    "Plaats": "Post Noord (Blaricum)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.2664679,
+    "lon": 5.20865993
+  },
+  {
+    "Standplaats": "Almere",
+    "Straatnaam": "Boomgaardweg",
+    "Huisnummer": "4",
+    "Postcode": "1326AC",
+    "Plaats": "Almere",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.37322426,
+    "lon": 5.23697429
+  },
+  {
+    "Standplaats": "Post Vechtstreek (Weesp)",
+    "Straatnaam": "Aetsveldselaan",
+    "Huisnummer": "65",
+    "Postcode": "1381CZ",
+    "Plaats": "Post Vechtstreek (Weesp)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.30257071,
+    "lon": 5.04497734
+  },
+  {
+    "Standplaats": "Aalsmeer",
+    "Straatnaam": "Zwarteweg 77",
+    "Huisnummer": "A",
+    "Postcode": "1431VJ",
+    "Plaats": "Aalsmeer",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.25828559,
+    "lon": 4.76241846
+  },
+  {
+    "Standplaats": "Purmerend",
+    "Straatnaam": "Cantekoogweg",
+    "Huisnummer": "17",
+    "Postcode": "1442LG",
+    "Plaats": "Purmerend",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.51672834,
+    "lon": 4.97393226
+  },
+  {
+    "Standplaats": "Zaandam",
+    "Straatnaam": "Heijermansstraat",
+    "Huisnummer": "76",
+    "Postcode": "1502DR",
+    "Plaats": "Zaandam",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.45148429,
+    "lon": 4.82682457
+  },
+  {
+    "Standplaats": "Wormerveer",
+    "Straatnaam": "Industrieweg",
+    "Huisnummer": "1c",
+    "Postcode": "1521NA",
+    "Plaats": "Wormerveer",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.49661637,
+    "lon": 4.7751983
+  },
+  {
+    "Standplaats": "Hoogkarspel",
+    "Straatnaam": "Sluisweg",
+    "Huisnummer": "8",
+    "Postcode": "1616RT",
+    "Plaats": "Hoogkarspel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.69897574,
+    "lon": 5.17967688
+  },
+  {
+    "Standplaats": "Wognum",
+    "Straatnaam": "Nieuweweg",
+    "Huisnummer": "24b",
+    "Postcode": "1687BA",
+    "Plaats": "Wognum",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.69348692,
+    "lon": 5.02633191
+  },
+  {
+    "Standplaats": "Noord-Scharwoude",
+    "Straatnaam": "De Mossel",
+    "Huisnummer": "23a",
+    "Postcode": "1723HX",
+    "Plaats": "Noord-Scharwoude",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.70501076,
+    "lon": 4.80671092
+  },
+  {
+    "Standplaats": "Schagen",
+    "Straatnaam": "Lagedijkerweg",
+    "Huisnummer": "19b",
+    "Postcode": "1742NB",
+    "Plaats": "Schagen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.79367005,
+    "lon": 4.78322976
+  },
+  {
+    "Standplaats": "Wieringerwerf",
+    "Straatnaam": "Dr. Tamsmalaan",
+    "Huisnummer": "3",
+    "Postcode": "1771AB",
+    "Plaats": "Wieringerwerf",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.84782619,
+    "lon": 5.02495549
+  },
+  {
+    "Standplaats": "Den Helder",
+    "Straatnaam": "Schrijnwerkersweg",
+    "Huisnummer": "12",
+    "Postcode": "1786PC",
+    "Plaats": "Den Helder",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.9129827,
+    "lon": 4.78335423
+  },
+  {
+    "Standplaats": "Texel (Den Burg)",
+    "Straatnaam": "Pontweg",
+    "Huisnummer": "100",
+    "Postcode": "1791LB",
+    "Plaats": "Texel (Den Burg)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.05545418,
+    "lon": 4.78685728
+  },
+  {
+    "Standplaats": "Alkmaar Zuid",
+    "Straatnaam": "Diamantweg",
+    "Huisnummer": "24f",
+    "Postcode": "1812RC",
+    "Plaats": "Alkmaar Zuid",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.60228785,
+    "lon": 4.7533047
+  },
+  {
+    "Standplaats": "Alkmaar Noord",
+    "Straatnaam": "Hertog Aalbrechtweg",
+    "Huisnummer": "8",
+    "Postcode": "1823DL",
+    "Plaats": "Alkmaar Noord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.64445399,
+    "lon": 4.76742661
+  },
+  {
+    "Standplaats": "Heemskerk",
+    "Straatnaam": "Strengweg",
+    "Huisnummer": "4",
+    "Postcode": "1969MG",
+    "Plaats": "Heemskerk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.50729159,
+    "lon": 4.65326833
+  },
+  {
+    "Standplaats": "Velsen",
+    "Straatnaam": "Amsterdamseweg",
+    "Huisnummer": "12",
+    "Postcode": "1981LE",
+    "Plaats": "Velsen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.4583662,
+    "lon": 4.66088601
+  },
+  {
+    "Standplaats": "Haarlem",
+    "Straatnaam": "Zijlweg",
+    "Huisnummer": "200",
+    "Postcode": "2015CK",
+    "Plaats": "Haarlem",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.38617226,
+    "lon": 4.61651492
+  },
+  {
+    "Standplaats": "Haarlem-Oost",
+    "Straatnaam": "Floris van Adrichemlaan",
+    "Huisnummer": "90",
+    "Postcode": "2035VD",
+    "Plaats": "Haarlem-Oost",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.36429858,
+    "lon": 4.65873689
+  },
+  {
+    "Standplaats": "Zandvoort",
+    "Straatnaam": "Duinstraat",
+    "Huisnummer": "5",
+    "Postcode": "2042HC",
+    "Plaats": "Zandvoort",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.37097873,
+    "lon": 4.52731286
+  },
+  {
+    "Standplaats": "Hoofddorp",
+    "Straatnaam": "Jacobus  Spijkerdreef",
+    "Huisnummer": "400",
+    "Postcode": "2132PZ",
+    "Plaats": "Hoofddorp",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.29142826,
+    "lon": 4.67543077
+  },
+  {
+    "Standplaats": "Hoofddorp",
+    "Straatnaam": "Spaarnepoort",
+    "Huisnummer": "1",
+    "Postcode": "2134TM",
+    "Plaats": "Hoofddorp",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.32442381,
+    "lon": 4.65351525
+  },
+  {
+    "Standplaats": "Hillegom",
+    "Straatnaam": "Hyacinthenlaan",
+    "Huisnummer": "1",
+    "Postcode": "2182DT",
+    "Plaats": "Hillegom",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.2785074,
+    "lon": 4.57086813
+  },
+  {
+    "Standplaats": "Noordwijk",
+    "Straatnaam": "Van Berckelweg",
+    "Huisnummer": "34a",
+    "Postcode": "2203LB",
+    "Plaats": "Noordwijk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.22836747,
+    "lon": 4.46494067
+  },
+  {
+    "Standplaats": "Wassenaar",
+    "Straatnaam": "Hofcampweg",
+    "Huisnummer": "102",
+    "Postcode": "2241KJ",
+    "Plaats": "Wassenaar",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.1441371,
+    "lon": 4.40546323
+  },
+  {
+    "Standplaats": "Leidschendam-Voorburg",
+    "Straatnaam": "Via Donizetti",
+    "Huisnummer": "1",
+    "Postcode": "2272VK",
+    "Plaats": "Leidschendam-Voorburg",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.08808502,
+    "lon": 4.37637
+  },
+  {
+    "Standplaats": "Leiden",
+    "Straatnaam": "Vondellaan",
+    "Huisnummer": "43",
+    "Postcode": "2332AA",
+    "Plaats": "Leiden",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.16248528,
+    "lon": 4.47417232
+  },
+  {
+    "Standplaats": "Leiderdorp",
+    "Straatnaam": "Simon Smitweg",
+    "Huisnummer": "1a",
+    "Postcode": "2353GA",
+    "Plaats": "Leiderdorp",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.15652128,
+    "lon": 4.54083128
+  },
+  {
+    "Standplaats": "Alphen aan den Rijn",
+    "Straatnaam": "Vorkweg",
+    "Huisnummer": "2",
+    "Postcode": "2408ZD",
+    "Plaats": "Alphen aan den Rijn",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.1153111,
+    "lon": 4.66528893
+  },
+  {
+    "Standplaats": "Nieuwveen",
+    "Straatnaam": "Schoterhoek",
+    "Huisnummer": "2a",
+    "Postcode": "2441LD",
+    "Plaats": "Nieuwveen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.18633445,
+    "lon": 4.75907619
+  },
+  {
+    "Standplaats": "Den Haag (Waldorpstraat)",
+    "Straatnaam": "Waldorpstraat",
+    "Huisnummer": "555",
+    "Postcode": "2521CK",
+    "Plaats": "Den Haag (Waldorpstraat)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.05651461,
+    "lon": 4.30989028
+  },
+  {
+    "Standplaats": "Den Haag",
+    "Straatnaam": "Mangaanstraat",
+    "Huisnummer": "86",
+    "Postcode": "2544DW",
+    "Plaats": "Den Haag",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.04964138,
+    "lon": 4.25137606
+  },
+  {
+    "Standplaats": "Delft",
+    "Straatnaam": "Krakeelpolderweg",
+    "Huisnummer": "51",
+    "Postcode": "2613NW",
+    "Plaats": "Delft",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.002536,
+    "lon": 4.35323155
+  },
+  {
+    "Standplaats": "Berkel en Rodenrijs",
+    "Straatnaam": "Berkelsepoort",
+    "Huisnummer": "25",
+    "Postcode": "2651JX",
+    "Plaats": "Berkel en Rodenrijs",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.98909894,
+    "lon": 4.4775172
+  },
+  {
+    "Standplaats": "Naaldwijk (Westland)",
+    "Straatnaam": "Galgeweg",
+    "Huisnummer": "9",
+    "Postcode": "2671MV",
+    "Plaats": "Naaldwijk (Westland)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.98800679,
+    "lon": 4.19860373
+  },
+  {
+    "Standplaats": "Zoetermeer",
+    "Straatnaam": "Brusselstraat",
+    "Huisnummer": "4",
+    "Postcode": "2711AJ",
+    "Plaats": "Zoetermeer",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.0620007,
+    "lon": 4.48772954
+  },
+  {
+    "Standplaats": "Zoetermeer",
+    "Straatnaam": "Roodlaan",
+    "Huisnummer": "290",
+    "Postcode": "2718SK",
+    "Plaats": "Zoetermeer",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.03486696,
+    "lon": 4.49427784
+  },
+  {
+    "Standplaats": "Gouda",
+    "Straatnaam": "Zuider IJsseldijk",
+    "Huisnummer": "50",
+    "Postcode": "2808PB",
+    "Plaats": "Gouda",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.00646872,
+    "lon": 4.72219624
+  },
+  {
+    "Standplaats": "Moordrecht",
+    "Straatnaam": "Middelweg",
+    "Huisnummer": "18D",
+    "Postcode": "2841LA",
+    "Plaats": "Moordrecht",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.00261916,
+    "lon": 4.65190785
+  },
+  {
+    "Standplaats": "Capelle aan den Ijssel",
+    "Straatnaam": "Slotlaan",
+    "Huisnummer": "121",
+    "Postcode": "2902AP",
+    "Plaats": "Capelle aan den Ijssel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.92467271,
+    "lon": 4.57840619
+  },
+  {
+    "Standplaats": "Nederlek",
+    "Straatnaam": "C.G. Roosweg",
+    "Huisnummer": "150",
+    "Postcode": "2941LH",
+    "Plaats": "Nederlek",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.92930131,
+    "lon": 4.71768737
+  },
+  {
+    "Standplaats": "Molenwaard",
+    "Straatnaam": "Middenpolderweg",
+    "Huisnummer": "63b",
+    "Postcode": "2959LB",
+    "Plaats": "Molenwaard",
+    "Beschikbaarheid": "Nacht",
+    "lat": 51.88763664,
+    "lon": 4.73884609
+  },
+  {
+    "Standplaats": "Barendrecht",
+    "Straatnaam": "Breslau",
+    "Huisnummer": "2",
+    "Postcode": "2993LT",
+    "Plaats": "Barendrecht",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.8542968,
+    "lon": 4.51328891
+  },
+  {
+    "Standplaats": "Rotterdam-Centrum",
+    "Straatnaam": "Schiedamsedijk",
+    "Huisnummer": "95",
+    "Postcode": "3011TP",
+    "Plaats": "Rotterdam-Centrum",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.91828701,
+    "lon": 4.48840087
+  },
+  {
+    "Standplaats": "Rotterdam-Noord",
+    "Straatnaam": "Brugwachter",
+    "Huisnummer": "12",
+    "Postcode": "3034KD",
+    "Plaats": "Rotterdam-Noord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.94064921,
+    "lon": 4.49602736
+  },
+  {
+    "Standplaats": "Rotterdam - Zuid",
+    "Straatnaam": "Maasstadweg",
+    "Huisnummer": "21",
+    "Postcode": "3079DZ",
+    "Plaats": "Rotterdam - Zuid",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.87997362,
+    "lon": 4.53507811
+  },
+  {
+    "Standplaats": "Schiedam",
+    "Straatnaam": "Zoomweg",
+    "Huisnummer": "20",
+    "Postcode": "3123EP",
+    "Plaats": "Schiedam",
+    "Beschikbaarheid": "Opkomst",
+    "lat": 51.93618807,
+    "lon": 4.36442265
+  },
+  {
+    "Standplaats": "Vlaardingen",
+    "Straatnaam": "Hoogstad",
+    "Huisnummer": "501",
+    "Postcode": "3131KX",
+    "Plaats": "Vlaardingen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.91770603,
+    "lon": 4.33806904
+  },
+  {
+    "Standplaats": "Maasvlakte",
+    "Straatnaam": "Coloradoweg",
+    "Huisnummer": "20",
+    "Postcode": "3199LA",
+    "Plaats": "Maasvlakte",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.955631,
+    "lon": 4.02727124
+  },
+  {
+    "Standplaats": "Spijkenisse",
+    "Straatnaam": "Schenkelweg",
+    "Huisnummer": "90",
+    "Postcode": "3203LE",
+    "Plaats": "Spijkenisse",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.84263131,
+    "lon": 4.34506727
+  },
+  {
+    "Standplaats": "Hellevoetsluis",
+    "Straatnaam": "Zwartedijk",
+    "Huisnummer": "2",
+    "Postcode": "3222LM",
+    "Plaats": "Hellevoetsluis",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.85810211,
+    "lon": 4.12007073
+  },
+  {
+    "Standplaats": "Brielle",
+    "Straatnaam": "Amer",
+    "Huisnummer": "7",
+    "Postcode": "3232HA",
+    "Plaats": "Brielle",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.89841611,
+    "lon": 4.17183615
+  },
+  {
+    "Standplaats": "Dirksland",
+    "Straatnaam": "Watertoren",
+    "Huisnummer": "45D",
+    "Postcode": "3247CL",
+    "Plaats": "Dirksland",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.75002664,
+    "lon": 4.11882761
+  },
+  {
+    "Standplaats": "Goedereede",
+    "Straatnaam": "Provincialeweg",
+    "Huisnummer": "18a",
+    "Postcode": "3252LR",
+    "Plaats": "Goedereede",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.81667561,
+    "lon": 3.98440422
+  },
+  {
+    "Standplaats": "Oude Tonge",
+    "Straatnaam": "Tramweg",
+    "Huisnummer": "3",
+    "Postcode": "3255MB",
+    "Plaats": "Oude Tonge",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.69426202,
+    "lon": 4.22054619
+  },
+  {
+    "Standplaats": "Klaaswaal",
+    "Straatnaam": "Molendijk",
+    "Huisnummer": "57",
+    "Postcode": "3286BG",
+    "Plaats": "Klaaswaal",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.77515576,
+    "lon": 4.43989818
+  },
+  {
+    "Standplaats": "Dordrecht",
+    "Straatnaam": "Romboutslaan",
+    "Huisnummer": "105",
+    "Postcode": "3312KP",
+    "Plaats": "Dordrecht",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.79811457,
+    "lon": 4.68269325
+  },
+  {
+    "Standplaats": "Zwijndrecht",
+    "Straatnaam": "",
+    "Huisnummer": "85",
+    "Postcode": "3331HA",
+    "Plaats": "Zwijndrecht",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.82477096,
+    "lon": 4.62949223
+  },
+  {
+    "Standplaats": "Papendrecht",
+    "Straatnaam": "Vliedberg",
+    "Huisnummer": "2",
+    "Postcode": "3356GA",
+    "Plaats": "Papendrecht",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.83340129,
+    "lon": 4.73407376
+  },
+  {
+    "Standplaats": "Montfoort",
+    "Straatnaam": "Willeskop",
+    "Huisnummer": "94",
+    "Postcode": "3417ME",
+    "Plaats": "Montfoort",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.03053457,
+    "lon": 4.92928955
+  },
+  {
+    "Standplaats": "Nieuwegein",
+    "Straatnaam": "Nevelgaarde",
+    "Huisnummer": "1",
+    "Postcode": "3436ZZ",
+    "Plaats": "Nieuwegein",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.02813203,
+    "lon": 5.068277
+  },
+  {
+    "Standplaats": "Woerden",
+    "Straatnaam": "Polanerbaan",
+    "Huisnummer": "2",
+    "Postcode": "3447GN",
+    "Plaats": "Woerden",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.0798921,
+    "lon": 4.89182613
+  },
+  {
+    "Standplaats": "Utrecht (Vader Rijndreef)",
+    "Straatnaam": "Vader Rijndreef",
+    "Huisnummer": "1",
+    "Postcode": "3561XB",
+    "Plaats": "Utrecht (Vader Rijndreef)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.1090486,
+    "lon": 5.11444782
+  },
+  {
+    "Standplaats": "Utrecht (Andreaelaan)",
+    "Straatnaam": "Burg. Fockema Andreaelaan",
+    "Huisnummer": "90",
+    "Postcode": "3582KT",
+    "Plaats": "Utrecht (Andreaelaan)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.08090039,
+    "lon": 5.13757263
+  },
+  {
+    "Standplaats": "Maarssen",
+    "Straatnaam": "Floraweg",
+    "Huisnummer": "18",
+    "Postcode": "3608BW",
+    "Plaats": "Maarssen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.12733549,
+    "lon": 5.02704004
+  },
+  {
+    "Standplaats": "Vinkeveen",
+    "Straatnaam": "Herenweg",
+    "Huisnummer": "105",
+    "Postcode": "3645DJ",
+    "Plaats": "Vinkeveen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.21669426,
+    "lon": 4.93327899
+  },
+  {
+    "Standplaats": "Wilnis",
+    "Straatnaam": "Geerkade",
+    "Huisnummer": "23",
+    "Postcode": "3648NX",
+    "Plaats": "Wilnis",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.16367321,
+    "lon": 4.91331836
+  },
+  {
+    "Standplaats": "Zeist",
+    "Straatnaam": "Jagersingel",
+    "Huisnummer": "3",
+    "Postcode": "3707HL",
+    "Plaats": "Zeist",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.09052081,
+    "lon": 5.26098616
+  },
+  {
+    "Standplaats": "Baarn",
+    "Straatnaam": "Molenweg",
+    "Huisnummer": "2",
+    "Postcode": "3743KM",
+    "Plaats": "Baarn",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.20912429,
+    "lon": 5.28144153
+  },
+  {
+    "Standplaats": "Soesterberg",
+    "Straatnaam": "Stemerdingweg",
+    "Huisnummer": "13",
+    "Postcode": "3769CE",
+    "Plaats": "Soesterberg",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.1215753,
+    "lon": 5.27604219
+  },
+  {
+    "Standplaats": "Barneveld",
+    "Straatnaam": "Nijkerkerweg",
+    "Huisnummer": "119",
+    "Postcode": "3771LA",
+    "Plaats": "Barneveld",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.15071953,
+    "lon": 5.56602191
+  },
+  {
+    "Standplaats": "Terschuur",
+    "Straatnaam": "Zelderseweg",
+    "Huisnummer": "61",
+    "Postcode": "3784LN",
+    "Plaats": "Terschuur",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.16907283,
+    "lon": 5.56261709
+  },
+  {
+    "Standplaats": "Amersfoort Centrum",
+    "Straatnaam": "Zonnehof",
+    "Huisnummer": "10",
+    "Postcode": "3811ND",
+    "Plaats": "Amersfoort Centrum",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.15145747,
+    "lon": 5.38425426
+  },
+  {
+    "Standplaats": "Amersfoort Noord",
+    "Straatnaam": "Het Hofslot",
+    "Huisnummer": "1",
+    "Postcode": "3823VV",
+    "Plaats": "Amersfoort Noord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.19010639,
+    "lon": 5.40598023
+  },
+  {
+    "Standplaats": "Harderwijk",
+    "Straatnaam": "Deventerweg",
+    "Huisnummer": "70",
+    "Postcode": "3843DG",
+    "Plaats": "Harderwijk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.3351224,
+    "lon": 5.62914805
+  },
+  {
+    "Standplaats": "Ermelo (Putterweg)",
+    "Straatnaam": "Putterweg",
+    "Huisnummer": "136",
+    "Postcode": "3851VG",
+    "Plaats": "Ermelo (Putterweg)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.28913655,
+    "lon": 5.6261802
+  },
+  {
+    "Standplaats": "Zeewolde",
+    "Straatnaam": "Bosruiterweg",
+    "Huisnummer": "36",
+    "Postcode": "3897LV",
+    "Plaats": "Zeewolde",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.32643671,
+    "lon": 5.42749971
+  },
+  {
+    "Standplaats": "Rhenen",
+    "Straatnaam": "Cuneraweg",
+    "Huisnummer": "354",
+    "Postcode": "3911RV",
+    "Plaats": "Rhenen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.00330774,
+    "lon": 5.54390558
+  },
+  {
+    "Standplaats": "Woudenberg",
+    "Straatnaam": "Europaweg",
+    "Huisnummer": "4",
+    "Postcode": "3931NJ",
+    "Plaats": "Woudenberg",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.07518238,
+    "lon": 5.42407782
+  },
+  {
+    "Standplaats": "Doorn",
+    "Straatnaam": "Korte Molenweg",
+    "Huisnummer": "1",
+    "Postcode": "3941PW",
+    "Plaats": "Doorn",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.03407963,
+    "lon": 5.33033543
+  },
+  {
+    "Standplaats": "Amerongen",
+    "Straatnaam": " noord",
+    "Huisnummer": "6",
+    "Postcode": "3958VX",
+    "Plaats": "Amerongen",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.00214773,
+    "lon": 5.45360194
+  },
+  {
+    "Standplaats": "Houten",
+    "Straatnaam": "De Brug",
+    "Huisnummer": "2b",
+    "Postcode": "3991LN",
+    "Plaats": "Houten",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.02414584,
+    "lon": 5.16021717
+  },
+  {
+    "Standplaats": "Tiel",
+    "Straatnaam": "Blomboorgerd",
+    "Huisnummer": "10",
+    "Postcode": "4003BX",
+    "Plaats": "Tiel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.89915925,
+    "lon": 5.43812061
+  },
+  {
+    "Standplaats": "Kesteren",
+    "Straatnaam": "Vincent van Goghstraat",
+    "Huisnummer": "20",
+    "Postcode": "4041GG",
+    "Plaats": "Kesteren",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.93692017,
+    "lon": 5.57221647
+  },
+  {
+    "Standplaats": "Culemborg",
+    "Straatnaam": "Triosingel",
+    "Huisnummer": "34",
+    "Postcode": "4101XC",
+    "Plaats": "Culemborg",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.95159754,
+    "lon": 5.22474287
+  },
+  {
+    "Standplaats": "Lexmond",
+    "Straatnaam": "Driemolenweg",
+    "Huisnummer": "1",
+    "Postcode": "4128LS",
+    "Plaats": "Lexmond",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.95946911,
+    "lon": 5.03562685
+  },
+  {
+    "Standplaats": "Leerdam",
+    "Straatnaam": "Koningin Emmalaan",
+    "Huisnummer": "30",
+    "Postcode": "4141EC",
+    "Plaats": "Leerdam",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.89282997,
+    "lon": 5.10080387
+  },
+  {
+    "Standplaats": "Rumpt",
+    "Straatnaam": "Boutensteinseweg",
+    "Huisnummer": "4a",
+    "Postcode": "4156JZ",
+    "Plaats": "Rumpt",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.87149625,
+    "lon": 5.19606886
+  },
+  {
+    "Standplaats": "Waardenburg",
+    "Straatnaam": "Steenweg",
+    "Huisnummer": "20",
+    "Postcode": "4181AL",
+    "Plaats": "Waardenburg",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.82861981,
+    "lon": 5.25405032
+  },
+  {
+    "Standplaats": "Gorinchem",
+    "Straatnaam": "Banneweg",
+    "Huisnummer": "57",
+    "Postcode": "4204AA",
+    "Plaats": "Gorinchem",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.83863883,
+    "lon": 4.95768369
+  },
+  {
+    "Standplaats": "Genderen",
+    "Straatnaam": "Genderensedijk",
+    "Huisnummer": "7",
+    "Postcode": "4265JJ",
+    "Plaats": "Genderen",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.7366135,
+    "lon": 5.07790418
+  },
+  {
+    "Standplaats": "Almkerk",
+    "Straatnaam": "Sportlaan",
+    "Huisnummer": "168",
+    "Postcode": "4286ET",
+    "Plaats": "Almkerk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.77029301,
+    "lon": 4.94156681
+  },
+  {
+    "Standplaats": "Zierikzee",
+    "Straatnaam": "Koning Gustaafweg",
+    "Huisnummer": "2",
+    "Postcode": "4301NP",
+    "Plaats": "Zierikzee",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.65640157,
+    "lon": 3.92835162
+  },
+  {
+    "Standplaats": "Oosterland",
+    "Straatnaam": "Molenweg",
+    "Huisnummer": "56B",
+    "Postcode": "4307AK",
+    "Plaats": "Oosterland",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 51.65342989,
+    "lon": 4.03048899
+  },
+  {
+    "Standplaats": "Burgh-Haamstede",
+    "Straatnaam": "Dapperweg",
+    "Huisnummer": "28",
+    "Postcode": "4328BB",
+    "Plaats": "Burgh-Haamstede",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.69785895,
+    "lon": 3.75045125
+  },
+  {
+    "Standplaats": "Middelburg",
+    "Straatnaam": "Stromenweg",
+    "Huisnummer": "5",
+    "Postcode": "4335JR",
+    "Plaats": "Middelburg",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.48137445,
+    "lon": 3.59635697
+  },
+  {
+    "Standplaats": "Grijpskerke",
+    "Straatnaam": "Mariekerkseweg",
+    "Huisnummer": "52",
+    "Postcode": "4364AS",
+    "Plaats": "Grijpskerke",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.53225462,
+    "lon": 3.55746219
+  },
+  {
+    "Standplaats": "Kruiningen",
+    "Straatnaam": "Weihoek",
+    "Huisnummer": "5M",
+    "Postcode": "4416PX",
+    "Plaats": "Kruiningen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.46255804,
+    "lon": 4.03120577
+  },
+  {
+    "Standplaats": "Goes",
+    "Straatnaam": "Verrijn Stuartweg",
+    "Huisnummer": "24",
+    "Postcode": "4462GE",
+    "Plaats": "Goes",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.49564017,
+    "lon": 3.87542101
+  },
+  {
+    "Standplaats": "Oostburg",
+    "Straatnaam": "Pastoor van Genklaan",
+    "Huisnummer": "6",
+    "Postcode": "4501WD",
+    "Plaats": "Oostburg",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.33388727,
+    "lon": 3.50312241
+  },
+  {
+    "Standplaats": "Terneuzen",
+    "Straatnaam": "Wielingenlaan",
+    "Huisnummer": "2",
+    "Postcode": "4538PK",
+    "Plaats": "Terneuzen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.29178086,
+    "lon": 3.84692693
+  },
+  {
+    "Standplaats": "Hulst",
+    "Straatnaam": "Lyceumstraat",
+    "Huisnummer": "20",
+    "Postcode": "4561HV",
+    "Plaats": "Hulst",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.28701246,
+    "lon": 4.05070951
+  },
+  {
+    "Standplaats": "Bergen op Zoom",
+    "Straatnaam": "Veilingdreef",
+    "Huisnummer": "41",
+    "Postcode": "4614RX",
+    "Plaats": "Bergen op Zoom",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.5097415,
+    "lon": 4.30129656
+  },
+  {
+    "Standplaats": "Hoogerheide",
+    "Straatnaam": "Van der Heijdenstraat",
+    "Huisnummer": "6",
+    "Postcode": "4631NH",
+    "Plaats": "Hoogerheide",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.42524803,
+    "lon": 4.32262316
+  },
+  {
+    "Standplaats": "Dinteloord",
+    "Straatnaam": "Noordlangeweg",
+    "Huisnummer": "5",
+    "Postcode": "4671PK",
+    "Plaats": "Dinteloord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.62762194,
+    "lon": 4.36818289
+  },
+  {
+    "Standplaats": "Poortvliet",
+    "Straatnaam": "Paasdijkweg",
+    "Huisnummer": "39",
+    "Postcode": "4693RE",
+    "Plaats": "Poortvliet",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.55061398,
+    "lon": 4.14238366
+  },
+  {
+    "Standplaats": "Roosendaal (Rucphen)",
+    "Straatnaam": "Zuid",
+    "Huisnummer": "113",
+    "Postcode": "4715TA",
+    "Plaats": "Roosendaal (Rucphen)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.54203205,
+    "lon": 4.51351825
+  },
+  {
+    "Standplaats": "Roosendaal-Noord (Oud-Gastel)",
+    "Straatnaam": "Neon",
+    "Huisnummer": "15Q",
+    "Postcode": "4751XA",
+    "Plaats": "Roosendaal-Noord (Oud-Gastel)",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.56648338,
+    "lon": 4.46374573
+  },
+  {
+    "Standplaats": "Zevenbergen",
+    "Straatnaam": "Zuidelijke Randweg",
+    "Huisnummer": "1",
+    "Postcode": "4761RN",
+    "Plaats": "Zevenbergen",
+    "Beschikbaarheid": "24 uur"
+  },
+  {
+    "Standplaats": "Breda-Noord",
+    "Straatnaam": "Hoeksteen",
+    "Huisnummer": "10",
+    "Postcode": "4815PR",
+    "Plaats": "Breda-Noord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.59774874,
+    "lon": 4.73925213
+  },
+  {
+    "Standplaats": "Breda-Zuid (Ulvenhout)",
+    "Straatnaam": "Chaamsebaan",
+    "Huisnummer": "4",
+    "Postcode": "4851SN",
+    "Plaats": "Breda-Zuid (Ulvenhout)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.53944622,
+    "lon": 4.79406219
+  },
+  {
+    "Standplaats": "Etten Leur",
+    "Straatnaam": "Schoonhout",
+    "Huisnummer": "215",
+    "Postcode": "4872MC",
+    "Plaats": "Etten Leur",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.57185239,
+    "lon": 4.65005698
+  },
+  {
+    "Standplaats": "Rijsbergen",
+    "Straatnaam": "Sint Bavostraat",
+    "Huisnummer": "16A",
+    "Postcode": "4891CJ",
+    "Plaats": "Rijsbergen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.51485091,
+    "lon": 4.70055783
+  },
+  {
+    "Standplaats": "Oosterhout",
+    "Straatnaam": "Vaartweg",
+    "Huisnummer": "8G",
+    "Postcode": "4905BL",
+    "Plaats": "Oosterhout",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.65753142,
+    "lon": 4.85026431
+  },
+  {
+    "Standplaats": "Tilburg-Zuid",
+    "Straatnaam": "Prof. Van Buchemlaan",
+    "Huisnummer": "12",
+    "Postcode": "5022KB",
+    "Plaats": "Tilburg-Zuid",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.54081145,
+    "lon": 5.10298861
+  },
+  {
+    "Standplaats": "Tilburg-Noord",
+    "Straatnaam": "Brugstraat",
+    "Huisnummer": "2",
+    "Postcode": "5042SB",
+    "Plaats": "Tilburg-Noord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.57891465,
+    "lon": 5.05745335
+  },
+  {
+    "Standplaats": "Oisterwijk",
+    "Straatnaam": "Kreitenstraat",
+    "Huisnummer": "40-42",
+    "Postcode": "5061PT",
+    "Plaats": "Oisterwijk",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.59166625,
+    "lon": 5.17506973
+  },
+  {
+    "Standplaats": "Gilze",
+    "Straatnaam": "Broekakkerweg",
+    "Huisnummer": "9",
+    "Postcode": "5126BD",
+    "Plaats": "Gilze",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.54693404,
+    "lon": 4.94681132
+  },
+  {
+    "Standplaats": "Waalwijk",
+    "Straatnaam": "De Gaard",
+    "Huisnummer": "128",
+    "Postcode": "5146AW",
+    "Plaats": "Waalwijk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.67614505,
+    "lon": 5.04718595
+  },
+  {
+    "Standplaats": "s-Hertogenbosch",
+    "Straatnaam": "Gruttostraat",
+    "Huisnummer": "14",
+    "Postcode": "5212VM",
+    "Plaats": "s-Hertogenbosch",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.7006439,
+    "lon": 5.30086539
+  },
+  {
+    "Standplaats": "Vlijmen ",
+    "Straatnaam": "Burg. Zwaansweg",
+    "Huisnummer": "2-A",
+    "Postcode": "5251CJ",
+    "Plaats": "Vlijmen ",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 51.69429551,
+    "lon": 5.20865012
+  },
+  {
+    "Standplaats": "Boxtel",
+    "Straatnaam": "Brederodeweg",
+    "Huisnummer": "27",
+    "Postcode": "5283HA",
+    "Plaats": "Boxtel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.5868387,
+    "lon": 5.33182229
+  },
+  {
+    "Standplaats": "Zaltbommel",
+    "Straatnaam": "Steenweg",
+    "Huisnummer": "83",
+    "Postcode": "5301HK",
+    "Plaats": "Zaltbommel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.80166047,
+    "lon": 5.24333978
+  },
+  {
+    "Standplaats": "Oss",
+    "Straatnaam": "Aengelbertlaan",
+    "Huisnummer": "11",
+    "Postcode": "5342LA",
+    "Plaats": "Oss",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.75386128,
+    "lon": 5.55223952
+  },
+  {
+    "Standplaats": "Velp NB",
+    "Straatnaam": "De Eek",
+    "Huisnummer": "1B",
+    "Postcode": "5363VD",
+    "Plaats": "Velp NB",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.75037444,
+    "lon": 5.72928283
+  },
+  {
+    "Standplaats": "Nistelrode ",
+    "Straatnaam": "Heescheweg",
+    "Huisnummer": "37",
+    "Postcode": "5388RG",
+    "Plaats": "Nistelrode ",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 51.71524115,
+    "lon": 5.55632862
+  },
+  {
+    "Standplaats": "Uden",
+    "Straatnaam": "Eikenheuvelweg",
+    "Huisnummer": "5",
+    "Postcode": "5406NA",
+    "Plaats": "Uden",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.64961834,
+    "lon": 5.6043111
+  },
+  {
+    "Standplaats": "Haps",
+    "Straatnaam": "Schuttersweg",
+    "Huisnummer": "14a",
+    "Postcode": "5443PR",
+    "Plaats": "Haps",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.69285403,
+    "lon": 5.8829007
+  },
+  {
+    "Standplaats": "Mill ",
+    "Straatnaam": "St. Jacobsstraat",
+    "Huisnummer": "2-D",
+    "Postcode": "5454GN",
+    "Plaats": "Mill ",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 51.67389307,
+    "lon": 5.80098965
+  },
+  {
+    "Standplaats": "Veghel",
+    "Straatnaam": "Doornhoek",
+    "Huisnummer": "3738",
+    "Postcode": "5465TA",
+    "Plaats": "Veghel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.60706143,
+    "lon": 5.53199611
+  },
+  {
+    "Standplaats": "Schijndel ",
+    "Straatnaam": "Hoofdstraat",
+    "Huisnummer": "141",
+    "Postcode": "5481AD",
+    "Plaats": "Schijndel ",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 51.61673658,
+    "lon": 5.43806916
+  },
+  {
+    "Standplaats": "Eersel",
+    "Straatnaam": "Kerver",
+    "Huisnummer": "9A",
+    "Postcode": "5521DA",
+    "Plaats": "Eersel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.36619032,
+    "lon": 5.31772121
+  },
+  {
+    "Standplaats": "Bladel",
+    "Straatnaam": "Ambachtsweg",
+    "Huisnummer": "5",
+    "Postcode": "5531AC",
+    "Plaats": "Bladel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.35983012,
+    "lon": 5.19446252
+  },
+  {
+    "Standplaats": "Valkenswaard",
+    "Straatnaam": "De Vest",
+    "Huisnummer": "48",
+    "Postcode": "5555XP",
+    "Plaats": "Valkenswaard",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.34295329,
+    "lon": 5.47881014
+  },
+  {
+    "Standplaats": "Eindhoven",
+    "Straatnaam": "Deken van Somerenstraat",
+    "Huisnummer": "2A",
+    "Postcode": "5611KX",
+    "Plaats": "Eindhoven",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.43450374,
+    "lon": 5.47485318
+  },
+  {
+    "Standplaats": "Eindhoven (Noord)",
+    "Straatnaam": "Avignonlaan",
+    "Huisnummer": "7",
+    "Postcode": "5627GA",
+    "Plaats": "Eindhoven (Noord)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.4766471,
+    "lon": 5.44647873
+  },
+  {
+    "Standplaats": "Helmond",
+    "Straatnaam": "Lagedijk",
+    "Huisnummer": "4b",
+    "Postcode": "5705BZ",
+    "Plaats": "Helmond",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.4702748,
+    "lon": 5.67890611
+  },
+  {
+    "Standplaats": "Asten",
+    "Straatnaam": "Ommelseweg",
+    "Huisnummer": "69A",
+    "Postcode": "5721 WA",
+    "Plaats": "Asten",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.20383919,
+    "lon": 5.65006207
+  },
+  {
+    "Standplaats": "Beek en Donk",
+    "Straatnaam": "Willemstraat",
+    "Huisnummer": "7B",
+    "Postcode": "5741 PA",
+    "Plaats": "Beek en Donk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.52850359,
+    "lon": 5.64362497
+  },
+  {
+    "Standplaats": "Venray",
+    "Straatnaam": "Acaciastraat",
+    "Huisnummer": "15",
+    "Postcode": "5802EK",
+    "Plaats": "Venray",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.51754215,
+    "lon": 5.98090773
+  },
+  {
+    "Standplaats": "Well",
+    "Straatnaam": "Bosscherheide 29",
+    "Huisnummer": "a",
+    "Postcode": "5855EA",
+    "Plaats": "Well",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.57437803,
+    "lon": 6.08513685
+  },
+  {
+    "Standplaats": "Venlo",
+    "Straatnaam": "Tegelseweg",
+    "Huisnummer": "210",
+    "Postcode": "5912BL",
+    "Plaats": "Venlo",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.3567524,
+    "lon": 6.15402033
+  },
+  {
+    "Standplaats": "Blerick",
+    "Straatnaam": "van Heemskerckweg",
+    "Huisnummer": "8",
+    "Postcode": "5928LL",
+    "Plaats": "Blerick",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.39209791,
+    "lon": 6.08746292
+  },
+  {
+    "Standplaats": "Horst",
+    "Straatnaam": "Venloseweg 70",
+    "Huisnummer": "a",
+    "Postcode": "5961JD",
+    "Plaats": "Horst",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.43812669,
+    "lon": 6.08362024
+  },
+  {
+    "Standplaats": "Panningen",
+    "Straatnaam": "J.F. Kennedylaan",
+    "Huisnummer": "212",
+    "Postcode": "5981WX",
+    "Plaats": "Panningen",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 51.32995415,
+    "lon": 5.96742404
+  },
+  {
+    "Standplaats": "Weert",
+    "Straatnaam": "Saturnus",
+    "Huisnummer": "1",
+    "Postcode": "6003NK",
+    "Plaats": "Weert",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.27014405,
+    "lon": 5.71685581
+  },
+  {
+    "Standplaats": "Maarheeze",
+    "Straatnaam": "Rondven",
+    "Huisnummer": "32",
+    "Postcode": "6026PX",
+    "Plaats": "Maarheeze",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.30884936,
+    "lon": 5.62904236
+  },
+  {
+    "Standplaats": "Kelpen",
+    "Straatnaam": "Ellerweg 2",
+    "Huisnummer": "b",
+    "Postcode": "6037RS",
+    "Plaats": "Kelpen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.22901889,
+    "lon": 5.81957435
+  },
+  {
+    "Standplaats": "Roermond",
+    "Straatnaam": "Nassaustraat",
+    "Huisnummer": "79",
+    "Postcode": "6043EB",
+    "Plaats": "Roermond",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.19124979,
+    "lon": 5.99971371
+  },
+  {
+    "Standplaats": "Herten",
+    "Straatnaam": "Louis Eijssenweg",
+    "Huisnummer": "4",
+    "Postcode": "6049CD",
+    "Plaats": "Herten",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.16748401,
+    "lon": 5.95887756
+  },
+  {
+    "Standplaats": "Roggel",
+    "Straatnaam": "Heverstraat",
+    "Huisnummer": "9",
+    "Postcode": "6088BG",
+    "Plaats": "Roggel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.26743274,
+    "lon": 5.92878545
+  },
+  {
+    "Standplaats": "Echt",
+    "Straatnaam": "Nobelweg",
+    "Huisnummer": "4",
+    "Postcode": "6101XB",
+    "Plaats": "Echt",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.11495553,
+    "lon": 5.8729345
+  },
+  {
+    "Standplaats": "Geleen",
+    "Straatnaam": "Demystraat",
+    "Huisnummer": "15",
+    "Postcode": "6162AP",
+    "Plaats": "Geleen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 50.98431627,
+    "lon": 5.84423507
+  },
+  {
+    "Standplaats": "Maastricht",
+    "Straatnaam": "Vijverdalseweg",
+    "Huisnummer": "2",
+    "Postcode": "6226NB",
+    "Plaats": "Maastricht",
+    "Beschikbaarheid": "24 uur",
+    "lat": 50.85068614,
+    "lon": 5.73105632
+  },
+  {
+    "Standplaats": "Gulpen",
+    "Straatnaam": "Oude Rijksweg",
+    "Huisnummer": "32",
+    "Postcode": "6271AA",
+    "Plaats": "Gulpen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 50.81560979,
+    "lon": 5.90303401
+  },
+  {
+    "Standplaats": "Landgraaf",
+    "Straatnaam": "Reeweg",
+    "Huisnummer": "120",
+    "Postcode": "6374BZ",
+    "Plaats": "Landgraaf",
+    "Beschikbaarheid": "24 uur",
+    "lat": 50.91921769,
+    "lon": 6.02391539
+  },
+  {
+    "Standplaats": "Heerlen",
+    "Straatnaam": "Het Overloon",
+    "Huisnummer": "2",
+    "Postcode": "6411TE",
+    "Plaats": "Heerlen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 50.88770329,
+    "lon": 5.9692318
+  },
+  {
+    "Standplaats": "Nijmegen",
+    "Straatnaam": "Professor Bellefroidstraat ",
+    "Huisnummer": "11",
+    "Postcode": "6525AG",
+    "Plaats": "Nijmegen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.82868788,
+    "lon": 5.86711615
+  },
+  {
+    "Standplaats": "Nijmegen West",
+    "Straatnaam": "Nieuwe Dukenburgseweg",
+    "Huisnummer": "23",
+    "Postcode": "6534AD",
+    "Plaats": "Nijmegen West",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.8170259,
+    "lon": 5.81845699
+  },
+  {
+    "Standplaats": "Beek-Ubbergen",
+    "Straatnaam": "Nieuwe Rijksweg",
+    "Huisnummer": "1",
+    "Postcode": "6573DH",
+    "Plaats": "Beek-Ubbergen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.82477918,
+    "lon": 5.93985018
+  },
+  {
+    "Standplaats": "Beuningen",
+    "Straatnaam": "Elsenpas",
+    "Huisnummer": "11",
+    "Postcode": "6641KM",
+    "Plaats": "Beuningen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.84542033,
+    "lon": 5.75008197
+  },
+  {
+    "Standplaats": "Druten",
+    "Straatnaam": "van Heemstraweg",
+    "Huisnummer": "52A",
+    "Postcode": "6651KH",
+    "Plaats": "Druten",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.88534891,
+    "lon": 5.61195658
+  },
+  {
+    "Standplaats": "Beneden Leeuwen",
+    "Straatnaam": "Van Heemstraweg",
+    "Huisnummer": "64D",
+    "Postcode": "6658KJ",
+    "Plaats": "Beneden Leeuwen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.87740438,
+    "lon": 5.52059756
+  },
+  {
+    "Standplaats": "Elst",
+    "Straatnaam": "Nijverheidsweg",
+    "Huisnummer": "45",
+    "Postcode": "6662NG",
+    "Plaats": "Elst",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.9129406,
+    "lon": 5.87075566
+  },
+  {
+    "Standplaats": "Lent",
+    "Straatnaam": "Spoorstraat",
+    "Huisnummer": "31",
+    "Postcode": "6663AE",
+    "Plaats": "Lent",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 51.86712508,
+    "lon": 5.8588469
+  },
+  {
+    "Standplaats": "Ede",
+    "Straatnaam": "",
+    "Huisnummer": "6",
+    "Postcode": "6711MR",
+    "Plaats": "Ede",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.04145929,
+    "lon": 5.66926788
+  },
+  {
+    "Standplaats": "Arnhem IJsseloord",
+    "Straatnaam": "Meander",
+    "Huisnummer": "401",
+    "Postcode": "6825MD",
+    "Plaats": "Arnhem IJsseloord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.9764165,
+    "lon": 5.9672071
+  },
+  {
+    "Standplaats": "Arnhem",
+    "Straatnaam": "Eusebiusbuitensingel",
+    "Huisnummer": "43",
+    "Postcode": "6828HZ",
+    "Plaats": "Arnhem",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 51.97778567,
+    "lon": 5.91601211
+  },
+  {
+    "Standplaats": "Renkum",
+    "Straatnaam": "Utrechtseweg",
+    "Huisnummer": "131",
+    "Postcode": "6871DR",
+    "Plaats": "Renkum",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.97359599,
+    "lon": 5.73708224
+  },
+  {
+    "Standplaats": "Zevenaar",
+    "Straatnaam": "Kampsingel",
+    "Huisnummer": "34",
+    "Postcode": "6901JG",
+    "Plaats": "Zevenaar",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.93225917,
+    "lon": 6.08074068
+  },
+  {
+    "Standplaats": "Dieren",
+    "Straatnaam": "Hogestraat",
+    "Huisnummer": "11",
+    "Postcode": "6953AN",
+    "Plaats": "Dieren",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.04163885,
+    "lon": 6.10542932
+  },
+  {
+    "Standplaats": "Doetinchem",
+    "Straatnaam": "Havenstraat",
+    "Huisnummer": "122",
+    "Postcode": "7005AG",
+    "Plaats": "Doetinchem",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.94871199,
+    "lon": 6.30299821
+  },
+  {
+    "Standplaats": "Varsseveld",
+    "Straatnaam": "Klaproosstraat",
+    "Huisnummer": "28",
+    "Postcode": "7051ZH",
+    "Plaats": "Varsseveld",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.94474109,
+    "lon": 6.45858868
+  },
+  {
+    "Standplaats": "Etten",
+    "Straatnaam": "Zeddamseweg",
+    "Huisnummer": "43a",
+    "Postcode": "7075ED",
+    "Plaats": "Etten",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.9156947,
+    "lon": 6.34279137
+  },
+  {
+    "Standplaats": "Winterswijk",
+    "Straatnaam": "Magnoliastraat",
+    "Huisnummer": "9",
+    "Postcode": "7102CX",
+    "Plaats": "Winterswijk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.96401567,
+    "lon": 6.70436053
+  },
+  {
+    "Standplaats": "Groenlo",
+    "Straatnaam": "Barkenkamp",
+    "Huisnummer": "5",
+    "Postcode": "7141EL",
+    "Plaats": "Groenlo",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.03830569,
+    "lon": 6.6137251
+  },
+  {
+    "Standplaats": "Zutphen",
+    "Straatnaam": "Den Elterweg",
+    "Huisnummer": "65",
+    "Postcode": "7207AE",
+    "Plaats": "Zutphen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.12400136,
+    "lon": 6.21684382
+  },
+  {
+    "Standplaats": "Baak",
+    "Straatnaam": "Dambroek",
+    "Huisnummer": "16",
+    "Postcode": "7223DV",
+    "Plaats": "Baak",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.07205901,
+    "lon": 6.22283708
+  },
+  {
+    "Standplaats": "Borculo",
+    "Straatnaam": "Bosberg",
+    "Huisnummer": "9",
+    "Postcode": "7271LE",
+    "Plaats": "Borculo",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.12424523,
+    "lon": 6.53515099
+  },
+  {
+    "Standplaats": "Apeldoorn",
+    "Straatnaam": "Kanaal Noord",
+    "Huisnummer": "380",
+    "Postcode": "7323AM",
+    "Plaats": "Apeldoorn",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.23953124,
+    "lon": 5.9778458
+  },
+  {
+    "Standplaats": "Apeldoorn",
+    "Straatnaam": "Saba",
+    "Huisnummer": "2",
+    "Postcode": "7332BH",
+    "Plaats": "Apeldoorn",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.18395996,
+    "lon": 5.9837713
+  },
+  {
+    "Standplaats": "Deventer",
+    "Straatnaam": "Nijmegensestraat",
+    "Huisnummer": "11",
+    "Postcode": "7418BZ",
+    "Plaats": "Deventer",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.25155816,
+    "lon": 6.17463703
+  },
+  {
+    "Standplaats": "Deventer Noord (Schalkhaar)",
+    "Straatnaam": "Raalterweg",
+    "Huisnummer": "18A",
+    "Postcode": "7433RA",
+    "Plaats": "Deventer Noord (Schalkhaar)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.26891626,
+    "lon": 6.17687567
+  },
+  {
+    "Standplaats": "Nijverdal",
+    "Straatnaam": "Van Heerdtweg",
+    "Huisnummer": "7",
+    "Postcode": "7443TA",
+    "Plaats": "Nijverdal",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.3740858,
+    "lon": 6.4701719
+  },
+  {
+    "Standplaats": "Rijssen",
+    "Straatnaam": "Wierdensestraat",
+    "Huisnummer": "65",
+    "Postcode": "7461BC",
+    "Plaats": "Rijssen",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.31050846,
+    "lon": 6.52353742
+  },
+  {
+    "Standplaats": "Goor",
+    "Straatnaam": "van Kollaan",
+    "Huisnummer": "19",
+    "Postcode": "7471DP",
+    "Plaats": "Goor",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.23638131,
+    "lon": 6.58025067
+  },
+  {
+    "Standplaats": "Markelo",
+    "Straatnaam": "Holterweg",
+    "Huisnummer": "32A",
+    "Postcode": "7475AW",
+    "Plaats": "Markelo",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.2598846,
+    "lon": 6.46147087
+  },
+  {
+    "Standplaats": "Haaksbergen",
+    "Straatnaam": "Hengelosestraat",
+    "Huisnummer": "174",
+    "Postcode": "7482AE",
+    "Plaats": "Haaksbergen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.1708937,
+    "lon": 6.74138659
+  },
+  {
+    "Standplaats": "Hengevelde",
+    "Straatnaam": "Bentelosestraat",
+    "Huisnummer": "1",
+    "Postcode": "7496PE",
+    "Plaats": "Hengevelde",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.1999917,
+    "lon": 6.64573963
+  },
+  {
+    "Standplaats": "Enschede",
+    "Straatnaam": "M.H.Tromplaan",
+    "Huisnummer": "47",
+    "Postcode": "7513AB",
+    "Plaats": "Enschede",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.21964606,
+    "lon": 6.88407829
+  },
+  {
+    "Standplaats": "Enschede",
+    "Straatnaam": "Hengelosestraat ",
+    "Huisnummer": "705",
+    "Postcode": "7521PA",
+    "Plaats": "Enschede",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.23787418,
+    "lon": 6.84766717
+  },
+  {
+    "Standplaats": "Lonneker",
+    "Straatnaam": "Oldenzaalsestraat",
+    "Huisnummer": "726",
+    "Postcode": "7524AG",
+    "Plaats": "Lonneker",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.2490743,
+    "lon": 6.91614278
+  },
+  {
+    "Standplaats": "Hengelo",
+    "Straatnaam": "Demmersweg",
+    "Huisnummer": "55",
+    "Postcode": "7556BN",
+    "Plaats": "Hengelo",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.28449467,
+    "lon": 6.77845417
+  },
+  {
+    "Standplaats": "Deurningen",
+    "Straatnaam": "Hengelosestraat ",
+    "Huisnummer": "6",
+    "Postcode": "7561RT",
+    "Plaats": "Deurningen",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.28504794,
+    "lon": 6.85328254
+  },
+  {
+    "Standplaats": "Oldenzaal",
+    "Straatnaam": "Zandbreeweg",
+    "Huisnummer": "16",
+    "Postcode": "7577BZ",
+    "Plaats": "Oldenzaal",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.32219137,
+    "lon": 6.9260678
+  },
+  {
+    "Standplaats": "Weerselo",
+    "Straatnaam": "De Aanleg",
+    "Huisnummer": "2",
+    "Postcode": "7595AP",
+    "Plaats": "Weerselo",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.34997196,
+    "lon": 6.85700781
+  },
+  {
+    "Standplaats": "Almelo",
+    "Straatnaam": "Nieuwe Witvoet",
+    "Huisnummer": "2",
+    "Postcode": "7609NE",
+    "Plaats": "Almelo",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.33602001,
+    "lon": 6.64357405
+  },
+  {
+    "Standplaats": "Zenderen",
+    "Straatnaam": "Hoofdstraat",
+    "Huisnummer": "6",
+    "Postcode": "7625PD",
+    "Plaats": "Zenderen",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.32316279,
+    "lon": 6.72581398
+  },
+  {
+    "Standplaats": "Wierden",
+    "Straatnaam": "Rijssenseweg",
+    "Huisnummer": "61",
+    "Postcode": "7642CW",
+    "Plaats": "Wierden",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.35385802,
+    "lon": 6.58860562
+  },
+  {
+    "Standplaats": "Tubbergen",
+    "Straatnaam": "Boskampstraat",
+    "Huisnummer": "35",
+    "Postcode": "7651AL",
+    "Plaats": "Tubbergen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.4052449,
+    "lon": 6.78742546
+  },
+  {
+    "Standplaats": "Fleringen",
+    "Straatnaam": "Oldenzaalseweg",
+    "Huisnummer": "86",
+    "Postcode": "7666LH",
+    "Plaats": "Fleringen",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.38188759,
+    "lon": 6.80303591
+  },
+  {
+    "Standplaats": "Vriezenveen",
+    "Straatnaam": "Zuivering",
+    "Huisnummer": "30",
+    "Postcode": "7671SP",
+    "Plaats": "Vriezenveen",
+    "Beschikbaarheid": "24 uur DAM/VWS",
+    "lat": 52.40565765,
+    "lon": 6.63396078
+  },
+  {
+    "Standplaats": "Vroomshoop",
+    "Straatnaam": "laan",
+    "Huisnummer": "2",
+    "Postcode": "7681NC",
+    "Plaats": "Vroomshoop",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.45267559,
+    "lon": 6.57781747
+  },
+  {
+    "Standplaats": "Dedemsvaart",
+    "Straatnaam": "Langewijk",
+    "Huisnummer": "124A",
+    "Postcode": "7701AH",
+    "Plaats": "Dedemsvaart",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.60523218,
+    "lon": 6.45296054
+  },
+  {
+    "Standplaats": "Ommen",
+    "Straatnaam": "Balkerweg",
+    "Huisnummer": "22D",
+    "Postcode": "7731RZ",
+    "Plaats": "Ommen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.53900953,
+    "lon": 6.41109526
+  },
+  {
+    "Standplaats": "Coevorden",
+    "Straatnaam": "Hulsvoorderdijk",
+    "Huisnummer": "4",
+    "Postcode": "7741CX",
+    "Plaats": "Coevorden",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.674845,
+    "lon": 6.74721914
+  },
+  {
+    "Standplaats": "Hardenberg",
+    "Straatnaam": "Jan Weitkamplaan",
+    "Huisnummer": "4A",
+    "Postcode": "7772SG",
+    "Plaats": "Hardenberg",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.56614617,
+    "lon": 6.63161589
+  },
+  {
+    "Standplaats": "Emmen",
+    "Straatnaam": "Waanderweg",
+    "Huisnummer": "200",
+    "Postcode": "7812HZ",
+    "Plaats": "Emmen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.75398703,
+    "lon": 6.87599329
+  },
+  {
+    "Standplaats": "Emmen-ziekenhuis",
+    "Straatnaam": "Boermarkeweg",
+    "Huisnummer": "60",
+    "Postcode": "7824AA",
+    "Plaats": "Emmen-ziekenhuis",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.78554992,
+    "lon": 6.91317193
+  },
+  {
+    "Standplaats": "Emmen-Noord",
+    "Straatnaam": "Kanaal B ZZ",
+    "Huisnummer": "55",
+    "Postcode": "7881NB",
+    "Plaats": "Emmen-Noord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.80558423,
+    "lon": 6.97578491
+  },
+  {
+    "Standplaats": "Klazienaveen",
+    "Straatnaam": "Doorndistel",
+    "Huisnummer": "15",
+    "Postcode": "7891WV",
+    "Plaats": "Klazienaveen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.73147573,
+    "lon": 6.9778234
+  },
+  {
+    "Standplaats": "Hoogeveen",
+    "Straatnaam": "Dr.G.H.Amshoffweg",
+    "Huisnummer": "1",
+    "Postcode": "7909AA",
+    "Plaats": "Hoogeveen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.72393024,
+    "lon": 6.45125438
+  },
+  {
+    "Standplaats": "Meppel",
+    "Straatnaam": "Hoogeveenseweg",
+    "Huisnummer": "38",
+    "Postcode": "7943KA",
+    "Plaats": "Meppel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.69094039,
+    "lon": 6.21742007
+  },
+  {
+    "Standplaats": "Rouveen",
+    "Straatnaam": "Oude Rijksweg",
+    "Huisnummer": "502B",
+    "Postcode": "7954GG",
+    "Plaats": "Rouveen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.58883326,
+    "lon": 6.19384691
+  },
+  {
+    "Standplaats": "Dieverbrug",
+    "Straatnaam": "De Wringen",
+    "Huisnummer": "25a",
+    "Postcode": "7984NL",
+    "Plaats": "Dieverbrug",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.84749603,
+    "lon": 6.33378863
+  },
+  {
+    "Standplaats": "Zwolle",
+    "Straatnaam": "Voltastraat",
+    "Huisnummer": "3A",
+    "Postcode": "8013PM",
+    "Plaats": "Zwolle",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.49100578,
+    "lon": 6.12821822
+  },
+  {
+    "Standplaats": "Zwolle West",
+    "Straatnaam": "Nijenhuislaan",
+    "Huisnummer": "175",
+    "Postcode": "8043WB",
+    "Plaats": "Zwolle West",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.53563244,
+    "lon": 6.04652525
+  },
+  {
+    "Standplaats": "Zwartsluis",
+    "Straatnaam": "Zomerdijk",
+    "Huisnummer": "41A",
+    "Postcode": "8064XB",
+    "Plaats": "Zwartsluis",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.64390004,
+    "lon": 6.07965342
+  },
+  {
+    "Standplaats": "Elburg",
+    "Straatnaam": "Oostelijke Rondweg",
+    "Huisnummer": "1",
+    "Postcode": "8081RT",
+    "Plaats": "Elburg",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.44327507,
+    "lon": 5.86377612
+  },
+  {
+    "Standplaats": "Raalte",
+    "Straatnaam": "Weidelaan",
+    "Huisnummer": "2B",
+    "Postcode": "8103NA",
+    "Plaats": "Raalte",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.38819143,
+    "lon": 6.28946956
+  },
+  {
+    "Standplaats": "Heerde",
+    "Straatnaam": "Zwarteweg",
+    "Huisnummer": "4A",
+    "Postcode": "8181PD",
+    "Plaats": "Heerde",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.37270315,
+    "lon": 6.01943871
+  },
+  {
+    "Standplaats": "Lelystad",
+    "Straatnaam": "Gordiaandreef",
+    "Huisnummer": "99",
+    "Postcode": "8233AB",
+    "Plaats": "Lelystad",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.50180099,
+    "lon": 5.47819322
+  },
+  {
+    "Standplaats": "Dronten",
+    "Straatnaam": "De Noord",
+    "Huisnummer": "34",
+    "Postcode": "8251KP",
+    "Plaats": "Dronten",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.53628244,
+    "lon": 5.72016582
+  },
+  {
+    "Standplaats": "IJsselmuiden",
+    "Straatnaam": "Kleiland",
+    "Huisnummer": "8",
+    "Postcode": "8271RV",
+    "Plaats": "IJsselmuiden",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.55024578,
+    "lon": 5.93764346
+  },
+  {
+    "Standplaats": "Emmeloord",
+    "Straatnaam": "Nagelerweg",
+    "Huisnummer": "3",
+    "Postcode": "8304AB",
+    "Plaats": "Emmeloord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.70271395,
+    "lon": 5.75709742
+  },
+  {
+    "Standplaats": "Urk",
+    "Straatnaam": "Malzwin",
+    "Huisnummer": "1",
+    "Postcode": "8321MX",
+    "Plaats": "Urk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.65226612,
+    "lon": 5.63539281
+  },
+  {
+    "Standplaats": "Steenwijk",
+    "Straatnaam": "Vendelweg",
+    "Huisnummer": "3A",
+    "Postcode": "8331XE",
+    "Plaats": "Steenwijk",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.7818909,
+    "lon": 6.116787
+  },
+  {
+    "Standplaats": "Nieuwehorne",
+    "Straatnaam": "Achtste Wijk",
+    "Huisnummer": "1a",
+    "Postcode": "8414NA",
+    "Plaats": "Nieuwehorne",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.95546449,
+    "lon": 6.06251447
+  },
+  {
+    "Standplaats": "Oosterwolde",
+    "Straatnaam": "Veengang",
+    "Huisnummer": "27",
+    "Postcode": "8431NJ",
+    "Plaats": "Oosterwolde",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.98039251,
+    "lon": 6.29614872
+  },
+  {
+    "Standplaats": "Heerenveen",
+    "Straatnaam": "Venus",
+    "Huisnummer": "3",
+    "Postcode": "8448CE",
+    "Plaats": "Heerenveen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.96841619,
+    "lon": 5.93596482
+  },
+  {
+    "Standplaats": "Wolvega",
+    "Straatnaam": "Zeeweegbree",
+    "Huisnummer": "3",
+    "Postcode": "8472BD",
+    "Plaats": "Wolvega",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.88682142,
+    "lon": 6.00620405
+  },
+  {
+    "Standplaats": "Joure",
+    "Straatnaam": "Morseweg",
+    "Huisnummer": "17",
+    "Postcode": "8503AH",
+    "Plaats": "Joure",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.95894851,
+    "lon": 5.77759364
+  },
+  {
+    "Standplaats": "Lemmer",
+    "Straatnaam": "Houtsaachmolen",
+    "Huisnummer": "13b",
+    "Postcode": "8531WC",
+    "Plaats": "Lemmer",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.8552322,
+    "lon": 5.71857809
+  },
+  {
+    "Standplaats": "Sneek",
+    "Straatnaam": "Bolswarderbaan",
+    "Huisnummer": "1",
+    "Postcode": "8601ZK",
+    "Plaats": "Sneek",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.03468901,
+    "lon": 5.64286706
+  },
+  {
+    "Standplaats": "Bolsward",
+    "Straatnaam": "Snekerweg",
+    "Huisnummer": "3b",
+    "Postcode": "8701PZ",
+    "Plaats": "Bolsward",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.0605646,
+    "lon": 5.53938127
+  },
+  {
+    "Standplaats": "Koudum",
+    "Straatnaam": "T. van der Walstraat",
+    "Huisnummer": "32",
+    "Postcode": "8723CA",
+    "Plaats": "Koudum",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.90964239,
+    "lon": 5.45042363
+  },
+  {
+    "Standplaats": "Franeker",
+    "Straatnaam": "Het Want",
+    "Huisnummer": "16",
+    "Postcode": "8802PV",
+    "Plaats": "Franeker",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.19855507,
+    "lon": 5.54371302
+  },
+  {
+    "Standplaats": "Harlingen",
+    "Straatnaam": "Rijksweg",
+    "Huisnummer": "8",
+    "Postcode": "8861NL",
+    "Plaats": "Harlingen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.18256644,
+    "lon": 5.46317613
+  },
+  {
+    "Standplaats": "Terschelling",
+    "Straatnaam": "Burg. Reedekerstraat",
+    "Huisnummer": "21",
+    "Postcode": "8881BZ",
+    "Plaats": "Terschelling",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.36173606,
+    "lon": 5.21556997
+  },
+  {
+    "Standplaats": "Vlieland",
+    "Straatnaam": "Berkenlaan",
+    "Huisnummer": "13a",
+    "Postcode": "8899BP",
+    "Plaats": "Vlieland",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.29810816,
+    "lon": 5.07514756
+  },
+  {
+    "Standplaats": "Leeuwarden (Elzenstraat)",
+    "Straatnaam": "Elzenstraat",
+    "Huisnummer": "1c",
+    "Postcode": "8924JN",
+    "Plaats": "Leeuwarden (Elzenstraat)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.21312493,
+    "lon": 5.81490642
+  },
+  {
+    "Standplaats": "Leeuwarden (Oostergoweg)",
+    "Straatnaam": "Oostergoweg",
+    "Huisnummer": "14",
+    "Postcode": "8932PG",
+    "Plaats": "Leeuwarden (Oostergoweg)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.19020728,
+    "lon": 5.79930811
+  },
+  {
+    "Standplaats": "Grou",
+    "Straatnaam": "Biensma",
+    "Huisnummer": "4",
+    "Postcode": "9001ZZ",
+    "Plaats": "Grou",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 53.09795054,
+    "lon": 5.83056021
+  },
+  {
+    "Standplaats": "Stiens",
+    "Straatnaam": "Seefugel",
+    "Huisnummer": "1-A",
+    "Postcode": "9051VC",
+    "Plaats": "Stiens",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 53.26599264,
+    "lon": 5.74901697
+  },
+  {
+    "Standplaats": "Dokkum",
+    "Straatnaam": "Birdaarderstraatweg",
+    "Huisnummer": "80f",
+    "Postcode": "9101PK",
+    "Plaats": "Dokkum",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.32053635,
+    "lon": 5.98933019
+  },
+  {
+    "Standplaats": "Metslawier",
+    "Straatnaam": "Oerslach",
+    "Huisnummer": "2a",
+    "Postcode": "9123KK",
+    "Plaats": "Metslawier",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.36275523,
+    "lon": 6.06750518
+  },
+  {
+    "Standplaats": "Nes (Ameland)",
+    "Straatnaam": "Ballummerweg",
+    "Huisnummer": "38a",
+    "Postcode": "9163GB",
+    "Plaats": "Nes (Ameland)",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.44654889,
+    "lon": 5.7626935
+  },
+  {
+    "Standplaats": "Schiermonnikoog",
+    "Straatnaam": "Knuppeldam",
+    "Huisnummer": "6",
+    "Postcode": "9166NZ",
+    "Plaats": "Schiermonnikoog",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.47966326,
+    "lon": 6.16797129
+  },
+  {
+    "Standplaats": "Drachten",
+    "Straatnaam": "Omloop",
+    "Huisnummer": "5",
+    "Postcode": "9201CC",
+    "Plaats": "Drachten",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 53.10989964,
+    "lon": 6.08408305
+  },
+  {
+    "Standplaats": "Drachten",
+    "Straatnaam": "Ottolaan",
+    "Huisnummer": "2",
+    "Postcode": "9207JR",
+    "Plaats": "Drachten",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.11153812,
+    "lon": 6.13063708
+  },
+  {
+    "Standplaats": "Hardegarijp",
+    "Straatnaam": "Rijksstraatweg",
+    "Huisnummer": "211",
+    "Postcode": "9254DH",
+    "Plaats": "Hardegarijp",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.21919649,
+    "lon": 5.97466834
+  },
+  {
+    "Standplaats": "Buitenpost",
+    "Straatnaam": "West",
+    "Huisnummer": "32",
+    "Postcode": "9285WC",
+    "Plaats": "Buitenpost",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.25205297,
+    "lon": 6.13182405
+  },
+  {
+    "Standplaats": "Roden",
+    "Straatnaam": "Zudden",
+    "Huisnummer": "2",
+    "Postcode": "9301ZM",
+    "Plaats": "Roden",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.14944167,
+    "lon": 6.43667661
+  },
+  {
+    "Standplaats": "Niebert",
+    "Straatnaam": "Grasweg",
+    "Huisnummer": "1b",
+    "Postcode": "9365PP",
+    "Plaats": "Niebert",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.17254355,
+    "lon": 6.33147821
+  },
+  {
+    "Standplaats": "Assen Centrum",
+    "Straatnaam": "Dr. Philipsweg",
+    "Huisnummer": "15-A",
+    "Postcode": "9403AC",
+    "Plaats": "Assen Centrum",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 52.99769935,
+    "lon": 6.57325733
+  },
+  {
+    "Standplaats": "Assen",
+    "Straatnaam": "Balkendwarsweg",
+    "Huisnummer": "1",
+    "Postcode": "9405PT",
+    "Plaats": "Assen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.99529875,
+    "lon": 6.51961406
+  },
+  {
+    "Standplaats": "Beilen",
+    "Straatnaam": "Romhof",
+    "Huisnummer": "6",
+    "Postcode": "9411SC",
+    "Plaats": "Beilen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.86307848,
+    "lon": 6.49298318
+  },
+  {
+    "Standplaats": "Annen",
+    "Straatnaam": "Spijkerboorsdijk",
+    "Huisnummer": "3a",
+    "Postcode": "9468CG",
+    "Plaats": "Annen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.05579643,
+    "lon": 6.73247713
+  },
+  {
+    "Standplaats": "Stadskanaal",
+    "Straatnaam": "Veenstraat",
+    "Huisnummer": "8a",
+    "Postcode": "9502EZ",
+    "Plaats": "Stadskanaal",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.98017937,
+    "lon": 6.96785122
+  },
+  {
+    "Standplaats": "Borger",
+    "Straatnaam": "IJzertijdstraat",
+    "Huisnummer": "3",
+    "Postcode": "9531RA",
+    "Plaats": "Borger",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.92209413,
+    "lon": 6.7827341
+  },
+  {
+    "Standplaats": "Vlagtwedde",
+    "Straatnaam": "Nieuweweg",
+    "Huisnummer": "1",
+    "Postcode": "9541EG",
+    "Plaats": "Vlagtwedde",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 53.02724147,
+    "lon": 7.10471842
+  },
+  {
+    "Standplaats": "Ter Apel",
+    "Straatnaam": "Industrieweg",
+    "Huisnummer": "9",
+    "Postcode": "9561MB",
+    "Plaats": "Ter Apel",
+    "Beschikbaarheid": "24 uur",
+    "lat": 52.88860707,
+    "lon": 7.05088538
+  },
+  {
+    "Standplaats": "Sappemeer",
+    "Straatnaam": "De Vosholen",
+    "Huisnummer": "99",
+    "Postcode": "9611TE",
+    "Plaats": "Sappemeer",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.15974615,
+    "lon": 6.80932929
+  },
+  {
+    "Standplaats": "Veendam",
+    "Straatnaam": "Van Stolbergweg",
+    "Huisnummer": "28",
+    "Postcode": "9641HL",
+    "Plaats": "Veendam",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.10027205,
+    "lon": 6.88400258
+  },
+  {
+    "Standplaats": "Winschoten",
+    "Straatnaam": "J.D. van der Veenstraat",
+    "Huisnummer": "30",
+    "Postcode": "9672AC",
+    "Plaats": "Winschoten",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.13219021,
+    "lon": 7.04873644
+  },
+  {
+    "Standplaats": "Groningen Gotenburgweg",
+    "Straatnaam": "Gotenburgweg",
+    "Huisnummer": "40",
+    "Postcode": "9723TM",
+    "Plaats": "Groningen Gotenburgweg",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.20751877,
+    "lon": 6.60719054
+  },
+  {
+    "Standplaats": "Groningen-Noord",
+    "Straatnaam": "Kastanjelaan",
+    "Huisnummer": "2",
+    "Postcode": "9741CP",
+    "Plaats": "Groningen-Noord",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.23070867,
+    "lon": 6.55349793
+  },
+  {
+    "Standplaats": "Eelde",
+    "Straatnaam": "Machlaan",
+    "Huisnummer": "14-A",
+    "Postcode": "9761TK",
+    "Plaats": "Eelde",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 53.12889552,
+    "lon": 6.58754625
+  },
+  {
+    "Standplaats": "Appingedam",
+    "Straatnaam": "Zwet",
+    "Huisnummer": "35",
+    "Postcode": "9902RM",
+    "Plaats": "Appingedam",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.32021747,
+    "lon": 6.8826699
+  },
+  {
+    "Standplaats": "Winsum",
+    "Straatnaam": "Hoofdstraat  W",
+    "Huisnummer": "70",
+    "Postcode": "9951AC",
+    "Plaats": "Winsum",
+    "Beschikbaarheid": "Dag/avond",
+    "lat": 53.32772942,
+    "lon": 6.51550793
+  },
+  {
+    "Standplaats": "Leens",
+    "Straatnaam": "R.Ritzemastraat",
+    "Huisnummer": "9E",
+    "Postcode": "9965TD",
+    "Plaats": "Leens",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.36285991,
+    "lon": 6.37833204
+  },
+  {
+    "Standplaats": "Uithuizen",
+    "Straatnaam": "Industrieweg",
+    "Huisnummer": "14a",
+    "Postcode": "9981HJ",
+    "Plaats": "Uithuizen",
+    "Beschikbaarheid": "24 uur",
+    "lat": 53.40987803,
+    "lon": 6.67741127
+  },
+  {}
+]
