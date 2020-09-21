@@ -17,6 +17,7 @@ export const HospitalMap: MeiosisComponent = () => {
   let map: L.Map;
   let a25: L.GeoJSON;
   let ambulancePostLayer: L.GeoJSON;
+  let ambulanceReachLayer: L.GeoJSON;
   let postcodeLayer: L.GeoJSON;
   let ziekenhuisLayer: L.GeoJSON;
   // let selectedHospitalLayer: L.Marker;
@@ -29,6 +30,7 @@ export const HospitalMap: MeiosisComponent = () => {
         selectedHospitalId,
         aanrijd25,
         ambulancePosts,
+        ambulanceReach,
       } = state.app;
       const selectedHospital = hospitals?.features
         .filter((f) => f.properties.id === selectedHospitalId)
@@ -203,6 +205,28 @@ export const HospitalMap: MeiosisComponent = () => {
               },
             });
 
+            ambulanceReachLayer = L.geoJSON<IAmbulancePost>(ambulanceReach, {
+              style: {
+                fillColor: 'yellow',
+                color: 'yellow',
+              },
+              onEachFeature: (
+                {
+                  properties: {
+                    Standplaats,
+                    Straatnaam,
+                    Huisnummer,
+                    Beschikbaarheid,
+                  },
+                },
+                layer
+              ) => {
+                layer.bindPopup(
+                  `${Standplaats}, ${Straatnaam} ${Huisnummer}, ${Beschikbaarheid}`
+                );
+              },
+            });
+
             L.control
               .layers(
                 {
@@ -214,6 +238,7 @@ export const HospitalMap: MeiosisComponent = () => {
                   'aanrijdtijd < 25 min': a25,
                   postcodes: postcodeLayer,
                   ambulanceposten: ambulancePostLayer,
+                  'bereik ambulances': ambulanceReachLayer,
                 }
               )
               .addTo(map);

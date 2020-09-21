@@ -2,6 +2,7 @@ import m from 'mithril';
 import { UpdateStream } from '../meiosis';
 import { IZiekenhuis } from '../../models/ziekenhuis';
 import amublances from '../../assets/ambulancestandplaatsen.json';
+import amublancesReach from '../../assets/ambulancesbereik.json';
 import ziekenhuizen from '../../assets/ziekenhuizen.json';
 import aanrijdtijd25 from '../../assets/aanrijden25.json';
 import demografie from '../../assets/demografie.json';
@@ -73,6 +74,10 @@ const inactivateHospitalsFromHash = (
 export interface IAppStateModel {
   app: Partial<{
     ambulancePosts: GeoJSON.FeatureCollection<GeoJSON.Point, IAmbulancePost>;
+    ambulanceReach: GeoJSON.FeatureCollection<
+      GeoJSON.Polygon,
+      IAmbulancePost & { v: string }
+    >;
     hospitals: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>;
     aanrijd25: GeoJSON.FeatureCollection<GeoJSON.Polygon>;
     selectedHospitalId: number;
@@ -197,6 +202,7 @@ export const appStateMgmt = {
         ziekenhuizen as GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>
       ),
       ambulancePosts: amublances,
+      ambulanceReach: amublancesReach,
       aanrijd25: aanrijdtijd25,
       baseline: (ziekenhuizen as GeoJSON.FeatureCollection<
         GeoJSON.Point,

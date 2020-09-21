@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { IAmbulancePost } from './models';
 import axios from 'axios';
+import { sleep } from './utils';
 
 /** Convert the ambulanceposten.json data to GeoJSON, and include accessibility information using howfar and OSRM */
 
@@ -37,20 +38,25 @@ const processBereik = async () => {
     features: [] as any[],
   };
   for (const p of posten.features) {
-    if (p) {
-      const [lon, lat] = p.geometry.coordinates;
-      const url = `http://localhost:3000/${lat}/${lon}?bands=1&distance=15`;
-      const result = await axios.request<{ features: any[] }>({ url });
-      const f = result.data.features
-        ? result.data.features.map((f) => ({ ...f, properties: { ...p.properties, ...f.properties } }))
-        : undefined;
-      if (f) {
-        bereik.features.push(...f);
-      }
+    if (!p) {
+      continue;
+    }
+
+    const [lon, lat] = p.geometry.coordinates;
+    const url = `http://localhost:3000/${lat}/${lon}?bands=1&distance=15`;
+    console.log(`Processing ${p.properties.Standplaats}: ${url}`);
+    const result = await axios.get<{ features: any[] }>(url);
+    const f = result.data.features
+      ? result.data.features.map((f) => ({ ...f, properties: { ...p.properties, ...f.properties } }))
+      : undefined;
+    if (f) {
+      bereik.features.push(...f);
+    } else {
+      console.log(JSON.stringify(p, null, 2));
+      debugger;
     }
   }
   fs.writeFileSync(outputBereik, JSON.stringify(bereik));
 };
 
 processBereik();
-// console.log(posten);
