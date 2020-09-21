@@ -48,7 +48,14 @@ const DashboardPanel: FactoryComponent<{
 export const InfoPanel: MeiosisComponent = () => {
   return {
     view: ({ attrs: { state } }) => {
-      const { baseline = [0, 0, 0], curline = [0, 0, 0] } = state.app;
+      const {
+        baseline = [0, 0, 0],
+        curline = [0, 0, 0],
+        hospitals,
+      } = state.app;
+      const selectedHospitalsCount = hospitals?.features.filter(
+        (h) => h.properties.active
+      ).length;
       const totalBirths = baseline.reduce((acc, cur) => acc + cur);
       const qosBaseline = Math.round(
         100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths)
@@ -57,7 +64,11 @@ export const InfoPanel: MeiosisComponent = () => {
         100 * (1 - (curline[1] + 2 * curline[2]) / totalBirths)
       );
       return [
-        m('h1', `Baseline 2018 (QoS: ${qosBaseline})`),
+        m('h2', `Baseline 2018 (QoS: ${qosBaseline})`),
+        m(
+          'h3',
+          `Geselecteerd aant. ziekenhuizen: ${selectedHospitalsCount}/${hospitals?.features.length}`
+        ),
         m(DashboardPanel, { status: baseline }),
         m('ul', [
           m('li', `QoS: ${showDiff(qosCurline, qosBaseline)}`),

@@ -36,7 +36,7 @@ const updateHash = (
   const inactiveHospitals = hospitals?.features
     .filter((h) => !h.properties.active)
     .map((h) => h.properties.id);
-  const i = location.href.indexOf('?inactive');
+  const i = location.href.indexOf(inactive);
   const href = i > 0 ? location.href.substr(0, i) : location.href;
   if (inactiveHospitals && inactiveHospitals.length > 0) {
     console.log(`Inactive hospitals: ${inactiveHospitals.join(',')}`);
@@ -113,6 +113,7 @@ const computeCurline = (
     features: [],
   }
 ) => {
+  inactivateHospitalsFromHash(hospitals);
   // if (!hospitals) {
   //   return { hospitals, curline: [0,0,0] };
   // }
@@ -226,7 +227,7 @@ export const appStateMgmt = {
       inactivateHospitalsFromHash: (layer: L.GeoJSON) => {
         us(
           ({ app: { hospitals, selectedHospitalId, baseline, aanrijd25 } }) => {
-            inactivateHospitalsFromHash(hospitals);
+            // inactivateHospitalsFromHash(hospitals);
             const app = {
               ...computeCurline(hospitals),
               aanrijd25,
