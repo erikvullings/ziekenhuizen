@@ -41,7 +41,12 @@ const processBereik = async () => {
       const [lon, lat] = p.geometry.coordinates;
       const url = `http://localhost:3000/${lat}/${lon}?bands=1&distance=15`;
       const result = await axios.request<{ features: any[] }>({ url });
-      bereik.features.push(...result.data.features);
+      const f = result.data.features
+        ? result.data.features.map((f) => ({ ...f, properties: { ...p.properties, ...f.properties } }))
+        : undefined;
+      if (f) {
+        bereik.features.push(...f);
+      }
     }
   }
   fs.writeFileSync(outputBereik, JSON.stringify(bereik));

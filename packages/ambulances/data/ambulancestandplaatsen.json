@@ -1175,7 +1175,9 @@
     "Huisnummer": "1",
     "Postcode": "4761RN",
     "Plaats": "Zevenbergen",
-    "Beschikbaarheid": "24 uur"
+    "Beschikbaarheid": "24 uur",
+    "lat": 51.656809,
+    "lon": 4.557367
   },
   {
     "Standplaats": "Breda-Noord",
@@ -2806,6 +2808,5 @@
     "Beschikbaarheid": "24 uur",
     "lat": 53.40987803,
     "lon": 6.67741127
-  },
-  {}
+  }
 ]
