@@ -1,7 +1,7 @@
 import m from 'mithril';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import 'leaflet-hash';
+// import 'leaflet-hash';
 import {
   ziekenhuisIconX,
   ziekenhuisIconV,
@@ -91,7 +91,7 @@ export const HospitalMap: MeiosisComponent = () => {
           style:
             'height: 100vh; width: 70vw; margin: 0; padding: 0; overflow: hidden; box-shadow: (0px 0px 20px rgba(0,0,0,.3))',
           oncreate: () => {
-            map = L.map('map', {}).setView([51.9741, 5.6688], 9);
+            map = L.map('map', {}).setView([52.14, 5.109], 8);
             // map.on('load', (e: LeafletEvent) => {
             //   // In order to fix an issue when loading leaflet in a modal or tab: https://stackoverflow.com/a/53511529/319711
             //   setTimeout(() => {
@@ -121,7 +121,7 @@ export const HospitalMap: MeiosisComponent = () => {
               }
             );
             // Hash in URL
-            new (L as any).Hash(map);
+            // new (L as any).Hash(map);
 
             ziekenhuisLayer = L.geoJSON<IZiekenhuis>(hospitals, {
               pointToLayer: (feature, latlng) => {

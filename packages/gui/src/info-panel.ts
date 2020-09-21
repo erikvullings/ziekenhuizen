@@ -45,9 +45,68 @@ const DashboardPanel: FactoryComponent<{
   };
 };
 
+const ScenarioButton: FactoryComponent<{
+  buttonName: number;
+  activeScenario?: number;
+  reload: (index: number) => void;
+}> = () => {
+  return {
+    view: ({ attrs: { buttonName, activeScenario, reload } }) => {
+      return m('input[type=button]', {
+        value: `S${buttonName}`,
+        style: buttonName === activeScenario ? 'color: red' : '',
+        onclick: () => reload && reload(buttonName),
+      });
+    },
+  };
+};
+
+const SaveScenarioButton: FactoryComponent<{
+  activeScenario?: number;
+  save: (index: number) => void;
+}> = () => {
+  return {
+    view: ({ attrs: { activeScenario, save } }) => {
+      return m('input[type=button]', {
+        value: `Save`,
+        onclick: () => activeScenario && save && save(activeScenario),
+      });
+    },
+  };
+};
+
+const SaveScenarioPanel: MeiosisComponent = () => {
+  return {
+    view: ({
+      attrs: {
+        state: {
+          app: {
+            activeScenario = parseInt(
+              localStorage.getItem('ziekenhuizen.activeScenario') || '1'
+            ),
+          },
+        },
+        actions,
+      },
+    }) => {
+      const reload = actions.activateScenario;
+      const save = actions.saveScenario;
+      return m(
+        '.right-align',
+        m('ul.list-inline', [
+          m('li', m(ScenarioButton, { buttonName: 1, activeScenario, reload })),
+          m('li', m(ScenarioButton, { buttonName: 2, activeScenario, reload })),
+          m('li', m(ScenarioButton, { buttonName: 3, activeScenario, reload })),
+          m('li', m(SaveScenarioButton, { activeScenario, save })),
+        ])
+      );
+    },
+  };
+};
+
 export const InfoPanel: MeiosisComponent = () => {
   return {
-    view: ({ attrs: { state } }) => {
+    view: ({ attrs: { state, actions } }) => {
       const {
         baseline = [0, 0, 0],
         curline = [0, 0, 0],
@@ -64,6 +123,7 @@ export const InfoPanel: MeiosisComponent = () => {
         100 * (1 - (curline[1] + 2 * curline[2]) / totalBirths)
       );
       return [
+        m(SaveScenarioPanel, { state, actions }),
         m('h2', `Baseline 2018 (QoS: ${qosBaseline})`),
         m(
           'h3',

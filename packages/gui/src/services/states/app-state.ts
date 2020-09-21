@@ -36,17 +36,22 @@ const updateHash = (
   const inactiveHospitals = hospitals?.features
     .filter((h) => !h.properties.active)
     .map((h) => h.properties.id);
-  const i = location.href.indexOf(inactive);
-  const href = i > 0 ? location.href.substr(0, i) : location.href;
+  // const i = location.href.indexOf(inactive);
+  // const href = i > 0 ? location.href.substr(0, i) : location.href;
   if (inactiveHospitals && inactiveHospitals.length > 0) {
     console.log(`Inactive hospitals: ${inactiveHospitals.join(',')}`);
   }
-  location.replace(
-    href +
-      (inactiveHospitals && inactiveHospitals.length > 0
-        ? `${inactive}=${inactiveHospitals.join(',')}`
-        : '')
+  m.route.set(
+    inactiveHospitals && inactiveHospitals.length > 0
+      ? `${inactive}=${inactiveHospitals.join(',')}`
+      : ''
   );
+  // location.replace(
+  //   href +
+  //     (inactiveHospitals && inactiveHospitals.length > 0
+  //       ? `${inactive}=${inactiveHospitals.join(',')}`
+  //       : '')
+  // );
 };
 
 const inactivateHospitalsFromHash = (
@@ -85,6 +90,7 @@ export interface IAppStateModel {
     baseline: [number, number, number];
     /** Total births in 25 min area, in 30 min, outside 30 min */
     curline: [number, number, number];
+    activeScenario?: number;
     isSearching: boolean;
     searchQuery?: string;
   }>;
@@ -189,6 +195,8 @@ export interface IAppStateActions {
   selectHospital: (id: number) => void;
   toggleHospitalActivity: (id: number, layer?: L.GeoJSON) => void;
   search: (isSearching: boolean, searchQuery?: string) => void;
+  activateScenario: (scenarioIndex: number) => void;
+  saveScenario: (scenarioIndex: number) => void;
 }
 
 export interface IAppState {
@@ -226,13 +234,21 @@ export const appStateMgmt = {
     return {
       inactivateHospitalsFromHash: (layer: L.GeoJSON) => {
         us(
-          ({ app: { hospitals, selectedHospitalId, baseline, aanrijd25 } }) => {
-            // inactivateHospitalsFromHash(hospitals);
+          ({
+            app: {
+              hospitals,
+              aanrijd25,
+              selectedHospitalId,
+              baseline,
+              activeScenario,
+            },
+          }) => {
             const app = {
               ...computeCurline(hospitals),
               aanrijd25,
               selectedHospitalId,
               baseline,
+              activeScenario,
             };
             if (layer) {
               let i = 0;
@@ -265,7 +281,15 @@ export const appStateMgmt = {
       },
       toggleHospitalActivity: (id: number, layer?: L.GeoJSON) => {
         us(
-          ({ app: { hospitals, selectedHospitalId, baseline, aanrijd25 } }) => {
+          ({
+            app: {
+              hospitals,
+              selectedHospitalId,
+              baseline,
+              aanrijd25,
+              activeScenario,
+            },
+          }) => {
             hospitals?.features.some((h) => {
               if (h.properties.id === id) {
                 h.properties.active = !h.properties.active;
@@ -279,6 +303,7 @@ export const appStateMgmt = {
               aanrijd25,
               selectedHospitalId,
               baseline,
+              activeScenario,
             };
             if (layer) {
               let i = 0;
@@ -308,6 +333,26 @@ export const appStateMgmt = {
       },
       search: (isSearching: boolean, searchQuery?: string) =>
         us({ app: { isSearching, searchQuery } }),
+      activateScenario: (scenarioIndex) => {
+        window.localStorage.setItem(
+          'ziekenhuizen.activeScenario',
+          scenarioIndex.toString()
+        );
+        const href = window.localStorage.getItem(
+          `ziekenhuizen.scenario${scenarioIndex}`
+        );
+        if (href && href !== window.location.href) {
+          window.location.href = href;
+          window.location.reload();
+        }
+        us({ app: { activeScenario: scenarioIndex } });
+      },
+      saveScenario: (scenarioIndex) => {
+        window.localStorage.setItem(
+          `ziekenhuizen.scenario${scenarioIndex}`,
+          window.location.href
+        );
+      },
     };
   },
 } as IAppState;

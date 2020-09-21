@@ -33,8 +33,7 @@
     "proj4": "^2.6.2",
     "proj4leaflet": "^1.0.2",
     "mgrs": "^1.0.0",
-    "wkt-parser": "^1.2.4",
-    "leaflet-hash": "^0.2.1"
+    "wkt-parser": "^1.2.4"
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.7",
