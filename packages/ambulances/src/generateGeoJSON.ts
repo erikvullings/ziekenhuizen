@@ -39,7 +39,7 @@ const processBereik = async () => {
   for (const p of posten.features) {
     if (p) {
       const [lon, lat] = p.geometry.coordinates;
-      const url = `http://localhost:3000/${lat}/${lon}`;
+      const url = `http://localhost:3000/${lat}/${lon}?bands=1&distance=15`;
       const result = await axios.request<{ features: any[] }>({ url });
       bereik.features.push(...result.data.features);
     }
