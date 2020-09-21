@@ -57,4 +57,10 @@ De visualisatie laat:
   aantal geboorten dat buiten de 25 min aanrijdtijd valt. Des te meer, des te lager de QoS.
 - Optioneel kan de postcode kaartlaag uitgezet worden.
 - Optioneel kan de aanrijdtijd kaartlaag van 25 min worden aangezet.
-- Optioneel kan er voor een normale achtergrondkaart gekozen worden (ipv de grijze)
+- Optioneel kan er voor een normale achtergrondkaart gekozen worden (i.p.v. de grijze)
+- Optioneel kunnen de ambulanceposten getoond worden, en hun bereik in 15 minuten rijden
+- Je kunt als volgt een scenario opslaan (naar `localstorage`, dus het werkt alleen in dezelfde browser op dezelfde PC):
+  - Selecteer een scenario (rechtsboven, S1, S2 of S3)
+  - Selecteer welke ziekenhuizen actief zijn op de gebruikelijke wijze
+  - Druk op Save
+  - Switch naar een ander scenario door de desbetreffende knop in te drukken: de pagina wordt dan weer opnieuw geladen met de gewenste ziekenhuizen die actief zijn.
