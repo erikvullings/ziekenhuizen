@@ -9,12 +9,16 @@ import L from 'leaflet';
 export const formatNumber = (x: number) =>
   x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
+export const round = (x: number) => Math.round(100 * x);
+
 export const showDiff = (cur: number, orig: number) => {
   const c = Math.round(cur);
   const o = Math.round(orig);
+  const sign = c > o ? '+' : '';
   return c === o
     ? formatNumber(c)
-    : `${formatNumber(c)} (${c > o ? '+' : ''}${formatNumber(c - o)})`;
+    : `${formatNumber(c)} (${sign}${formatNumber(c - o)}, 
+      ${sign}${round((c - o) / o)}%)`;
 };
 
 export const RDnew = new L.Proj.CRS(
