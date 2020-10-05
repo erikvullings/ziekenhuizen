@@ -40,10 +40,12 @@ export const HospitalMap: MeiosisComponent = () => {
       const aantalGeboorten = h ? Math.round(h.t25 + h.t30 + h.tOv) : 0;
       const aantalGeboortecentrum = Math.round(aantalGeboorten * 0.15);
       const aantalTweedelijn = Math.round(aantalGeboorten * 0.71);
+      /** Huidig aantal geboorten na het sluiten van andere ziekenhuizen */
       const aantalGeboorten2 = h
         ? Math.round(h.curline.reduce((acc, cur) => acc + cur))
         : 0;
       const aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * 0.15);
+      /** Huidig aantal 2e-lijns geboorten na het sluiten van andere ziekenhuizen */
       const aantalTweedelijn2 = Math.round(aantalGeboorten2 * 0.71);
 
       if (map && a25) {

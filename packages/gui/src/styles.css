@@ -97,3 +97,8 @@ ul > li > span {
 .right-align {
   text-align: right;
 }
+
+.table-header {
+  font-weight: bold;
+  background-color: lightgray;
+}

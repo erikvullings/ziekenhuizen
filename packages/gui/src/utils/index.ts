@@ -9,6 +9,9 @@ import L from 'leaflet';
 export const formatNumber = (x: number) =>
   x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
+export const formatRoundedNumber = (x: number, div = 1) =>
+  (Math.round(x * div) / div).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
 export const round = (x: number) => Math.round(100 * x);
 
 export const showDiff = (cur: number, orig: number) => {
