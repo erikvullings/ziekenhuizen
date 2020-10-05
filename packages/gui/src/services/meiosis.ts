@@ -1,10 +1,6 @@
-import MithrilStream, { Stream } from 'mithril/stream';
+import Stream from 'mithril/stream';
 import { merge } from '../utils/mergerino';
-import {
-  appStateMgmt,
-  IAppStateActions,
-  IAppStateModel,
-} from './states/app-state';
+import { appStateMgmt, IAppStateActions, IAppStateModel } from './states/app-state';
 import { FactoryComponent } from 'mithril';
 
 export type StatePatch<S> = (state: S) => S;
@@ -25,10 +21,9 @@ export type MeiosisComponent = FactoryComponent<{
 
 const app = {
   initial: Object.assign({}, appStateMgmt.initial),
-  actions: (update: UpdateStream) =>
-    Object.assign({}, appStateMgmt.actions(update)) as IActions,
+  actions: (update: UpdateStream) => Object.assign({}, appStateMgmt.actions(update)) as IActions,
 };
 
-const update = MithrilStream<ModelUpdateFunction>();
-export const states = MithrilStream.scan(merge, app.initial, update);
+const update = Stream<ModelUpdateFunction>();
+export const states = Stream.scan(merge, app.initial, update);
 export const actions = app.actions(update);

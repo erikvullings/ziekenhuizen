@@ -30,22 +30,14 @@ ziekenhuizen.features = ziekenhuizen.features.map((z: any) => ({
 
 const inactive = '?inactive';
 
-const updateHash = (
-  hospitals?: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>
-) => {
-  const inactiveHospitals = hospitals?.features
-    .filter((h) => !h.properties.active)
-    .map((h) => h.properties.id);
+const updateHash = (hospitals?: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>) => {
+  const inactiveHospitals = hospitals?.features.filter((h) => !h.properties.active).map((h) => h.properties.id);
   // const i = location.href.indexOf(inactive);
   // const href = i > 0 ? location.href.substr(0, i) : location.href;
   if (inactiveHospitals && inactiveHospitals.length > 0) {
     console.log(`Inactive hospitals: ${inactiveHospitals.join(',')}`);
   }
-  m.route.set(
-    inactiveHospitals && inactiveHospitals.length > 0
-      ? `${inactive}=${inactiveHospitals.join(',')}`
-      : ''
-  );
+  m.route.set(inactiveHospitals && inactiveHospitals.length > 0 ? `${inactive}=${inactiveHospitals.join(',')}` : '');
   // location.replace(
   //   href +
   //     (inactiveHospitals && inactiveHospitals.length > 0
@@ -54,9 +46,7 @@ const updateHash = (
   // );
 };
 
-const inactivateHospitalsFromHash = (
-  hospitals?: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>
-) => {
+const inactivateHospitalsFromHash = (hospitals?: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>) => {
   const i = location.href.indexOf(inactive);
   if (i < 0) return;
   try {
@@ -79,10 +69,7 @@ const inactivateHospitalsFromHash = (
 export interface IAppStateModel {
   app: Partial<{
     ambulancePosts: GeoJSON.FeatureCollection<GeoJSON.Point, IAmbulancePost>;
-    ambulanceReach: GeoJSON.FeatureCollection<
-      GeoJSON.Polygon,
-      IAmbulancePost & { v: string }
-    >;
+    ambulanceReach: GeoJSON.FeatureCollection<GeoJSON.Polygon, IAmbulancePost & { v: string }>;
     hospitals: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>;
     aanrijd25: GeoJSON.FeatureCollection<GeoJSON.Polygon>;
     selectedHospitalId: number;
@@ -96,9 +83,7 @@ export interface IAppStateModel {
   }>;
 }
 
-const createFindActiveHospital = (
-  hospitals: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>
-) => {
+const createFindActiveHospital = (hospitals: GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>) => {
   const activeHospitals = hospitals.features.filter((h) => h.properties.active);
   return (ids: number[]) =>
     ids.length > 0
@@ -176,11 +161,7 @@ const computeCurline = (
   });
 
   const curline = hospitals.features.reduce(
-    (acc, f) => [
-      acc[0] + f.properties.curline[0],
-      acc[1] + f.properties.curline[1],
-      acc[2] + f.properties.curline[2],
-    ],
+    (acc, f) => [acc[0] + f.properties.curline[0], acc[1] + f.properties.curline[1], acc[2] + f.properties.curline[2]],
     [0, 0, 0]
   ) as [number, number, number];
 
@@ -207,22 +188,17 @@ export interface IAppState {
 export const appStateMgmt = {
   initial: {
     app: {
-      ...computeCurline(
-        ziekenhuizen as GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>
-      ),
+      ...computeCurline(ziekenhuizen as GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>),
       ambulancePosts: amublances,
       ambulanceReach: amublancesReach,
       aanrijd25: aanrijdtijd25,
-      baseline: (ziekenhuizen as GeoJSON.FeatureCollection<
-        GeoJSON.Point,
-        IZiekenhuis
-      >).features.reduce(
+      baseline: (ziekenhuizen as GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>).features.reduce(
         (acc, cur) => {
-          return [
-            acc[0] + cur.properties.t25,
-            acc[1] + cur.properties.t30,
-            acc[2] + cur.properties.tOv,
-          ] as [number, number, number];
+          return [acc[0] + cur.properties.t25, acc[1] + cur.properties.t30, acc[2] + cur.properties.tOv] as [
+            number,
+            number,
+            number
+          ];
         },
         [0, 0, 0] as [number, number, number]
       ),
@@ -230,128 +206,93 @@ export const appStateMgmt = {
       searchQuery: '',
     },
   } as IAppStateModel,
-  actions: (us: UpdateStream): IAppStateActions => {
+  actions: (update: UpdateStream): IAppStateActions => {
     return {
       inactivateHospitalsFromHash: (layer: L.GeoJSON) => {
-        us(
-          ({
-            app: {
-              hospitals,
-              aanrijd25,
-              selectedHospitalId,
-              baseline,
-              activeScenario,
-            },
-          }) => {
-            const app = {
-              ...computeCurline(hospitals),
-              aanrijd25,
-              selectedHospitalId,
-              baseline,
-              activeScenario,
-            };
-            if (layer) {
-              let i = 0;
-              layer.eachLayer((l) => {
-                const curHospital = app.hospitals.features[i].properties;
-                if (curHospital.active) {
-                  const curLoad =
-                    ((3 * (curHospital.curline[0] - curHospital.t25)) /
-                      curHospital.t25 +
-                      (2 * (curHospital.curline[1] - curHospital.t30)) /
-                        curHospital.t30 +
-                      (curHospital.curline[2] - curHospital.tOv) /
-                        curHospital.tOv) /
-                    6;
-                  const curColor = getColor(100 * curLoad);
-                  (l as L.Marker).setIcon(createIcon(curColor)).setOpacity(1);
-                } else {
-                  (l as L.Marker).setIcon(ziekenhuisIconX).setOpacity(0.3);
-                }
-                i++;
-              });
-            }
-            return { app };
+        update(({ app: { hospitals, aanrijd25, selectedHospitalId, baseline, activeScenario } }) => {
+          const app = {
+            ...computeCurline(hospitals),
+            aanrijd25,
+            selectedHospitalId,
+            baseline,
+            activeScenario,
+          };
+          if (layer) {
+            let i = 0;
+            layer.eachLayer((l) => {
+              const curHospital = app.hospitals.features[i].properties;
+              if (curHospital.active) {
+                const curLoad =
+                  ((3 * (curHospital.curline[0] - curHospital.t25)) / curHospital.t25 +
+                    (2 * (curHospital.curline[1] - curHospital.t30)) / curHospital.t30 +
+                    (curHospital.curline[2] - curHospital.tOv) / curHospital.tOv) /
+                  6;
+                const curColor = getColor(100 * curLoad);
+                (l as L.Marker).setIcon(createIcon(curColor)).setOpacity(1);
+              } else {
+                (l as L.Marker).setIcon(ziekenhuisIconX).setOpacity(0.3);
+              }
+              i++;
+            });
           }
-        );
+          return { app };
+        });
       },
       selectHospital: (selectedHospitalId: number) => {
-        us({ app: { selectedHospitalId } });
+        update({ app: { selectedHospitalId } });
         m.redraw();
       },
       toggleHospitalActivity: (id: number, layer?: L.GeoJSON) => {
-        us(
-          ({
-            app: {
-              hospitals,
-              selectedHospitalId,
-              baseline,
-              aanrijd25,
-              activeScenario,
-            },
-          }) => {
-            hospitals?.features.some((h) => {
-              if (h.properties.id === id) {
-                h.properties.active = !h.properties.active;
-                return true;
-              }
-              return false;
-            });
-            updateHash(hospitals);
-            const app = {
-              ...computeCurline(hospitals),
-              aanrijd25,
-              selectedHospitalId,
-              baseline,
-              activeScenario,
-            };
-            if (layer) {
-              let i = 0;
-              layer.eachLayer((l) => {
-                const curHospital = app.hospitals.features[i].properties;
-                if (curHospital.active) {
-                  const curLoad =
-                    ((3 * (curHospital.curline[0] - curHospital.t25)) /
-                      curHospital.t25 +
-                      (2 * (curHospital.curline[1] - curHospital.t30)) /
-                        curHospital.t30 +
-                      (curHospital.curline[2] - curHospital.tOv) /
-                        curHospital.tOv) /
-                    6;
-                  const curColor = getColor(100 * curLoad);
-                  (l as L.Marker).setIcon(createIcon(curColor)).setOpacity(1);
-                } else {
-                  (l as L.Marker).setIcon(ziekenhuisIconX).setOpacity(0.3);
-                }
-                i++;
-              });
+        update(({ app: { hospitals, selectedHospitalId, baseline, aanrijd25, activeScenario } }) => {
+          hospitals?.features.some((h) => {
+            if (h.properties.id === id) {
+              h.properties.active = !h.properties.active;
+              return true;
             }
-            return { app };
+            return false;
+          });
+          updateHash(hospitals);
+          const app = {
+            ...computeCurline(hospitals),
+            aanrijd25,
+            selectedHospitalId,
+            baseline,
+            activeScenario,
+          };
+          if (layer) {
+            let i = 0;
+            layer.eachLayer((l) => {
+              const curHospital = app.hospitals.features[i].properties;
+              if (curHospital.active) {
+                const curLoad =
+                  ((3 * (curHospital.curline[0] - curHospital.t25)) / curHospital.t25 +
+                    (2 * (curHospital.curline[1] - curHospital.t30)) / curHospital.t30 +
+                    (curHospital.curline[2] - curHospital.tOv) / curHospital.tOv) /
+                  6;
+                const curColor = getColor(100 * curLoad);
+                (l as L.Marker).setIcon(createIcon(curColor)).setOpacity(1);
+              } else {
+                (l as L.Marker).setIcon(ziekenhuisIconX).setOpacity(0.3);
+              }
+              i++;
+            });
           }
-        );
+          return { app };
+        });
         // m.redraw();
       },
-      search: (isSearching: boolean, searchQuery?: string) =>
-        us({ app: { isSearching, searchQuery } }),
+      search: (isSearching: boolean, searchQuery?: string) => update({ app: { isSearching, searchQuery } }),
       activateScenario: (scenarioIndex) => {
-        window.localStorage.setItem(
-          'ziekenhuizen.activeScenario',
-          scenarioIndex.toString()
-        );
-        const href = window.localStorage.getItem(
-          `ziekenhuizen.scenario${scenarioIndex}`
-        );
+        window.localStorage.setItem('ziekenhuizen.activeScenario', scenarioIndex.toString());
+        const href = window.localStorage.getItem(`ziekenhuizen.scenario${scenarioIndex}`);
         if (href && href !== window.location.href) {
           window.location.href = href;
           window.location.reload();
         }
-        us({ app: { activeScenario: scenarioIndex } });
+        update({ app: { activeScenario: scenarioIndex } });
       },
       saveScenario: (scenarioIndex) => {
-        window.localStorage.setItem(
-          `ziekenhuizen.scenario${scenarioIndex}`,
-          window.location.href
-        );
+        window.localStorage.setItem(`ziekenhuizen.scenario${scenarioIndex}`, window.location.href);
       },
     };
   },
