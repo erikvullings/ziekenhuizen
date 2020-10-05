@@ -187,3 +187,8 @@ label {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+table {
+  text-align: right;
+  width: 100%;
+}

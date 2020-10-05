@@ -1,20 +1,25 @@
 import m from 'mithril';
 import { investering_per_partus } from '../models/cost-variables';
 import { MeiosisComponent } from '../services/meiosis';
-import { formatRoundedNumber as f } from '../utils';
+import { formatNumber, formatRoundedNumber as f, showDiff, showDiffInColumns } from '../utils';
 
 export const GlobalCostModule: MeiosisComponent = () => {
   return {
     view: ({
       attrs: {
         state: {
-          app: { hospitals },
+          app: { hospitals, baseline = [0, 0, 0], curline = [0, 0, 0] },
         },
       },
     }) => {
       if (!hospitals) {
         return;
       }
+      const selectedHospitalsCount = hospitals.features.filter((h) => h.properties.active).length;
+      const totalBirths = baseline.reduce((acc, cur) => acc + cur);
+      const qosBaseline = Math.round(100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths));
+      const qosCurline = Math.round(100 * (1 - (curline[1] + 2 * curline[2]) / totalBirths));
+
       const [investering, desinvestering] = hospitals.features.reduce(
         (acc, cur) => {
           const h = cur.properties;
@@ -30,7 +35,18 @@ export const GlobalCostModule: MeiosisComponent = () => {
         },
         [0, 0] as [number, number]
       );
-      return m('div', `(Des-)investeringen: ${f((investering - desinvestering) / 1000000, 10)} mln €`);
+      return m(
+        'table',
+        { style: 'width: 100%; margin: 1rem 0' },
+        m('tr', m('td.table-header[colspan=4]', `Quality of Service ${showDiff(qosCurline, qosBaseline)}`)),
+        m('tr', [m('td', '< 25 min'), ...showDiffInColumns(curline[0], baseline[0])]),
+        m('tr', [m('td', '< 30 min'), ...showDiffInColumns(curline[1], baseline[1])]),
+        m('tr', [m('td', '> 30 min'), ...showDiffInColumns(curline[2], baseline[2])]),
+        m('tr', [
+          m('td', '(Des-)investeringen'),
+          m('td.left-align[colspan=3]', `${f((investering - desinvestering) / 1000000, 10)} mln. €`),
+        ])
+      );
     },
   };
 };

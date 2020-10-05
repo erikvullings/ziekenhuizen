@@ -16,31 +16,14 @@ const DashboardPanel: FactoryComponent<{
       const aantalThuisgeboren = Math.round(aantalGeboorten * 0.129);
       const aantalGeboortecentrum = Math.round(aantalGeboorten * 0.15);
       const aantalTweedelijn = Math.round(aantalGeboorten * 0.71);
-      const overig = Math.round(
-        aantalGeboorten -
-          aantalThuisgeboren -
-          aantalTweedelijn -
-          aantalGeboortecentrum
-      );
+      const overig = Math.round(aantalGeboorten - aantalThuisgeboren - aantalTweedelijn - aantalGeboortecentrum);
       console.log(`Aantal geboorten: ${aantalGeboorten}`);
 
       return m('ul.list-inline', [
-        m('li', [
-          m('img', { src: houseImg, width: 20, height: 20 }),
-          m('span', formatNumber(aantalThuisgeboren)),
-        ]),
-        m('li', [
-          m('img', { src: healthImg, width: 20, height: 20 }),
-          m('span', formatNumber(aantalGeboortecentrum)),
-        ]),
-        m('li', [
-          m('img', { src: ziekenhuisImg, width: 20, height: 20 }),
-          m('span', formatNumber(aantalTweedelijn)),
-        ]),
-        m('li', [
-          m('img', { src: childImg, width: 20, height: 20 }),
-          m('span', formatNumber(overig)),
-        ]),
+        m('li', [m('img', { src: houseImg, width: 20, height: 20 }), m('span', formatNumber(aantalThuisgeboren))]),
+        m('li', [m('img', { src: healthImg, width: 20, height: 20 }), m('span', formatNumber(aantalGeboortecentrum))]),
+        m('li', [m('img', { src: ziekenhuisImg, width: 20, height: 20 }), m('span', formatNumber(aantalTweedelijn))]),
+        m('li', [m('img', { src: childImg, width: 20, height: 20 }), m('span', formatNumber(overig))]),
       ]);
     },
   };
@@ -81,11 +64,7 @@ const SaveScenarioPanel: MeiosisComponent = () => {
     view: ({
       attrs: {
         state: {
-          app: {
-            activeScenario = parseInt(
-              localStorage.getItem('ziekenhuizen.activeScenario') || '1'
-            ),
-          },
+          app: { activeScenario = parseInt(localStorage.getItem('ziekenhuizen.activeScenario') || '1') },
         },
         actions,
       },
@@ -108,35 +87,15 @@ const SaveScenarioPanel: MeiosisComponent = () => {
 export const InfoPanel: MeiosisComponent = () => {
   return {
     view: ({ attrs: { state, actions } }) => {
-      const {
-        baseline = [0, 0, 0],
-        curline = [0, 0, 0],
-        hospitals,
-      } = state.app;
-      const selectedHospitalsCount = hospitals?.features.filter(
-        (h) => h.properties.active
-      ).length;
+      const { baseline = [0, 0, 0], hospitals } = state.app;
+      const selectedHospitalsCount = hospitals?.features.filter((h) => h.properties.active).length;
       const totalBirths = baseline.reduce((acc, cur) => acc + cur);
-      const qosBaseline = Math.round(
-        100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths)
-      );
-      const qosCurline = Math.round(
-        100 * (1 - (curline[1] + 2 * curline[2]) / totalBirths)
-      );
+      const qosBaseline = Math.round(100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths));
       return [
         m(SaveScenarioPanel, { state, actions }),
         m('h2', `Baseline 2018 (QoS: ${qosBaseline})`),
-        m(
-          'h3',
-          `Geselecteerd aant. ziekenhuizen: ${selectedHospitalsCount}/${hospitals?.features.length}`
-        ),
+        m('h3', `Geselecteerd aantal ziekenhuizen: ${selectedHospitalsCount}/${hospitals?.features.length}`),
         m(DashboardPanel, { status: baseline }),
-        m('ul', [
-          m('li', `QoS: ${showDiff(qosCurline, qosBaseline)}`),
-          m('li', `< 25 min: ${showDiff(curline[0], baseline[0])}`),
-          m('li', `< 30 min: ${showDiff(curline[1], baseline[1])}`),
-          m('li', `> 30 min: ${showDiff(curline[2], baseline[2])}`),
-        ]),
         m(GlobalCostModule, { state, actions }),
       ];
     },

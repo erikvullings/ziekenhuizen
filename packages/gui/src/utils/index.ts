@@ -7,8 +7,7 @@ import m from 'mithril';
 // import ziekenhuisSvgX from '../assets/icons/ziekenhuis_x.svg';
 // import ziekenhuisSvgI from '../assets/icons/ziekenhuis_!.svg';
 
-export const formatNumber = (x: number) =>
-  x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+export const formatNumber = (x: number) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
 export const formatRoundedNumber = (x: number, div = 1) =>
   (Math.round(x * div) / div).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -30,13 +29,10 @@ export const showDiffInColumns = (cur: number, orig: number) => {
   const o = Math.round(orig);
   const sign = c > o ? '+' : '';
   return c === o
-    ? [m('td[colspan=3]', formatNumber(c))]
+    ? [m('td', formatNumber(c))]
     : [
         m('td', formatNumber(c)),
-        m(
-          'td.left-align[colspan=2]',
-          `(${sign}${formatNumber(c - o)}, ${sign}${round((c - o) / o)}%)`
-        ),
+        m('td.left-align[colspan=2]', `(${sign}${formatNumber(c - o)}, ${sign}${round((c - o) / o)}%)`),
       ];
 };
 
@@ -61,10 +57,7 @@ export const RDnew = new L.Proj.CRS(
       0.42,
       0.21,
     ],
-    bounds: L.bounds(
-      [-285401.92, 22598.08],
-      [595401.9199999999, 903401.9199999999]
-    ),
+    bounds: L.bounds([-285401.92, 22598.08], [595401.9199999999, 903401.9199999999]),
     origin: [-285401.92, 22598.08],
   }
 );
