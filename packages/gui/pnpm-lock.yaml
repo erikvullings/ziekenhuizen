@@ -1,5 +1,5 @@
 dependencies:
-  leaflet: 1.6.0
+  leaflet: 1.7.1
   mgrs: 1.0.0
   mithril: 2.0.4
   proj4: 2.6.2
@@ -8,14 +8,14 @@ dependencies:
 devDependencies:
   '@types/geojson': 7946.0.7
   '@types/leaflet': 1.5.17
-  '@types/mithril': 1.1.17
-  '@types/node': 14.0.24
-  '@types/proj4': 2.3.4
+  '@types/mithril': 2.0.4
+  '@types/node': 14.11.2
+  '@types/proj4': 2.5.0
   '@types/proj4leaflet': 1.0.5
   cssnano: 4.1.10
   parcel: 1.12.4
   rimraf: 3.0.2
-  typescript: 3.9.7
+  typescript: 4.0.3
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.4:
@@ -1024,18 +1024,22 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2XYq9k6kNjhNI7PaTz8Rdxcc8Vzwu97OaS9CtcrTxnTSxFUGwjlGjTDvhTLJU+JRSfZ4lBwGcl0SjZHALdVr6g==
-  /@types/mithril/1.1.17:
+  /@types/mithril/2.0.4:
     dev: true
     resolution:
-      integrity: sha512-U/wwKZT8hjstY2Q470bLMGVh/fjT2+SgBMzIILn0Z4nmgzzG6j+n18UOAxQ63aI8vXIOkQsbkAdbESt8+jIQdQ==
-  /@types/node/14.0.24:
+      integrity: sha512-MIvmMwqoCN+e46Yj+FqvlYXviGK/PW98KDdx07j29ljIme74LW7KbBimogUdNorloeqqFpQYSu8ioJ57UBvFiA==
+  /@types/node/14.11.2:
     dev: true
     resolution:
-      integrity: sha512-btt/oNOiDWcSuI721MdL8VQGnjsKjlTMdrKyTcLCKeQp/n4AAMFJ961wMbp+09y8WuGPClDEv07RIItdXKIXAA==
+      integrity: sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
   /@types/proj4/2.3.4:
     dev: true
     resolution:
       integrity: sha1-84i2AgnEy3XsIaF6S0rFWnGlhVg=
+  /@types/proj4/2.5.0:
+    dev: true
+    resolution:
+      integrity: sha512-9bR9qvg4wZE6UiIlmhodCOZ2r38SeN8T35SsmMDuIMfACxxaMvIwiwoTJnEA9f/KEhL+BQSuD+arbZucUzYu7w==
   /@types/proj4leaflet/1.0.5:
     dependencies:
       '@types/geojson': 7946.0.7
@@ -3171,10 +3175,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
-  /leaflet/1.6.0:
+  /leaflet/1.7.1:
     dev: false
     resolution:
-      integrity: sha512-CPkhyqWUKZKFJ6K8umN5/D2wrJ2+/8UIpXppY7QDnUZW5bZL5+SEI2J7GBpwh4LIupOKqbNSQXgqmrEJopHVNQ==
+      integrity: sha512-/xwPEBidtg69Q3HlqPdU3DnrXQOvQU/CCHA1tcDQVzOwm91YMYaILjNp7L4Eaw5Z4sOYdbBz6koWyibppd8Zqw==
   /leven/3.1.0:
     dev: true
     engines:
@@ -5057,13 +5061,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/3.9.7:
+  /typescript/4.0.3:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+      integrity: sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
   /uncss/0.17.3:
     dependencies:
       commander: 2.20.3
@@ -5324,18 +5328,18 @@ packages:
       integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 specifiers:
   '@types/geojson': ^7946.0.7
-  '@types/leaflet': ^1.5.4
-  '@types/mithril': ^1.1.12
-  '@types/node': ^14.0.24
-  '@types/proj4': 2.3.4
+  '@types/leaflet': ^1.5.17
+  '@types/mithril': ^2.0.4
+  '@types/node': ^14.11.2
+  '@types/proj4': 2.5.0
   '@types/proj4leaflet': ^1.0.5
   cssnano: ^4.1.10
-  leaflet: ^1.6.0
+  leaflet: ^1.7.1
   mgrs: ^1.0.0
   mithril: ^2.0.4
   parcel: ^1.12.4
   proj4: ^2.6.2
   proj4leaflet: ^1.0.2
   rimraf: ^3.0.2
-  typescript: ^3.9.7
+  typescript: ^4.0.3
   wkt-parser: ^1.2.4

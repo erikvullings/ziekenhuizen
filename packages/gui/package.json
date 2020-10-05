@@ -29,7 +29,7 @@
   "homepage": "https://github.com/erikvullings/ziekenhuizen#readme",
   "dependencies": {
     "mithril": "^2.0.4",
-    "leaflet": "^1.6.0",
+    "leaflet": "^1.7.1",
     "proj4": "^2.6.2",
     "proj4leaflet": "^1.0.2",
     "mgrs": "^1.0.0",
@@ -37,14 +37,14 @@
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.7",
-    "@types/leaflet": "^1.5.4",
-    "@types/mithril": "^1.1.12",
-    "@types/node": "^14.0.24",
-    "@types/proj4": "2.3.4",
+    "@types/leaflet": "^1.5.17",
+    "@types/mithril": "^2.0.4",
+    "@types/node": "^14.11.2",
+    "@types/proj4": "2.5.0",
     "@types/proj4leaflet": "^1.0.5",
     "cssnano": "^4.1.10",
     "parcel": "^1.12.4",
     "rimraf": "^3.0.2",
-    "typescript": "^3.9.7"
+    "typescript": "^4.0.3"
   }
 }
