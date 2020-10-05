@@ -15,7 +15,6 @@ export const GlobalCostModule: MeiosisComponent = () => {
       if (!hospitals) {
         return;
       }
-      const selectedHospitalsCount = hospitals.features.filter((h) => h.properties.active).length;
       const totalBirths = baseline.reduce((acc, cur) => acc + cur);
       const qosBaseline = Math.round(100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths));
       const qosCurline = Math.round(100 * (1 - (curline[1] + 2 * curline[2]) / totalBirths));
@@ -44,7 +43,8 @@ export const GlobalCostModule: MeiosisComponent = () => {
         m('tr', [m('td', '> 30 min'), ...showDiffInColumns(curline[2], baseline[2])]),
         m('tr', [
           m('td', '(Des-)investeringen'),
-          m('td.left-align[colspan=3]', `${f((investering - desinvestering) / 1000000, 10)} mln. €`),
+          m('td', f((investering - desinvestering) / 1000000, 10)),
+          m('td.left-align[colspan=2]', 'mln. €'),
         ])
       );
     },
