@@ -12,6 +12,7 @@ import { IZiekenhuis } from './models/ziekenhuis';
 import { MeiosisComponent } from './services/meiosis';
 import { InfoPanel } from './info-panel';
 import { IAmbulancePost } from './models';
+import { HospitalCostModule } from './components';
 
 export const HospitalMap: MeiosisComponent = () => {
   let map: L.Map;
@@ -255,7 +256,19 @@ export const HospitalMap: MeiosisComponent = () => {
             m(InfoPanel, { state, actions }),
             selectedHospital &&
               h && [
-                m('h2', `${h.locatie} (${h.organisatie})`),
+                m(
+                  'h2',
+                  m(
+                    'label',
+                    m('input[type=checkbox]', {
+                      checked: h.active,
+                      onchange: () =>
+                        actions.toggleHospitalActivity(h.id, ziekenhuisLayer),
+                    }),
+                    h.locatie
+                  )
+                ),
+                m(HospitalCostModule, { state, actions }),
                 m(
                   'p',
                   { style: 'font-weight: bold' },
@@ -305,15 +318,6 @@ export const HospitalMap: MeiosisComponent = () => {
                     aantalTweedelijn2,
                     aantalTweedelijn
                   )}`
-                ),
-                m(
-                  'label',
-                  m('input[type=checkbox]', {
-                    checked: h.active,
-                    onchange: () =>
-                      actions.toggleHospitalActivity(h.id, ziekenhuisLayer),
-                  }),
-                  'Actief'
                 ),
               ],
           ]

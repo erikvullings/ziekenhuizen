@@ -5,6 +5,7 @@ import healthImg from './assets/icons/health_centre.svg';
 import ziekenhuisImg from './assets/icons/ziekenhuis.svg';
 import childImg from './assets/icons/child.svg';
 import { formatNumber, showDiff } from './utils';
+import { GlobalCostModule } from './components/global-cost-module';
 
 const DashboardPanel: FactoryComponent<{
   status: [number, number, number];
@@ -136,6 +137,7 @@ export const InfoPanel: MeiosisComponent = () => {
           m('li', `< 30 min: ${showDiff(curline[1], baseline[1])}`),
           m('li', `> 30 min: ${showDiff(curline[2], baseline[2])}`),
         ]),
+        m(GlobalCostModule, { state, actions }),
       ];
     },
   };
