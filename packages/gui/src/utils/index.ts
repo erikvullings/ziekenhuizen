@@ -1,6 +1,7 @@
 import 'proj4';
 import 'proj4leaflet';
 import L from 'leaflet';
+import m from 'mithril';
 // import ziekenhuisImg from '../assets/icons/ziekenhuis.png';
 // import ziekenhuisSvgV from '../assets/icons/ziekenhuis_v.svg';
 // import ziekenhuisSvgX from '../assets/icons/ziekenhuis_x.svg';
@@ -22,6 +23,21 @@ export const showDiff = (cur: number, orig: number) => {
     ? formatNumber(c)
     : `${formatNumber(c)} (${sign}${formatNumber(c - o)}, 
       ${sign}${round((c - o) / o)}%)`;
+};
+
+export const showDiffInColumns = (cur: number, orig: number) => {
+  const c = Math.round(cur);
+  const o = Math.round(orig);
+  const sign = c > o ? '+' : '';
+  return c === o
+    ? [m('td[colspan=3]', formatNumber(c))]
+    : [
+        m('td', formatNumber(c)),
+        m(
+          'td.left-align[colspan=2]',
+          `(${sign}${formatNumber(c - o)}, ${sign}${round((c - o) / o)}%)`
+        ),
+      ];
 };
 
 export const RDnew = new L.Proj.CRS(
