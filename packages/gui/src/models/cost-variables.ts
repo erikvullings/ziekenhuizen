@@ -1,0 +1,21 @@
+/** Source of these constants: Norman's Excel: Geboortezorg Model -functions.xlsx */
+export const bevallingen_2e_lijn = 121.506;
+export const aandeel_sectio = 19.4; // In %
+export const aandeel_acute_sectio = 30.3; // In %
+export const aandeel_overige_sectio = 69.7; // In %
+export const aandeel_post_partum_ops = 8.2; // In %
+export const aandeel_electieve_sectio = 44.0; // In %
+export const aandeel_spoed_sectio = 25.7; // In %
+export const bevalling_in_bedrijfstijd = 40.0; // In %
+export const electieve_sectio_in_bedrijfstijd = 50.0; // In %
+export const spoed_sectio_in_bedrijfstijd = 40.0; // In %
+export const acute_sectio_in_bedrijfstijd = 40.0; // In %
+export const investering_per_partus = 483.4791;
+export const oK_per_partus = 0.0005;
+export const bVO_per_partus_2e_lijn = 0.9377;
+export const aantal_FTE = 0.024137476;
+export const fTE_kraam_direct = 0.022809963;
+export const fTE_kraam_indirect = 0.001327513;
+export const salaris = 1739.2317;
+export const salaris_kraam_direct = 1581.953466;
+export const salaris_kraam_indirect = 157.2782333;
