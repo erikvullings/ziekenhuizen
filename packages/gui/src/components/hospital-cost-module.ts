@@ -84,7 +84,6 @@ export const HospitalCostModule: MeiosisComponent = () => {
       const kraamafdeling_indirect_salaris = (bevalling_2e_lijn * salaris_kraam_indirect) / 1000;
       return m(
         'table',
-        { style: 'text-align: right' },
         m('tbody', [
           m('tr', m('td.table-header[colspan=4]', 'Geboortecijfers')),
           m('tr', [
