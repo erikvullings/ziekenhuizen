@@ -1,7 +1,7 @@
 import m from 'mithril';
 import { investering_per_partus } from '../models/cost-variables';
 import { MeiosisComponent } from '../services/meiosis';
-import { formatNumber, formatRoundedNumber as f, showDiff, showDiffInColumns } from '../utils';
+import { formatRoundedNumber as f, showDiff, showDiffInColumns } from '../utils';
 
 export const GlobalCostModule: MeiosisComponent = () => {
   return {
@@ -19,7 +19,7 @@ export const GlobalCostModule: MeiosisComponent = () => {
       const qosBaseline = Math.round(100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths));
       const qosCurline = Math.round(100 * (1 - (curline[1] + 2 * curline[2]) / totalBirths));
 
-      const [investering, desinvestering] = hospitals.features.reduce(
+      const [investering, boekwaarde] = hospitals.features.reduce(
         (acc, cur) => {
           const h = cur.properties;
           const aantalGeboorten = Math.round(h.t25 + h.t30 + h.tOv);
@@ -29,8 +29,9 @@ export const GlobalCostModule: MeiosisComponent = () => {
           /** Huidig aantal 2e-lijns geboorten na het sluiten van andere ziekenhuizen */
           const aantalTweedelijn2 = Math.round(aantalGeboorten2 * 0.71);
           const bevalling_2e_lijn = aantalTweedelijn2 - aantalTweedelijn;
-          const investeringen = bevalling_2e_lijn * investering_per_partus;
-          return [acc[0] + (investeringen >= 0 ? investeringen : 0), acc[1] + (investeringen < 0 ? investeringen : 0)];
+          const investering = bevalling_2e_lijn * investering_per_partus;
+          const boekwaarde = investering * 0.5;
+          return [acc[0] + (investering >= 0 ? investering : 0), acc[1] + (boekwaarde < 0 ? boekwaarde : 0)];
         },
         [0, 0] as [number, number]
       );
@@ -42,10 +43,11 @@ export const GlobalCostModule: MeiosisComponent = () => {
         m('tr', [m('td', '< 30 min'), ...showDiffInColumns(curline[1], baseline[1])]),
         m('tr', [m('td', '> 30 min'), ...showDiffInColumns(curline[2], baseline[2])]),
         m('tr', [
-          m('td', '(Des-)investeringen'),
-          m('td', f((investering - desinvestering) / 1000000, 10)),
+          m('td', 'investeringen'),
+          m('td', f(investering / 1000000, 10)),
           m('td.left-align[colspan=2]', 'mln. €'),
-        ])
+        ]),
+        m('tr', [m('td', 'boekwaarde'), m('td', f(-boekwaarde / 1000000, 10)), m('td.left-align[colspan=2]', 'mln. €')])
       );
     },
   };
