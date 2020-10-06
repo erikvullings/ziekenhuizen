@@ -2,7 +2,7 @@ import m from 'mithril';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 // import 'leaflet-hash';
-import { ziekenhuisIconX, ziekenhuisIconV, showDiff, ambulancePostIcon } from './utils';
+import { ziekenhuisIconX, ziekenhuisIconV, ambulancePostIcon } from './utils';
 import { IZiekenhuis } from './models/ziekenhuis';
 import { MeiosisComponent } from './services/meiosis';
 import { InfoPanel } from './info-panel';
@@ -24,14 +24,6 @@ export const HospitalMap: MeiosisComponent = () => {
       const { hospitals, selectedHospitalId, aanrijd25, ambulancePosts, ambulanceReach } = state.app;
       const selectedHospital = hospitals?.features.filter((f) => f.properties.id === selectedHospitalId).shift();
       const h = selectedHospital?.properties;
-      const aantalGeboorten = h ? Math.round(h.t25 + h.t30 + h.tOv) : 0;
-      const aantalGeboortecentrum = Math.round(aantalGeboorten * 0.15);
-      const aantalTweedelijn = Math.round(aantalGeboorten * 0.71);
-      /** Huidig aantal geboorten na het sluiten van andere ziekenhuizen */
-      const aantalGeboorten2 = h ? Math.round(h.curline.reduce((acc, cur) => acc + cur)) : 0;
-      const aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * 0.15);
-      /** Huidig aantal 2e-lijns geboorten na het sluiten van andere ziekenhuizen */
-      const aantalTweedelijn2 = Math.round(aantalGeboorten2 * 0.71);
 
       if (map && a25) {
         const t = aanrijd25?.features.filter(
