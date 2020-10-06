@@ -78,16 +78,16 @@ export const HospitalCostModule: MeiosisComponent = () => {
       const oppervlakte = bevalling_2e_lijn * bvo_per_partus_2e_lijn;
       const fte = bevalling_2e_lijn * aantal_fte;
       const kraamafdeling1op1_fte = bevalling_2e_lijn * fte_kraam_direct;
-      const kraamafdeling_indirect_fte = bevalling_2e_lijn * fte_kraam_indirect;
+      const kraamafdeling_generiek_fte = bevalling_2e_lijn * fte_kraam_indirect;
       const salariskosten = (bevalling_2e_lijn * salaris) / 1000;
       const kraamafdeling1op1_salaris = (bevalling_2e_lijn * salaris_kraam_direct) / 1000;
-      const kraamafdeling_indirect_salaris = (bevalling_2e_lijn * salaris_kraam_indirect) / 1000;
+      const kraamafdeling_generiek_salaris = (bevalling_2e_lijn * salaris_kraam_indirect) / 1000;
       return m(
         'table',
         m('tbody', [
           m('tr', m('td.table-header[colspan=4]', 'Geboortecijfers')),
           m('tr', [
-            m('td', 'Kenmerken'),
+            m('td', 'kenmerken'),
             m(
               'td.left-align[colspan=3]',
               [h.NICU ? 'NICU' : '', h.fullTimeSEH ? '24/7' : '', h.gevoeligeZH ? 'gevoelig' : '']
@@ -95,12 +95,12 @@ export const HospitalCostModule: MeiosisComponent = () => {
                 .join(', ')
             ),
           ]),
-          m('tr', [m('td', 'Aantal geboorten'), ...showDiffInColumns(aantalGeboorten2, aantalGeboorten)]),
+          m('tr', [m('td', 'aantal geboorten'), ...showDiffInColumns(aantalGeboorten2, aantalGeboorten)]),
           h.curline[0] ? m('tr', [m('td', 'binnen 25 min'), ...showDiffInColumns(h.curline[0], h.t25)]) : '',
           h.curline[1] ? m('tr', [m('td', 'binnen 30 min'), ...showDiffInColumns(h.curline[1], h.t30)]) : '',
           h.curline[2] ? m('tr', [m('td', 'overig'), ...showDiffInColumns(h.curline[2], h.tOv)]) : '',
-          m('tr', [m('td', 'Geboortecentrum'), ...showDiffInColumns(aantalGeboortecentrum2, aantalGeboortecentrum)]),
-          m('tr', [m('td', 'Ziekenhuis 2de-lijn'), ...showDiffInColumns(aantalTweedelijn2, aantalTweedelijn)]),
+          m('tr', [m('td', 'geboortecentrum'), ...showDiffInColumns(aantalGeboortecentrum2, aantalGeboortecentrum)]),
+          m('tr', [m('td', 'ziekenhuis 2de-lijn'), ...showDiffInColumns(aantalTweedelijn2, aantalTweedelijn)]),
 
           m('tr', m('td.table-header[colspan=4]', 'Productie verschuivingen')),
           m('tr', [m('td', 'TOTAAL'), m('td', f(bevalling_2e_lijn)), m('td.left-align[colspan=2]', 'bevallingen')]),
@@ -156,11 +156,11 @@ export const HospitalCostModule: MeiosisComponent = () => {
 
           m('tr', m('td.table-header[colspan=4]', 'Personeel')),
           m('tr', [m('td', 'TOTAAL'), m('td', f(fte, 10)), m('td.left-align[colspan=2]', 'FTE')]),
-          m('tr', [m('td', 'directe relatie'), m('td', f(kraamafdeling1op1_fte, 10))]),
-          m('tr', [m('td', 'indirecte relatie'), m('td', f(kraamafdeling_indirect_fte, 10))]),
+          m('tr', [m('td', 'specifiek'), m('td', f(kraamafdeling1op1_fte, 10))]),
+          m('tr', [m('td', 'generiek'), m('td', f(kraamafdeling_generiek_fte, 10))]),
           m('tr', [m('td', 'salariskosten'), m('td', f(salariskosten, 10)), m('td.left-align[colspan=2]', 'K€')]),
-          m('tr', [m('td', 'directe relatie'), m('td', f(kraamafdeling1op1_salaris, 10))]),
-          m('tr', [m('td', 'indirecte relatie'), m('td', f(kraamafdeling_indirect_salaris, 10))]),
+          m('tr', [m('td', 'specifiek'), m('td', f(kraamafdeling1op1_salaris, 10))]),
+          m('tr', [m('td', 'generiek'), m('td', f(kraamafdeling_generiek_salaris, 10))]),
         ])
       );
     },
