@@ -146,13 +146,19 @@ export const HospitalCostModule: MeiosisComponent = () => {
           ]),
 
           m('tr', m('td.table-header[colspan=4]', 'Infrastructuur')),
-          m('tr', [
-            m('td', '(des-)investeringen'),
-            m('td', f(investeringen, 100)),
-            m('td.left-align[colspan=2]', 'mln. €'),
-          ]),
+          h.active
+            ? m('tr', [
+                m('td', 'investeringen'),
+                m('td', f(investeringen, 100)),
+                m('td.left-align[colspan=2]', 'mln. €'),
+              ])
+            : m('tr', [
+                m('td', 'boekwaarde'),
+                m('td', f(-investeringen * 0.5, 100)),
+                m('td.left-align[colspan=2]', 'mln. €'),
+              ]),
           m('tr', [m('td', 'OK-gebruik'), m('td', f(ok_benutting, 100)), m('td.left-align[colspan=2]', 'aantal OK')]),
-          m('tr', [m('td', 'oppervakte'), m('td', f(oppervlakte)), m('td.left-align[colspan=2]', 'm² BVO')]),
+          m('tr', [m('td', 'oppervlakte'), m('td', f(oppervlakte)), m('td.left-align[colspan=2]', 'm² BVO')]),
 
           m('tr', m('td.table-header[colspan=4]', 'Personeel')),
           m('tr', [m('td', 'TOTAAL'), m('td', f(fte, 10)), m('td.left-align[colspan=2]', 'FTE')]),
