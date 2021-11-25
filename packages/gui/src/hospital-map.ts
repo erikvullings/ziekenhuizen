@@ -80,8 +80,9 @@ export const HospitalMap: MeiosisComponent = () => {
               // });
               L.control.scale({ imperial: false, metric: true }).addTo(map);
               // Add the PDOK map
+
               const pdokachtergrondkaartGrijs = new L.TileLayer(
-                'https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaartgrijs/EPSG:3857/{z}/{x}/{y}.png',
+                'https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0?layer=grijs&style=default&tilematrixset=EPSG:3857&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix=EPSG:28992:{z}&TileCol={x}&TileRow={y}',
                 {
                   minZoom: 3,
                   maxZoom: 14,
@@ -90,7 +91,7 @@ export const HospitalMap: MeiosisComponent = () => {
               );
               pdokachtergrondkaartGrijs.addTo(map);
               const pdokachtergrondkaart = new L.TileLayer(
-                'https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaart/EPSG:3857/{z}/{x}/{y}.png',
+                'https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0?layer=standaard&style=default&tilematrixset=EPSG:3857&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix=EPSG:28992:{z}&TileCol={x}&TileRow={y}',
                 {
                   minZoom: 3,
                   maxZoom: 14,
