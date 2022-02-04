@@ -51,7 +51,7 @@ const inactivateHospitalsFromHash = (hospitals?: GeoJSON.FeatureCollection<GeoJS
   if (i < 0) return;
   try {
     const inactiveHospitalIds = location.href
-      .substr(i + inactive.length + 1)
+      .substring(i + inactive.length + 1)
       .split(',')
       .map((n) => +n);
     hospitals?.features.forEach((h) => {
@@ -64,6 +64,8 @@ const inactivateHospitalsFromHash = (hospitals?: GeoJSON.FeatureCollection<GeoJS
   }
 };
 
+export type BirthsInArea = [totalBirthsIn25min: number, totalBirthsIn30min: number, totalBirthsOutside30min: number];
+
 /** Application state */
 
 export interface IAppStateModel {
@@ -74,9 +76,9 @@ export interface IAppStateModel {
     aanrijd25: GeoJSON.FeatureCollection<GeoJSON.Polygon>;
     selectedHospitalId: number;
     /** Total births in 25 min area, in 30 min, outside 30 min */
-    baseline: [number, number, number];
+    baseline: BirthsInArea;
     /** Total births in 25 min area, in 30 min, outside 30 min */
-    curline: [number, number, number];
+    curline: BirthsInArea;
     activeScenario?: number;
     isSearching: boolean;
     searchQuery?: string;
@@ -163,7 +165,7 @@ const computeCurline = (
   const curline = hospitals.features.reduce(
     (acc, f) => [acc[0] + f.properties.curline[0], acc[1] + f.properties.curline[1], acc[2] + f.properties.curline[2]],
     [0, 0, 0]
-  ) as [number, number, number];
+  ) as BirthsInArea;
 
   return {
     hospitals,
@@ -194,13 +196,13 @@ export const appStateMgmt = {
       aanrijd25: aanrijdtijd25,
       baseline: (ziekenhuizen as GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>).features.reduce(
         (acc, cur) => {
-          return [acc[0] + cur.properties.t25, acc[1] + cur.properties.t30, acc[2] + cur.properties.tOv] as [
-            number,
-            number,
-            number
-          ];
+          return [
+            acc[0] + cur.properties.t25,
+            acc[1] + cur.properties.t30,
+            acc[2] + cur.properties.tOv,
+          ] as BirthsInArea;
         },
-        [0, 0, 0] as [number, number, number]
+        [0, 0, 0] as BirthsInArea
       ),
       isSearching: false,
       searchQuery: '',

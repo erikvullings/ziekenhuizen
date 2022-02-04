@@ -1,23 +1,25 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import * as XLSX from 'xlsx';
+import * as fs from "fs";
+import * as path from "path";
+import * as XLSX from "xlsx";
 import {
   ziekenhuisInputFile,
   ziekenhuizenFolder,
-  ziekenhuisGeojson,
   aanrijdGeojson25,
   aanrijdGeojson30,
-} from './settings';
+} from "./settings";
 
 // Maak 2 geojson files, eentje met alle ziekenhuizen als punt op de kaart en de default gegevens,
 // de ander met alle aanrijdgebieden.
 
 const ziekenhuisWb = XLSX.readFile(ziekenhuisInputFile);
-const ziekenhuisTable = XLSX.utils.sheet_to_json(ziekenhuisWb.Sheets[ziekenhuisWb.SheetNames[0]], {
-  raw: true,
-  rawNumbers: true,
-}) as Array<{
-  filename: string;
+const ziekenhuisTable = XLSX.utils.sheet_to_json(
+  ziekenhuisWb.Sheets[ziekenhuisWb.SheetNames[0]],
+  {
+    raw: true,
+    rawNumbers: true,
+  }
+) as Array<{
+  filename?: string;
   id: number;
   organisatie: string;
   locatie: string;
@@ -38,31 +40,39 @@ const ziekenhuisTable = XLSX.utils.sheet_to_json(ziekenhuisWb.Sheets[ziekenhuisW
 }>;
 
 const aanrijdgebieden = ziekenhuisTable.map((z) => {
-  const data = fs.readFileSync(path.resolve(ziekenhuizenFolder, z.filename + '.geojson')).slice(3); // remove BOM
+  const data = fs
+    .readFileSync(path.resolve(ziekenhuizenFolder, `${z.filename}.geojson`))
+    .slice(3); // remove BOM
   delete z.filename;
   return JSON.parse(data.toString());
 });
 
 export const ziekenhuizen = {
-  type: 'FeatureCollection',
+  type: "FeatureCollection",
   features: ziekenhuisTable.map((z, i) => ({
-    type: 'Feature',
+    type: "Feature",
     properties: { ...z, id: i, t25: 0, t30: 0, tOv: 0 },
     geometry: {
-      type: 'Point',
+      type: "Point",
       coordinates: aanrijdgebieden[i].features[0].properties.center,
     },
   })),
 };
 
 export const aanrijdgebieden25 = {
-  type: 'FeatureCollection',
-  features: aanrijdgebieden.map((a, i) => ({ ...a.features[0], properties: { ...a.features[0].properties, id: i } })),
+  type: "FeatureCollection",
+  features: aanrijdgebieden.map((a, i) => ({
+    ...a.features[0],
+    properties: { ...a.features[0].properties, id: i },
+  })),
 };
 
 export const aanrijdgebieden30 = {
-  type: 'FeatureCollection',
-  features: aanrijdgebieden.map((a, i) => ({ ...a.features[1], properties: { ...a.features[1].properties, id: i } })),
+  type: "FeatureCollection",
+  features: aanrijdgebieden.map((a, i) => ({
+    ...a.features[1],
+    properties: { ...a.features[1].properties, id: i },
+  })),
 };
 
 // fs.writeFileSync(ziekenhuisGeojson, JSON.stringify(ziekenhuizen, null, 2));

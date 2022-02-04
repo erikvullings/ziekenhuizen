@@ -1,3 +1,5 @@
+import { BirthsInArea } from '../services/states';
+
 export interface IZiekenhuis {
   id: number;
   organisatie: string;
@@ -17,7 +19,7 @@ export interface IZiekenhuis {
   /** Totaal aantal geboorten buiten 30 min regio die hier opgevangen worden */
   tOv: number;
   /** Totaal aantal geboorten binnen 25, binnen 30 en buiten 30 min regio na deactiveren ziekenhuizen */
-  curline: [number, number, number];
+  curline: BirthsInArea;
   /** PCs assigned to this hospital */
   coverage: Array<{
     pc: number;
