@@ -596,8 +596,8 @@
     "Postcode": "3222LM",
     "Plaats": "Hellevoetsluis",
     "Beschikbaarheid": "24 uur",
-    "lat": 51.85810211,
-    "lon": 4.12007073
+    "lat": 51.8580578,
+    "lon": 4.12006334
   },
   {
     "Standplaats": "Brielle",
@@ -756,8 +756,8 @@
     "Postcode": "3648NX",
     "Plaats": "Wilnis",
     "Beschikbaarheid": "Dag/avond",
-    "lat": 52.16367321,
-    "lon": 4.91331836
+    "lat": 52.1636586,
+    "lon": 4.91333301
   },
   {
     "Standplaats": "Zeist",
@@ -1076,8 +1076,8 @@
     "Postcode": "4462GE",
     "Plaats": "Goes",
     "Beschikbaarheid": "24 uur",
-    "lat": 51.49564017,
-    "lon": 3.87542101
+    "lat": 51.49564938,
+    "lon": 3.8754257
   },
   {
     "Standplaats": "Oostburg",
@@ -1175,9 +1175,7 @@
     "Huisnummer": "1",
     "Postcode": "4761RN",
     "Plaats": "Zevenbergen",
-    "Beschikbaarheid": "24 uur",
-    "lat": 51.656809,
-    "lon": 4.557367
+    "Beschikbaarheid": "24 uur"
   },
   {
     "Standplaats": "Breda-Noord",
@@ -1646,8 +1644,8 @@
     "Postcode": "6374BZ",
     "Plaats": "Landgraaf",
     "Beschikbaarheid": "24 uur",
-    "lat": 50.91921769,
-    "lon": 6.02391539
+    "lat": 50.92245834,
+    "lon": 6.03107986
   },
   {
     "Standplaats": "Heerlen",
@@ -1826,8 +1824,8 @@
     "Postcode": "7075ED",
     "Plaats": "Etten",
     "Beschikbaarheid": "24 uur",
-    "lat": 51.9156947,
-    "lon": 6.34279137
+    "lat": 51.9157133,
+    "lon": 6.34278002
   },
   {
     "Standplaats": "Winterswijk",
@@ -1916,8 +1914,8 @@
     "Postcode": "7433RA",
     "Plaats": "Deventer Noord (Schalkhaar)",
     "Beschikbaarheid": "24 uur",
-    "lat": 52.26891626,
-    "lon": 6.17687567
+    "lat": 52.29004224,
+    "lon": 6.1897328
   },
   {
     "Standplaats": "Nijverdal",
@@ -2316,8 +2314,8 @@
     "Postcode": "8251KP",
     "Plaats": "Dronten",
     "Beschikbaarheid": "24 uur",
-    "lat": 52.53628244,
-    "lon": 5.72016582
+    "lat": 52.53535796,
+    "lon": 5.72130418
   },
   {
     "Standplaats": "IJsselmuiden",
@@ -2486,8 +2484,8 @@
     "Postcode": "8899BP",
     "Plaats": "Vlieland",
     "Beschikbaarheid": "24 uur",
-    "lat": 53.29810816,
-    "lon": 5.07514756
+    "lat": 53.29861836,
+    "lon": 5.07443749
   },
   {
     "Standplaats": "Leeuwarden (Elzenstraat)",
@@ -2676,8 +2674,8 @@
     "Postcode": "9502EZ",
     "Plaats": "Stadskanaal",
     "Beschikbaarheid": "24 uur",
-    "lat": 52.98017937,
-    "lon": 6.96785122
+    "lat": 52.97931818,
+    "lon": 6.9700322
   },
   {
     "Standplaats": "Borger",
@@ -2726,8 +2724,8 @@
     "Postcode": "9641HL",
     "Plaats": "Veendam",
     "Beschikbaarheid": "24 uur",
-    "lat": 53.10027205,
-    "lon": 6.88400258
+    "lat": 53.10009085,
+    "lon": 6.88446728
   },
   {
     "Standplaats": "Winschoten",
@@ -2808,5 +2806,6 @@
     "Beschikbaarheid": "24 uur",
     "lat": 53.40987803,
     "lon": 6.67741127
-  }
+  },
+  {}
 ]
