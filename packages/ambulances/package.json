@@ -1,10 +1,10 @@
 {
   "name": "ambulances",
   "version": "1.0.0",
-  "description": "From the location of ambulance posts, create two GeoJSON files, one that contains their locations, the other contains\r the area they can reach within 15 minutes. To determine this, we are creating a small script that will use\r [OSRM](https://project-osrm.org) for routing information. See [Agent-Smith](https://github.com/erikvullings/agent-smith)\r for an example how to run it locally.",
+  "description": "From the location of ambulance posts, create two GeoJSON files, one that contains their locations, the other contains\r the area they can reach within 15 minutes. To determine this, we are creating a small script that will use [OSRM](https://project-osrm.org) for routing information. See [Agent-Smith](https://github.com/erikvullings/agent-smith) for an example how to run it locally (folder: `docker/osrm-services`).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc -w"
   },
   "keywords": [],
   "author": "Erik Vullings <erik.vullings@gmail.com> (http://www.tno.nl)",

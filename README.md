@@ -1,8 +1,6 @@
 # Selectie van ziekenhuizen
 
-We proberen hier de volgende vraag te beantwoorden: Welke ziekenhuizen moeten open blijven voor goede geboortezorg,
-waarbij in acht genomen moet worden dat iedere Nederlander het recht heeft om binnen 45 minuten bij een ziekenhuis te
-komen?
+We proberen hier de volgende vraag te beantwoorden: Welke ziekenhuizen moeten open blijven voor goede geboortezorg, waarbij in acht genomen moet worden dat iedere Nederlander het recht heeft om binnen 45 minuten bij een ziekenhuis te komen?
 
 ## Hoe beantwoorden we die vraag:
 
