@@ -4,7 +4,7 @@ We proberen hier de volgende vraag te beantwoorden: Welke ziekenhuizen moeten op
 waarbij in acht genomen moet worden dat iedere Nederlander het recht heeft om binnen 45 minuten bij een ziekenhuis te
 komen?
 
-Hoe beantwoorden we die vraag:
+## Hoe beantwoorden we die vraag:
 
 Allereerst gebruiken we de volgende data sets:
 

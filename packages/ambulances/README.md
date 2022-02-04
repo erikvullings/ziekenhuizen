@@ -1,9 +1,6 @@
 # Processing the Ambulance Posts
 
-From the location of ambulance posts, create two GeoJSON files, one that contains their locations, the other contains
-the area they can reach within 15 minutes. To determine this, we are creating a small script that will use
-[OSRM](https://project-osrm.org) for routing information. See [Agent-Smith](https://github.com/erikvullings/agent-smith)
-for an example how to run it locally.
+From the location of ambulance posts, create two GeoJSON files, one that contains their locations, the other contains the area they can reach within 15 minutes. To determine this, we are creating a small script that will use [OSRM](https://project-osrm.org) for routing information. See [Agent-Smith](https://github.com/erikvullings/agent-smith) for an example how to run it locally.
 
 ## Prerequisites
 

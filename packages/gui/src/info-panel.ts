@@ -4,7 +4,7 @@ import houseImg from './assets/icons/house.svg';
 import healthImg from './assets/icons/health_centre.svg';
 import ziekenhuisImg from './assets/icons/ziekenhuis.svg';
 import childImg from './assets/icons/child.svg';
-import { formatNumber, showDiff } from './utils';
+import { formatNumber } from './utils';
 import { GlobalCostModule } from './components/global-cost-module';
 
 const DashboardPanel: FactoryComponent<{
