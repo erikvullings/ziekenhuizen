@@ -5,70 +5,51 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Isochrone",
-      "cwd": "${workspaceFolder}/packages/isochrone",
-      "program": "${workspaceFolder}/packages/isochrone/src/cli.js",
-      "request": "launch",
-      "args": [
-        "-c",
-        "5.496984, 51.468692",
-        "-n",
-        "http://127.0.0.1:5000",
-        "-s",
-        "0.1"
-      ],
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "type": "node"
-    },
-    {
       "type": "node",
       "request": "launch",
       "name": "Merge data",
       "cwd": "${workspaceFolder}/packages/processing",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "runtimeArgs": [
-        "-r",
-        "ts-node/register"
-      ],
-      "args": [
-        "${workspaceFolder}/packages/processing/src/index.ts"
-      ]
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${workspaceFolder}/packages/processing/src/index.ts"]
     },
     {
       "type": "node",
       "request": "launch",
       "name": "Process postcode data",
       "cwd": "${workspaceFolder}/packages/processing",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "runtimeArgs": [
-        "-r",
-        "ts-node/register"
-      ],
-      "args": [
-        "${workspaceFolder}/packages/processing/src/processPostcodes.ts"
-      ]
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${workspaceFolder}/packages/processing/src/processPostcodes.ts"]
     },
     {
       "type": "node",
       "request": "launch",
       "name": "Process ziekenhuis data",
       "cwd": "${workspaceFolder}/packages/processing",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "runtimeArgs": [
-        "-r",
-        "ts-node/register"
-      ],
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": ["-r", "ts-node/register"],
       "args": [
         "${workspaceFolder}/packages/processing/src/processZiekenhuizen.ts"
       ]
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Ambulances: Find locations",
+      "cwd": "${workspaceFolder}/packages/ambulances",
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${workspaceFolder}/packages/ambulances/src/findLocations.ts"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Ambulances: Generate GeoJSON",
+      "cwd": "${workspaceFolder}/packages/ambulances",
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${workspaceFolder}/packages/ambulances/src/generateGeoJSON.ts"]
+    }
   ]
 }
