@@ -1,5 +1,5 @@
 import m from 'mithril';
-import { investering_per_partus } from '../models/cost-variables';
+import { gemPerc2eLijnZh, investering_per_partus } from '../models/cost-variables';
 import { MeiosisComponent } from '../services/meiosis';
 import { formatRoundedNumber as f, showDiff, showDiffInColumns } from '../utils';
 
@@ -23,11 +23,11 @@ export const GlobalCostModule: MeiosisComponent = () => {
         (acc, cur) => {
           const h = cur.properties;
           const aantalGeboorten = Math.round(h.t25 + h.t30 + h.tOv);
-          const aantalTweedelijn = Math.round(aantalGeboorten * 0.71);
+          const aantalTweedelijn = Math.round(aantalGeboorten * gemPerc2eLijnZh);
           /** Huidig aantal geboorten na het sluiten van andere ziekenhuizen */
           const aantalGeboorten2 = h ? Math.round(h.curline.reduce((acc, cur) => acc + cur)) : 0;
           /** Huidig aantal 2e-lijns geboorten na het sluiten van andere ziekenhuizen */
-          const aantalTweedelijn2 = Math.round(aantalGeboorten2 * 0.71);
+          const aantalTweedelijn2 = Math.round(aantalGeboorten2 * gemPerc2eLijnZh);
           const bevalling_2e_lijn = aantalTweedelijn2 - aantalTweedelijn;
           const investering = bevalling_2e_lijn * investering_per_partus;
           const boekwaarde = investering * 0.5;

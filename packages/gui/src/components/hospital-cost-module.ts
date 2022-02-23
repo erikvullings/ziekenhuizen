@@ -39,13 +39,13 @@ export const HospitalCostModule: MeiosisComponent = () => {
       }
       const h = selectedHospital.properties;
       const aantalGeboorten = Math.round(h.t25 + h.t30 + h.tOv);
-      const aantalGeboortecentrum = Math.round(aantalGeboorten * 0.15);
-      const aantalTweedelijn = Math.round(aantalGeboorten * 0.721); // 0.71 + 0.011 voor overige bevallingen
+      const aantalGeboortecentrum = Math.round(aantalGeboorten * h.perc1lLijnZh);
+      const aantalTweedelijn = Math.round(aantalGeboorten * h.perc2lLijnZh); // 0.71 + 0.011 voor overige bevallingen
       /** Huidig aantal geboorten na het sluiten van andere ziekenhuizen */
       const aantalGeboorten2 = h ? Math.round(h.curline.reduce((acc, cur) => acc + cur)) : 0;
-      const aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * 0.15);
+      const aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * h.perc1lLijnZh);
       /** Huidig aantal 2e-lijns geboorten na het sluiten van andere ziekenhuizen */
-      const aantalTweedelijn2 = Math.round(aantalGeboorten2 * 0.721);
+      const aantalTweedelijn2 = Math.round(aantalGeboorten2 * h.perc2lLijnZh);
       const bevalling_2e_lijn = aantalTweedelijn2 - aantalTweedelijn;
       const sectio = bevalling_2e_lijn * aandeel_sectio;
       const overig = bevalling_2e_lijn * aandeel_sectio * aandeel_overige_sectio;
