@@ -25562,7 +25562,7 @@ module.exports = JSON.parse('{"type":"FeatureCollection","features":[{"type":"Fe
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://erikvullings.github.io/test_ziekenhuizen/";
+/******/ 		__webpack_require__.p = "https://tnocs.github.io/test_ziekenhuizen/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
