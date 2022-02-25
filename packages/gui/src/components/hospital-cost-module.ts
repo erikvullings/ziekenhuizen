@@ -13,8 +13,10 @@ import {
   electieve_sectio_in_bedrijfstijd,
   fte_kraam_direct,
   fte_kraam_indirect,
+  gemPerc1eLijnTh,
   gemPerc1eLijnZh,
   gemPerc2eLijnZh,
+  gemPercOnbekend,
   investering_per_partus,
   ok_per_partus,
   salaris,
@@ -42,10 +44,14 @@ export const HospitalCostModule: MeiosisComponent = () => {
       const h = selectedHospital.properties;
       const aantalGeboorten = Math.round(h.t25 + h.t30 + h.tOv);
       const aantalGeboortecentrum = Math.round(aantalGeboorten * (h.perc1lLijnZh || gemPerc1eLijnZh));
+      const aantalGeboortenThuis = Math.round(aantalGeboorten * (h.perc1lLijnThuis || gemPerc1eLijnTh));
+      const aantalGeboortenOnbekend = Math.round(aantalGeboorten * (h.percOnbekend || gemPercOnbekend));
       const aantalTweedelijn = Math.round(aantalGeboorten * (h.perc2lLijnZh || gemPerc2eLijnZh)); // 0.71 + 0.011 voor overige bevallingen
       /** Huidig aantal geboorten na het sluiten van andere ziekenhuizen */
       const aantalGeboorten2 = h ? Math.round(h.curline.reduce((acc, cur) => acc + cur)) : 0;
       const aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * (h.perc1lLijnZh || gemPerc1eLijnZh));
+      const aantalGeboortenThuis2 = Math.round(aantalGeboorten2 * (h.perc1lLijnThuis || gemPerc1eLijnTh));
+      const aantalGeboortenOnbekend2 = Math.round(aantalGeboorten2 * (h.percOnbekend || gemPercOnbekend));
       /** Huidig aantal 2e-lijns geboorten na het sluiten van andere ziekenhuizen */
       const aantalTweedelijn2 = Math.round(aantalGeboorten2 * (h.perc2lLijnZh || gemPerc2eLijnZh));
       const bevalling_2e_lijn = aantalTweedelijn2 - aantalTweedelijn;
@@ -84,93 +90,103 @@ export const HospitalCostModule: MeiosisComponent = () => {
       const salariskosten = (bevalling_2e_lijn * salaris) / 1000;
       const kraamafdeling1op1_salaris = (bevalling_2e_lijn * salaris_kraam_direct) / 1000;
       const kraamafdeling_generiek_salaris = (bevalling_2e_lijn * salaris_kraam_indirect) / 1000;
-      return m(
-        'table',
-        m('tbody', [
-          m('tr', m('td.table-header[colspan=4]', 'Geboortecijfers')),
-          m('tr', [
-            m('td', 'kenmerken'),
-            m(
-              'td.left-align[colspan=3]',
-              [h.NICU ? 'NICU' : '', h.fullTimeSEH ? '24/7' : '', h.gevoeligeZH ? 'gevoelig' : '']
-                .filter(Boolean)
-                .join(', ')
-            ),
-          ]),
-          m('tr', [m('td', 'aantal geboorten'), ...showDiffInColumns(aantalGeboorten2, aantalGeboorten)]),
-          h.curline[0] ? m('tr', [m('td', 'binnen 25 min'), ...showDiffInColumns(h.curline[0], h.t25)]) : '',
-          h.curline[1] ? m('tr', [m('td', 'binnen 30 min'), ...showDiffInColumns(h.curline[1], h.t30)]) : '',
-          h.curline[2] ? m('tr', [m('td', 'overig'), ...showDiffInColumns(h.curline[2], h.tOv)]) : '',
-          m('tr', [m('td', 'geboortecentrum'), ...showDiffInColumns(aantalGeboortecentrum2, aantalGeboortecentrum)]),
-          m('tr', [m('td', 'ziekenhuis 2de-lijn'), ...showDiffInColumns(aantalTweedelijn2, aantalTweedelijn)]),
+      return [
+        m('i.small', m.trust(h.notitie || '&nbsp;')),
+        m(
+          'table',
+          m('tbody', [
+            m('tr', m('td.table-header[colspan=4]', 'Geboortecijfers')),
+            m('tr', [
+              m('td', 'kenmerken'),
+              m(
+                'td.left-align[colspan=3]',
+                [h.NICU ? 'NICU' : '', h.fullTimeSEH ? '24/7' : '', h.gevoeligeZH ? 'gevoelig' : '']
+                  .filter(Boolean)
+                  .join(', ')
+              ),
+            ]),
+            m('tr', [m('td', 'aantal geboorten'), ...showDiffInColumns(aantalGeboorten2, aantalGeboorten)]),
+            m('tr', m('td[colspan=4]', m('hr'))),
+            h.curline[0] ? m('tr', [m('td', 'binnen 25 min'), ...showDiffInColumns(h.curline[0], h.t25)]) : '',
+            h.curline[1] ? m('tr', [m('td', 'binnen 30 min'), ...showDiffInColumns(h.curline[1], h.t30)]) : '',
+            h.curline[2] ? m('tr', [m('td', 'overig'), ...showDiffInColumns(h.curline[2], h.tOv)]) : '',
+            aantalGeboorten2 > 0 && m('tr', m('td[colspan=4]', m('hr'))),
+            m('tr', [m('td', 'ziekenhuis 2de-lijn'), ...showDiffInColumns(aantalTweedelijn2, aantalTweedelijn)]),
+            m('tr', [m('td', 'geboortecentrum'), ...showDiffInColumns(aantalGeboortecentrum2, aantalGeboortecentrum)]),
+            m('tr', [m('td', 'thuis'), ...showDiffInColumns(aantalGeboortenThuis2, aantalGeboortenThuis)]),
+            m('tr', [
+              m('td', 'niet gespecificeerd'),
+              ...showDiffInColumns(aantalGeboortenOnbekend2, aantalGeboortenOnbekend),
+            ]),
 
-          m('tr', m('td.table-header[colspan=4]', 'Productie verschuivingen')),
-          m('tr', [m('td', 'TOTAAL'), m('td', f(bevalling_2e_lijn)), m('td.left-align[colspan=2]', 'bevallingen')]),
-          m('tr', [m('td', 'sectio'), m('td', f(sectio)), m('td', 'overig'), m('td', f(overig))]),
-          m('tr', [m('td'), m('td'), m('td', 'acuut'), m('td', f(acuut))]),
-          m('tr', [m('td', 'overige bevallingen'), m('td', f(overige_bevallingen))]),
-          m('tr', [m('td', 'post partum operaties'), m('td', f(post_partum))]),
-          m('tr', [
-            m('td', m('b', 'Tijd productie')),
-            m('td.small', '09:00-17:00'),
-            m('td'),
-            m('td.small', '17:00-09:00'),
-          ]),
-          m('tr', [
-            m('td', 'overige bevallingen'),
-            m('td', f(overige_bevallingen_binnen)),
-            m('td'),
-            m('td', f(overige_bevallingen_buiten)),
-          ]),
-          m('tr', [
-            m('td', 'sectio electief'),
-            m('td', f(sectios_electief_binnen)),
-            m('td'),
-            m('td', f(sectios_electief_buiten)),
-          ]),
-          m('tr', [
-            m('td', 'sectio spoed'),
-            m('td', f(sectios_spoed_binnen)),
-            m('td'),
-            m('td', f(sectios_spoed_buiten)),
-          ]),
-          m('tr', [
-            m('td', 'sectio acuut'),
-            m('td', f(sectios_acuut_binnen)),
-            m('td'),
-            m('td', f(sectios_acuut_buiten)),
-          ]),
-          m('tr', [
-            m('td', 'post partum operaties'),
-            m('td', f(post_partum_ops_binnen)),
-            m('td'),
-            m('td', f(post_partum_ops_buiten)),
-          ]),
+            m('tr', m('td.table-header[colspan=4]', 'Productie verschuivingen')),
+            m('tr', [m('td', 'TOTAAL'), m('td', f(bevalling_2e_lijn)), m('td.left-align[colspan=2]', 'bevallingen')]),
+            m('tr', [m('td', 'sectio'), m('td', f(sectio)), m('td', 'overig'), m('td', f(overig))]),
+            m('tr', [m('td'), m('td'), m('td', 'acuut'), m('td', f(acuut))]),
+            m('tr', [m('td', 'overige bevallingen'), m('td', f(overige_bevallingen))]),
+            m('tr', [m('td', 'post partum operaties'), m('td', f(post_partum))]),
+            m('tr', [
+              m('td', m('b', 'Tijd productie')),
+              m('td.small', '09:00-17:00'),
+              m('td'),
+              m('td.small', '17:00-09:00'),
+            ]),
+            m('tr', [
+              m('td', 'overige bevallingen'),
+              m('td', f(overige_bevallingen_binnen)),
+              m('td'),
+              m('td', f(overige_bevallingen_buiten)),
+            ]),
+            m('tr', [
+              m('td', 'sectio electief'),
+              m('td', f(sectios_electief_binnen)),
+              m('td'),
+              m('td', f(sectios_electief_buiten)),
+            ]),
+            m('tr', [
+              m('td', 'sectio spoed'),
+              m('td', f(sectios_spoed_binnen)),
+              m('td'),
+              m('td', f(sectios_spoed_buiten)),
+            ]),
+            m('tr', [
+              m('td', 'sectio acuut'),
+              m('td', f(sectios_acuut_binnen)),
+              m('td'),
+              m('td', f(sectios_acuut_buiten)),
+            ]),
+            m('tr', [
+              m('td', 'post partum operaties'),
+              m('td', f(post_partum_ops_binnen)),
+              m('td'),
+              m('td', f(post_partum_ops_buiten)),
+            ]),
 
-          m('tr', m('td.table-header[colspan=4]', 'Infrastructuur')),
-          h.active
-            ? m('tr', [
-                m('td', 'investeringen'),
-                m('td', f(investeringen, 100)),
-                m('td.left-align[colspan=2]', 'mln. €'),
-              ])
-            : m('tr', [
-                m('td', 'boekwaarde'),
-                m('td', f(-investeringen * 0.5, 100)),
-                m('td.left-align[colspan=2]', 'mln. €'),
-              ]),
-          m('tr', [m('td', 'OK-gebruik'), m('td', f(ok_benutting, 100)), m('td.left-align[colspan=2]', 'aantal OK')]),
-          m('tr', [m('td', 'oppervlakte'), m('td', f(oppervlakte)), m('td.left-align[colspan=2]', 'm² BVO')]),
+            m('tr', m('td.table-header[colspan=4]', 'Infrastructuur')),
+            h.active
+              ? m('tr', [
+                  m('td', 'investeringen'),
+                  m('td', f(investeringen, 100)),
+                  m('td.left-align[colspan=2]', 'mln. €'),
+                ])
+              : m('tr', [
+                  m('td', 'boekwaarde'),
+                  m('td', f(-investeringen * 0.5, 100)),
+                  m('td.left-align[colspan=2]', 'mln. €'),
+                ]),
+            m('tr', [m('td', 'OK-gebruik'), m('td', f(ok_benutting, 100)), m('td.left-align[colspan=2]', 'aantal OK')]),
+            m('tr', [m('td', 'oppervlakte'), m('td', f(oppervlakte)), m('td.left-align[colspan=2]', 'm² BVO')]),
 
-          m('tr', m('td.table-header[colspan=4]', 'Personeel')),
-          m('tr', [m('td', 'TOTAAL'), m('td', f(fte, 10)), m('td.left-align[colspan=2]', 'FTE')]),
-          m('tr', [m('td', 'specifiek'), m('td', f(kraamafdeling1op1_fte, 10))]),
-          m('tr', [m('td', 'generiek'), m('td', f(kraamafdeling_generiek_fte, 10))]),
-          m('tr', [m('td', 'salariskosten'), m('td', f(salariskosten, 10)), m('td.left-align[colspan=2]', 'K€')]),
-          m('tr', [m('td', 'specifiek'), m('td', f(kraamafdeling1op1_salaris, 10))]),
-          m('tr', [m('td', 'generiek'), m('td', f(kraamafdeling_generiek_salaris, 10))]),
-        ])
-      );
+            m('tr', m('td.table-header[colspan=4]', 'Personeel')),
+            m('tr', [m('td', 'TOTAAL'), m('td', f(fte, 10)), m('td.left-align[colspan=2]', 'FTE')]),
+            m('tr', [m('td', 'specifiek'), m('td', f(kraamafdeling1op1_fte, 10))]),
+            m('tr', [m('td', 'generiek'), m('td', f(kraamafdeling_generiek_fte, 10))]),
+            m('tr', [m('td', 'salariskosten'), m('td', f(salariskosten, 10)), m('td.left-align[colspan=2]', 'K€')]),
+            m('tr', [m('td', 'specifiek'), m('td', f(kraamafdeling1op1_salaris, 10))]),
+            m('tr', [m('td', 'generiek'), m('td', f(kraamafdeling_generiek_salaris, 10))]),
+          ])
+        ),
+      ];
     },
   };
 };

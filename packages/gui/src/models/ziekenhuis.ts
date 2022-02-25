@@ -37,5 +37,10 @@ export interface IZiekenhuis {
   /** Percentage bevallingen, thuis 1e lijn */
   perc1lLijnThuis: number;
   /** Verwerkt het ziekenhuis bevallingen */
+  /** Percentage bevallingen die niet gespecificeerd zijn */
+  percOnbekend: number;
+  /** Aantekeningen betreffende de berekening */
+  notitie?: string;
+  /** Is active */
   active: boolean;
 }

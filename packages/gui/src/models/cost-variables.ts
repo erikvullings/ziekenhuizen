@@ -20,6 +20,7 @@ export const salaris_kraam_direct = 1581.953466;
 export const salaris_kraam_indirect = 157.2782333;
 
 /** Other constants used */
-export const gemPerc2eLijnZh = 0.7463; // 0.71
-export const gemPerc1eLijnZh = 0.1276; // 0.15
-export const gemPerc1eLijnTh = 0.126; // 0.129
+export const gemPerc2eLijnZh = 0.72245; // 0.71
+export const gemPerc1eLijnZh = 0.12763; // 0.15
+export const gemPerc1eLijnTh = 0.12604; // 0.129
+export const gemPercOnbekend = 0.02387; // Nieuw

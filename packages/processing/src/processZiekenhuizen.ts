@@ -39,6 +39,10 @@ const ziekenhuisTable = XLSX.utils.sheet_to_json(
   perc1lLijnZh: number;
   /** Percentage bevallingen, thuis 1e lijn */
   perc1lLijnThuis: number;
+  /** Percentage bevallingen die niet gespecificeerd zijn */
+  percOnbekend: number;
+  /** Aantekeningen betreffende de berekening */
+  notitie?: string;
   /** Verwerkt het ziekenhuis bevallingen */
   active: boolean;
   /** Totaal aantal geboorten binnen 25 min regio */
