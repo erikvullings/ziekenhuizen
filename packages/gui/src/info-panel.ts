@@ -94,7 +94,13 @@ export const InfoPanel: MeiosisComponent = () => {
       const qosBaseline = Math.round(100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths));
       return [
         m(SaveScenarioPanel, { state, actions }),
-        m('h2', `Baseline 2018 (QoS: ${qosBaseline})`),
+        m(
+          'h2',
+          m.trust(
+            `Baseline 2018 (QoS: ${qosBaseline}, 
+            <a href="https://www.zorginstituutnederland.nl/publicaties/rapport/2017/06/06/definitieve-indicatorenset-integrale-geboortezorg" target="_blank">bron</a>)`
+          )
+        ),
         m('h3', `Geselecteerd aantal ziekenhuizen: ${selectedHospitalsCount}/${hospitals?.features.length}`),
         m(DashboardPanel, { status: baseline }),
         m(GlobalCostModule, { state, actions }),
