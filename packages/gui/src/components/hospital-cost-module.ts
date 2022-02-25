@@ -13,6 +13,8 @@ import {
   electieve_sectio_in_bedrijfstijd,
   fte_kraam_direct,
   fte_kraam_indirect,
+  gemPerc1eLijnZh,
+  gemPerc2eLijnZh,
   investering_per_partus,
   ok_per_partus,
   salaris,
@@ -39,20 +41,20 @@ export const HospitalCostModule: MeiosisComponent = () => {
       }
       const h = selectedHospital.properties;
       const aantalGeboorten = Math.round(h.t25 + h.t30 + h.tOv);
-      const aantalGeboortecentrum = Math.round(aantalGeboorten * h.perc1lLijnZh);
-      const aantalTweedelijn = Math.round(aantalGeboorten * h.perc2lLijnZh); // 0.71 + 0.011 voor overige bevallingen
+      const aantalGeboortecentrum = Math.round(aantalGeboorten * (h.perc1lLijnZh || gemPerc1eLijnZh));
+      const aantalTweedelijn = Math.round(aantalGeboorten * (h.perc2lLijnZh || gemPerc2eLijnZh)); // 0.71 + 0.011 voor overige bevallingen
       /** Huidig aantal geboorten na het sluiten van andere ziekenhuizen */
       const aantalGeboorten2 = h ? Math.round(h.curline.reduce((acc, cur) => acc + cur)) : 0;
-      const aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * h.perc1lLijnZh);
+      const aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * (h.perc1lLijnZh || gemPerc1eLijnZh));
       /** Huidig aantal 2e-lijns geboorten na het sluiten van andere ziekenhuizen */
-      const aantalTweedelijn2 = Math.round(aantalGeboorten2 * h.perc2lLijnZh);
+      const aantalTweedelijn2 = Math.round(aantalGeboorten2 * (h.perc2lLijnZh || gemPerc2eLijnZh));
       const bevalling_2e_lijn = aantalTweedelijn2 - aantalTweedelijn;
       const sectio = bevalling_2e_lijn * aandeel_sectio;
       const overig = bevalling_2e_lijn * aandeel_sectio * aandeel_overige_sectio;
       const acuut = bevalling_2e_lijn * aandeel_sectio * aandeel_acute_sectio;
       const overige_bevallingen = bevalling_2e_lijn - bevalling_2e_lijn * aandeel_sectio;
       const post_partum = bevalling_2e_lijn * (1 - aandeel_sectio) * aandeel_post_partum_ops;
-      console.table({ overige_bevallingen, bevallingen_in_bedrijfstijd });
+      // console.table({ overige_bevallingen, bevallingen_in_bedrijfstijd });
       const overige_bevallingen_binnen = overige_bevallingen * bevallingen_in_bedrijfstijd;
       const overige_bevallingen_buiten = overige_bevallingen * (1 - bevallingen_in_bedrijfstijd);
       const sectios_electief_binnen =
