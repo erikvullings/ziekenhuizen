@@ -24459,20 +24459,20 @@ var HospitalCostModule = function () {
             }
             var h = selectedHospital.properties;
             var aantalGeboorten = Math.round(h.t25 + h.t30 + h.tOv);
-            var aantalGeboortecentrum = Math.round(aantalGeboorten * h.perc1lLijnZh);
-            var aantalTweedelijn = Math.round(aantalGeboorten * h.perc2lLijnZh); // 0.71 + 0.011 voor overige bevallingen
+            var aantalGeboortecentrum = Math.round(aantalGeboorten * (h.perc1lLijnZh || cost_variables_1.gemPerc1eLijnZh));
+            var aantalTweedelijn = Math.round(aantalGeboorten * (h.perc2lLijnZh || cost_variables_1.gemPerc2eLijnZh)); // 0.71 + 0.011 voor overige bevallingen
             /** Huidig aantal geboorten na het sluiten van andere ziekenhuizen */
             var aantalGeboorten2 = h ? Math.round(h.curline.reduce(function (acc, cur) { return acc + cur; })) : 0;
-            var aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * h.perc1lLijnZh);
+            var aantalGeboortecentrum2 = Math.round(aantalGeboorten2 * (h.perc1lLijnZh || cost_variables_1.gemPerc1eLijnZh));
             /** Huidig aantal 2e-lijns geboorten na het sluiten van andere ziekenhuizen */
-            var aantalTweedelijn2 = Math.round(aantalGeboorten2 * h.perc2lLijnZh);
+            var aantalTweedelijn2 = Math.round(aantalGeboorten2 * (h.perc2lLijnZh || cost_variables_1.gemPerc2eLijnZh));
             var bevalling_2e_lijn = aantalTweedelijn2 - aantalTweedelijn;
             var sectio = bevalling_2e_lijn * cost_variables_1.aandeel_sectio;
             var overig = bevalling_2e_lijn * cost_variables_1.aandeel_sectio * cost_variables_1.aandeel_overige_sectio;
             var acuut = bevalling_2e_lijn * cost_variables_1.aandeel_sectio * cost_variables_1.aandeel_acute_sectio;
             var overige_bevallingen = bevalling_2e_lijn - bevalling_2e_lijn * cost_variables_1.aandeel_sectio;
             var post_partum = bevalling_2e_lijn * (1 - cost_variables_1.aandeel_sectio) * cost_variables_1.aandeel_post_partum_ops;
-            console.table({ overige_bevallingen: overige_bevallingen, bevallingen_in_bedrijfstijd: cost_variables_1.bevallingen_in_bedrijfstijd });
+            // console.table({ overige_bevallingen, bevallingen_in_bedrijfstijd });
             var overige_bevallingen_binnen = overige_bevallingen * cost_variables_1.bevallingen_in_bedrijfstijd;
             var overige_bevallingen_buiten = overige_bevallingen * (1 - cost_variables_1.bevallingen_in_bedrijfstijd);
             var sectios_electief_binnen = bevalling_2e_lijn * cost_variables_1.aandeel_sectio * cost_variables_1.electieve_sectio_in_bedrijfstijd * cost_variables_1.aandeel_electieve_sectio;
@@ -25228,7 +25228,7 @@ var showDiff = function (cur, orig) {
     var sign = c > o ? '+' : '';
     return c === o
         ? (0, exports.formatNumber)(c)
-        : "".concat((0, exports.formatNumber)(c), " (").concat(sign).concat((0, exports.formatNumber)(c - o), ", \n      ").concat(sign).concat((0, exports.round)((c - o) / o), "%)");
+        : "".concat((0, exports.formatNumber)(c), " (").concat(sign).concat((0, exports.formatNumber)(c - o), ", \n      ").concat(sign).concat((0, exports.round)(o ? (c - o) / o : 1), "%)");
 };
 exports.showDiff = showDiff;
 var showDiffInColumns = function (cur, orig) {
@@ -25239,27 +25239,13 @@ var showDiffInColumns = function (cur, orig) {
         ? [(0, mithril_1.default)('td', (0, exports.formatNumber)(c))]
         : [
             (0, mithril_1.default)('td', (0, exports.formatNumber)(c)),
-            (0, mithril_1.default)('td.left-align[colspan=2]', "(".concat(sign).concat((0, exports.formatNumber)(c - o), ", ").concat(sign).concat((0, exports.round)((c - o) / o), "%)")),
+            (0, mithril_1.default)('td.left-align[colspan=2]', "(".concat(sign).concat((0, exports.formatNumber)(c - o), ", ").concat(sign).concat((0, exports.round)(o ? (c - o) / o : 1), "%)")),
         ];
 };
 exports.showDiffInColumns = showDiffInColumns;
 exports.RDnew = new leaflet_1.default.Proj.CRS('EPSG:28992', '+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +towgs84=565.2369,50.0087,465.658,-0.406857330322398,0.350732676542563,-1.8703473836068,4.0812 +no_defs', {
     resolutions: [
-        3440.64,
-        1720.32,
-        860.16,
-        430.08,
-        215.04,
-        107.52,
-        53.76,
-        26.88,
-        13.44,
-        6.72,
-        3.36,
-        1.68,
-        0.84,
-        0.42,
-        0.21,
+        3440.64, 1720.32, 860.16, 430.08, 215.04, 107.52, 53.76, 26.88, 13.44, 6.72, 3.36, 1.68, 0.84, 0.42, 0.21,
     ],
     bounds: leaflet_1.default.bounds([-285401.92, 22598.08], [595401.9199999999, 903401.9199999999]),
     origin: [-285401.92, 22598.08],
