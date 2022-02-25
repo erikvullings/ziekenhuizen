@@ -24894,7 +24894,7 @@ var InfoPanel = function () {
             var qosBaseline = Math.round(100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths));
             return [
                 (0, mithril_1.default)(SaveScenarioPanel, { state: state, actions: actions }),
-                (0, mithril_1.default)('h2', "Baseline 2018 (QoS: ".concat(qosBaseline, ")")),
+                (0, mithril_1.default)('h2', mithril_1.default.trust("Baseline 2018 (QoS: ".concat(qosBaseline, ", \n            <a href=\"https://www.zorginstituutnederland.nl/publicaties/rapport/2017/06/06/definitieve-indicatorenset-integrale-geboortezorg\" target=\"_blank\">bron</a>)"))),
                 (0, mithril_1.default)('h3', "Geselecteerd aantal ziekenhuizen: ".concat(selectedHospitalsCount, "/").concat(hospitals === null || hospitals === void 0 ? void 0 : hospitals.features.length)),
                 (0, mithril_1.default)(DashboardPanel, { status: baseline }),
                 (0, mithril_1.default)(global_cost_module_1.GlobalCostModule, { state: state, actions: actions }),
