@@ -21,7 +21,7 @@ export const showDiff = (cur: number, orig: number) => {
   return c === o
     ? formatNumber(c)
     : `${formatNumber(c)} (${sign}${formatNumber(c - o)}, 
-      ${sign}${round((c - o) / o)}%)`;
+      ${sign}${round(o ? (c - o) / o : 1)}%)`;
 };
 
 export const showDiffInColumns = (cur: number, orig: number) => {
@@ -32,7 +32,7 @@ export const showDiffInColumns = (cur: number, orig: number) => {
     ? [m('td', formatNumber(c))]
     : [
         m('td', formatNumber(c)),
-        m('td.left-align[colspan=2]', `(${sign}${formatNumber(c - o)}, ${sign}${round((c - o) / o)}%)`),
+        m('td.left-align[colspan=2]', `(${sign}${formatNumber(c - o)}, ${sign}${round(o ? (c - o) / o : 1)}%)`),
       ];
 };
 
@@ -41,21 +41,7 @@ export const RDnew = new L.Proj.CRS(
   '+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +towgs84=565.2369,50.0087,465.658,-0.406857330322398,0.350732676542563,-1.8703473836068,4.0812 +no_defs',
   {
     resolutions: [
-      3440.64,
-      1720.32,
-      860.16,
-      430.08,
-      215.04,
-      107.52,
-      53.76,
-      26.88,
-      13.44,
-      6.72,
-      3.36,
-      1.68,
-      0.84,
-      0.42,
-      0.21,
+      3440.64, 1720.32, 860.16, 430.08, 215.04, 107.52, 53.76, 26.88, 13.44, 6.72, 3.36, 1.68, 0.84, 0.42, 0.21,
     ],
     bounds: L.bounds([-285401.92, 22598.08], [595401.9199999999, 903401.9199999999]),
     origin: [-285401.92, 22598.08],

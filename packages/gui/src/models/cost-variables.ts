@@ -18,3 +18,9 @@ export const fte_kraam_indirect = 0.001327513;
 export const salaris = 1739.2317;
 export const salaris_kraam_direct = 1581.953466;
 export const salaris_kraam_indirect = 157.2782333;
+
+/** Other constants used */
+export const gemPerc2eLijnZh = 0.72245; // 0.71
+export const gemPerc1eLijnZh = 0.12763; // 0.15
+export const gemPerc1eLijnTh = 0.12604; // 0.129
+export const gemPercOnbekend = 0.02387; // Nieuw

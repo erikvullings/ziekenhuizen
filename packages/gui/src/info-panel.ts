@@ -6,6 +6,7 @@ import ziekenhuisImg from './assets/icons/ziekenhuis.svg';
 import childImg from './assets/icons/child.svg';
 import { formatNumber } from './utils';
 import { GlobalCostModule } from './components/global-cost-module';
+import { gemPerc1eLijnTh, gemPerc1eLijnZh, gemPerc2eLijnZh } from './models/cost-variables';
 
 const DashboardPanel: FactoryComponent<{
   status: [number, number, number];
@@ -13,9 +14,9 @@ const DashboardPanel: FactoryComponent<{
   return {
     view: ({ attrs: { status } }) => {
       const aantalGeboorten = status.reduce((acc, cur) => acc + cur);
-      const aantalThuisgeboren = Math.round(aantalGeboorten * 0.129);
-      const aantalGeboortecentrum = Math.round(aantalGeboorten * 0.15);
-      const aantalTweedelijn = Math.round(aantalGeboorten * 0.71);
+      const aantalThuisgeboren = Math.round(aantalGeboorten * gemPerc1eLijnTh);
+      const aantalGeboortecentrum = Math.round(aantalGeboorten * gemPerc1eLijnZh);
+      const aantalTweedelijn = Math.round(aantalGeboorten * gemPerc2eLijnZh);
       const overig = Math.round(aantalGeboorten - aantalThuisgeboren - aantalTweedelijn - aantalGeboortecentrum);
       console.log(`Aantal geboorten: ${aantalGeboorten}`);
 
@@ -93,7 +94,13 @@ export const InfoPanel: MeiosisComponent = () => {
       const qosBaseline = Math.round(100 * (1 - (baseline[1] + 2 * baseline[2]) / totalBirths));
       return [
         m(SaveScenarioPanel, { state, actions }),
-        m('h2', `Baseline 2018 (QoS: ${qosBaseline})`),
+        m(
+          'h2',
+          m.trust(
+            `Baseline 2018 (QoS: ${qosBaseline}, 
+            <a href="https://www.zorginstituutnederland.nl/publicaties/rapport/2017/06/06/definitieve-indicatorenset-integrale-geboortezorg" target="_blank">bron</a>)`
+          )
+        ),
         m('h3', `Geselecteerd aantal ziekenhuizen: ${selectedHospitalsCount}/${hospitals?.features.length}`),
         m(DashboardPanel, { status: baseline }),
         m(GlobalCostModule, { state, actions }),

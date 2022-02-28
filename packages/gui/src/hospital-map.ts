@@ -205,7 +205,7 @@ export const HospitalMap: MeiosisComponent = () => {
             selectedHospital &&
               h && [
                 m(
-                  'h2',
+                  'h2.hospital-title',
                   m(
                     'label',
                     m('input[type=checkbox]', {

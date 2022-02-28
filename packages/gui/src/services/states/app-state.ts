@@ -19,11 +19,11 @@ type DemografieType = Array<{
 }>;
 
 // Add curline
-ziekenhuizen.features = ziekenhuizen.features.map((z: any) => ({
+ziekenhuizen.features = (ziekenhuizen as GeoJSON.FeatureCollection<GeoJSON.Point, IZiekenhuis>).features.map((z) => ({
   ...z,
   properties: {
     ...z.properties,
-    active: true,
+    // active: true,
     curline: [0, 0, 0],
   },
 }));

@@ -192,3 +192,7 @@ table {
   text-align: right;
   width: 100%;
 }
+
+.hospital-title {
+  margin-bottom: -18px;
+}
