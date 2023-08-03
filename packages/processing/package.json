@@ -29,7 +29,7 @@
     "@turf/boolean-point-in-polygon": "6.5.0",
     "@turf/distance": "6.5.0",
     "@turf/turf": "6.5.0",
-    "xlsx": "0.18.0"
+    "xlsx": "0.18.5"
   },
   "devDependencies": {
     "@types/node": "^17.0.14",
